@@ -43,7 +43,7 @@
 <script>
   // loadCSVFile関数をfetchを使用してファイルを読み込むように変更します
   function loadCSVFile() {
-    fetch('https://tksarah.github.io/bc/data.csv')
+    fetch('data.csv')
       .then(response => response.text())
       .then(content => {
         parseCSV(content);
