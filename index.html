@@ -33,8 +33,6 @@
 </style>
 </head>
 <body>
-
-<input type="file" id="csvFileInput" accept=".csv" onchange="loadCSVFile(event)">
 <p>
 <canvas id="myChart" width="400" height="400"></canvas> <!-- グラフを表示するためのcanvasタグを追加 -->
 <table id="dataTable">
@@ -43,15 +41,15 @@
 </table>
 
 <script>
-  function loadCSVFile(event) {
-    const input = event.target;
-    if ('files' in input && input.files.length > 0) {
-      readFileContent(input.files[0]).then(content => {
+  // loadCSVFile関数をfetchを使用してファイルを読み込むように変更します
+  function loadCSVFile() {
+    fetch('data.csv')
+      .then(response => response.text())
+      .then(content => {
         parseCSV(content);
       }).catch(error => {
         console.error(error); // エラー処理を追加
       });
-    }
   }
 
   function readFileContent(file) {
