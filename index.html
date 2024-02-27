@@ -43,7 +43,7 @@
 <script>
   // loadCSVFile関数をfetchを使用してファイルを読み込むように変更します
   function loadCSVFile() {
-      readFileContent('data.csv').
+      readFileContent('data.csv')..then(content => {
         parseCSV(content);
       }).catch(error => {
         console.error(error); // エラー処理を追加
