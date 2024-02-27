@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>CSV to Chart</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.jsを追加 -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #777;
+  }
+  th {
+    background-color: #555;
+    cursor: pointer; /* カーソルをポインターに設定 */
+  }
+  tr:nth-child(even) {
+    background-color: #444;
+  }
+  tr:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<input type="file" id="csvFileInput" accept=".csv" onchange="loadCSVFile(event)">
+<p>
+<canvas id="myChart" width="400" height="400"></canvas> <!-- グラフを表示するためのcanvasタグを追加 -->
+<table id="dataTable">
+  <thead></thead> <!-- theadタグを追加 -->
+  <tbody></tbody> <!-- tbodyタグを追加 -->
+</table>
+
+<script>
+  function loadCSVFile(event) {
+    const input = event.target;
+    if ('files' in input && input.files.length > 0) {
+      readFileContent(input.files[0]).then(content => {
+        parseCSV(content);
+      }).catch(error => {
+        console.error(error); // エラー処理を追加
+      });
+    }
+  }
+
+  function readFileContent(file) {
+    const reader = new FileReader();
+    return new Promise((resolve, reject) => {
+      reader.onload = event => resolve(event.target.result);
+      reader.onerror = error => reject(error);
+      reader.readAsText(file);
+    });
+  }
+
+  function parseCSV(text) {
+    const lines = text.split(/\r\n|\n/);
+    const headers = lines[0].split(',');
+    headers.push('Current Tier'); // 'Current Tier' ヘッダーを追加
+    headers.push('Amount/Staker'); // 'Amount/Staker' ヘッダーを追加
+    const table = document.getElementById('dataTable');
+    const tbody = table.querySelector('tbody'); // tbodyを選択
+    tbody.innerHTML = ''; // tbodyの中身をクリア
+    const thead = table.createTHead();
+    thead.innerHTML = ''; // theadの中身をクリア
+    const row = thead.insertRow();
+    for (const header of headers) {
+      const th = document.createElement('th');
+      th.textContent = header.replace(/"/g, ''); // ヘッダーのダブルコーテーションを削除
+      th.addEventListener('click', () => sortTableByColumn(table, headers.indexOf(header))); // onclickからaddEventListenerに変更
+      row.appendChild(th);
+    }
+    for (let i = 1; i < lines.length; i++) {
+      if(lines[i].trim() === '') continue; // 空行をスキップ
+      const cells = lines[i].split(',');
+      const tr = tbody.insertRow(); // tbodyに行を追加
+      for (let j = 0; j < cells.length; j++) {
+        const td = tr.insertCell();
+        let cellText = cells[j];
+        // Name 列のダブルコーテーションを削除
+        if (headers[j] === 'Name') {
+          cellText = cellText.replace(/"/g, '');
+        }
+        td.textContent = cellText;
+      }
+      // 'Current Tier' カラムの値を設定
+      const totalStaked = parseFloat(cells[headers.indexOf('TotalStaked')].replace(/"/g, ''));
+      let tier = '';
+      if (totalStaked >= 200000000) {
+        tier = 'Tier 1';
+      } else if (totalStaked >= 50000000 && totalStaked < 300000000) {
+        tier = 'Tier 2';
+      } else if (totalStaked >= 15000000 && totalStaked < 50000000) {
+        tier = 'Tier 3';
+      } else if (totalStaked >= 1500000 && totalStaked < 15000000) {
+        tier = 'Tier 4';
+      } else if (totalStaked < 1500000) { 
+        tier = 'Tier 99(No Tier)';
+      }
+      const tierTd = tr.insertCell();
+      tierTd.textContent = tier;
+
+      // 'Amount/Staker' カラムの値を計算して設定
+      const stakers = parseFloat(cells[headers.indexOf('Stakers')].replace(/"/g, ''));
+      const amountPerStaker = (stakers !== 0) ? (totalStaked / stakers).toFixed(2) : '0'; // 0で割ることを避ける
+      const amountPerStakerTd = tr.insertCell();
+      amountPerStakerTd.textContent = amountPerStaker;
+    }
+  }
+
+  function sortTableByColumn(table, columnIndex) {
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.rows);
+    const isAscending = tbody.getAttribute('data-sort-order') === 'asc';
+    rows.sort((rowA, rowB) => {
+      const cellA = rowA.cells[columnIndex].textContent.trim();
+      const cellB = rowB.cells[columnIndex].textContent.trim();
+      return cellA.localeCompare(cellB, undefined, {numeric: true}) * (isAscending ? -1 : 1);
+    });
+    tbody.setAttribute('data-sort-order', isAscending ? 'desc' : 'asc');
+    rows.forEach(row => tbody.appendChild(row));
+  }
+  // parseCSV関数を修正して、円グラフが出力されるようにします
+  function parseCSV(text) {
+    const lines = text.split(/\r\n|\n/);
+    const headers = lines[0].split(',');
+    headers.push('Current Tier'); // 'Current Tier' ヘッダーを追加
+    headers.push('Amount/Staker'); // 'Amount/Staker' ヘッダーを追加
+    const table = document.getElementById('dataTable');
+    const tbody = table.querySelector('tbody'); // tbodyを選択
+    tbody.innerHTML = ''; // tbodyの中身をクリア
+    const thead = table.createTHead();
+    thead.innerHTML = ''; // theadの中身をクリア
+    const row = thead.insertRow();
+    for (const header of headers) {
+      const th = document.createElement('th');
+      th.textContent = header.replace(/"/g, ''); // ヘッダーのダブルコーテーションを削除
+      th.addEventListener('click', () => sortTableByColumn(table, headers.indexOf(header))); // onclickからaddEventListenerに変更
+      row.appendChild(th);
+    }
+
+    // カテゴリごとのTotalStakedを集計するためのオブジェクトを追加
+    const categoryTotals = {};
+
+    for (let i = 1; i < lines.length; i++) {
+      if(lines[i].trim() === '') continue; // 空行をスキップ
+      const cells = lines[i].split(',');
+      const tr = tbody.insertRow(); // tbodyに行を追加
+      for (let j = 0; j < cells.length; j++) {
+        const td = tr.insertCell();
+        let cellText = cells[j];
+        // Name 列のダブルコーテーションを削除
+        if (headers[j] === 'Name') {
+          cellText = cellText.replace(/"/g, '');
+        }
+        td.textContent = cellText;
+      }
+      // 'Current Tier' カラムの値を設定
+      const totalStaked = parseFloat(cells[headers.indexOf('TotalStaked')].replace(/"/g, ''));
+      let tier = '';
+      if (totalStaked >= 200000000) {
+        tier = 'Tier 1';
+      } else if (totalStaked >= 50000000 && totalStaked < 300000000) {
+        tier = 'Tier 2';
+      } else if (totalStaked >= 15000000 && totalStaked < 50000000) {
+        tier = 'Tier 3';
+      } else if (totalStaked >= 1500000 && totalStaked < 15000000) {
+        tier = 'Tier 4';
+      } else if (totalStaked < 1500000) { 
+        tier = 'Tier 99(No Tier)';
+      }
+      const tierTd = tr.insertCell();
+      tierTd.textContent = tier;
+
+      // 'Amount/Staker' カラムの値を計算して設定
+      const stakers = parseFloat(cells[headers.indexOf('Stakers')].replace(/"/g, ''));
+      const amountPerStaker = (stakers !== 0) ? (totalStaked / stakers).toFixed(2) : '0'; // 0で割ることを避ける
+      const amountPerStakerTd = tr.insertCell();
+      amountPerStakerTd.textContent = amountPerStaker;
+
+      // 'Category' カラムの値を取得し、TotalStakedを集計します
+      const category = cells[headers.indexOf('Category')].replace(/"/g, '');
+      if (!categoryTotals[category]) {
+        categoryTotals[category] = 0;
+      }
+      categoryTotals[category] += totalStaked;
+    }
+
+    // グラフを描画するためにdrawChart関数を呼び出します
+    drawChart(categoryTotals);
+  }
+
+  // drawChart関数を追加して、カテゴリごとのTotalStakedを集計し、円グラフを描画します
+  function drawChart(data) {
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'pie', // グラフの種類を指定
+      data: {
+        labels: Object.keys(data), // カテゴリ名をラベルとして設定
+        datasets: [{
+          label: 'Total Staked by Category',
+          data: Object.values(data), // 各カテゴリのTotalStakedの合計値をデータとして設定
+          backgroundColor: [
+            'rgba(255, 204, 204, 0.2)', // ピンク
+            'rgba(255, 229, 204, 0.2)', // オレンジ
+            'rgba(255, 255, 204, 0.2)', // イエロー
+            'rgba(204, 255, 204, 0.2)', // グリーン
+            'rgba(204, 255, 255, 0.2)', // ライトブルー
+            'rgba(204, 204, 255, 0.2)'  // パープル
+          ],
+          borderColor: [
+            'rgba(255, 204, 204, 1)',
+            'rgba(255, 229, 204, 1)',
+            'rgba(255, 255, 204, 1)',
+            'rgba(204, 255, 204, 1)',
+            'rgba(204, 255, 255, 1)',
+            'rgba(204, 204, 255, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: false, // レスポンシブ対応を無効に設定
+        legend: {
+          position: 'right', // 凡例の位置を指定
+        }
+      }
+    });
+  }
+
+
+</script>
+
+
+
+</body>
+</html>
