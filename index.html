@@ -196,6 +196,7 @@
       // 'Current Tier' カラムの値を設定
       const totalStaked = parseFloat(cells[headers.indexOf('TotalStaked')].replace(/"/g, ''));
       let tier = '';
+      let tierClass = '';
       if (totalStaked >= 200000000) {
         tier = 'Tier 1';
   	tierClass = 'tier1'; // Tier 1のクラスを追加
