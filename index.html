@@ -326,11 +326,44 @@
     });
   }
 
+
+function updateTableHeaders() {
+  const excludedHeaders = ['Address', 'dAppId']; // 除外するヘッダー
+  fetch('data.csv')
+    .then(response => response.text())
+    .then(content => {
+      const lines = content.split(/\r\n|\n/);
+      const headers = lines[0].split(',').filter(header => !excludedHeaders.includes(header.replace(/"/g, '')));
+      const table = document.getElementById('dataTable');
+      const tbody = table.querySelector('tbody');
+      tbody.innerHTML = '';
+      const thead = table.createTHead();
+      thead.innerHTML = '';
+      const row = thead.insertRow();
+      headers.forEach(header => {
+        const th = document.createElement('th');
+        th.textContent = header.replace(/"/g, '');
+        row.appendChild(th);
+      });
+      lines.slice(1).forEach(line => {
+        if(line.trim() === '') return;
+        const cells = line.split(',').filter((cell, index) => !excludedHeaders.includes(headers[index]));
+        const tr = tbody.insertRow();
+        cells.forEach(cellText => {
+          const td = tr.insertCell();
+          td.textContent = cellText.replace(/"/g, '');
+        });
+      });
+    }).catch(error => {
+      console.error(error);
+    });
+}
 </script>
 
 <script>
   // ページが読み込まれたときにloadCSVFile関数を呼び出します
-  window.onload = loadCSVFile;
+  // window.onload = loadCSVFile;
+  window.onload = updateTableHeaders;
 </script>
 
 </body>
