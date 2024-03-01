@@ -43,12 +43,12 @@
   font-weight: bold;
   background-color: orange;
 }
-/* Tier 2のセルのスタイル */
+/* Tier 3のセルのスタイル */
 .tier3 {
   font-weight: bold;
   background-color: rosybrown;
 }
-/* Tier 2のセルのスタイル */
+/* Tier 4のセルのスタイル */
 .tier4 {
   font-weight: bold;
   background-color: moccasin;
@@ -141,6 +141,7 @@
       }
       const tierTd = tr.insertCell();
       tierTd.textContent = tier;
+      tierTd.className = tierClass; // クラスを適用
 
       // 'Amount/Staker' カラムの値を計算して設定
       const stakers = parseFloat(cells[headers.indexOf('Stakers')].replace(/"/g, ''));
