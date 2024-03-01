@@ -65,8 +65,9 @@
 <h1> dApp Staking / dApp list 2024/03/01 15:10:34 JST</h1>
 
 <p>
-<h2> Category </h2>
+<h2> "Category" pieChart </h2>
 <canvas id="myChart" width="400" height="400"></canvas> <!-- 円グラフを表示するためのcanvasタグを追加 -->
+<h2>"Total Staked" barChart </h2>
 <canvas id="myBarChart" width="400" height="400"></canvas> <!-- 棒グラフを表示するためのcanvasタグを追加 -->
 
 <h2> Data Table </h2>
@@ -236,22 +237,23 @@
     }
 
 
-    // CSVデータをオブジェクトの配列に変換
-    let data = [];
+    // For bar chart CSVデータをオブジェクトの配列に変換
+    let bardata = [];
     for (let i = 1; i < lines.length; i++) {
       if(lines[i].trim() === '') continue; // 空行をスキップ
       const cells = lines[i].split(',');
       const totalStaked = parseFloat(cells[headers.indexOf('TotalStaked')].replace(/"/g, ''));
       const name = cells[headers.indexOf('Name')].replace(/"/g, '');
-      data.push({ name: name, totalStaked: totalStaked });
+      bardata.push({ name: name, totalStaked: totalStaked });
     }
 
-    // データを降順にソート
-    data = sortDataDescending(data);
+    // For bar chart データを降順にソート
+    bardata = sortDataDescending(bardata);
 
     // グラフを描画するためにdrawChart関数を呼び出します
     drawChart(categoryTotals);
-    drawBarChart(data);
+    // for bar chart 描画
+    drawBarChart(bardata);
   }
 
   // drawChart関数を追加して、カテゴリごとのTotalStakedを集計し、円グラフを描画します
@@ -292,38 +294,37 @@
     });
   }
 
-///////////////////
-// データを降順にソートする関数を追加
-function sortDataDescending(data) {
-  return data.sort((a, b) => b.totalStaked - a.totalStaked);
-}
-
-// 棒グラフを描画する関数を追加
-function drawBarChart(data) {
-  const ctxBar = document.getElementById('myBarChart').getContext('2d');
-  const barChart = new Chart(ctxBar, {
-    type: 'bar',
-    data: {
-      labels: data.map(item => item.name), // 各dAppの名前
-      datasets: [{
-        label: 'Total Staked',
-        data: data.map(item => item.totalStaked), // 各dAppのTotal Staked
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true
-          }
+  ///////////////////
+  // データを降順にソートする関数を追加
+  function sortDataDescending(bardata) {
+    return bardata.sort((a, b) => b.totalStaked - a.totalStaked);
+  }
+  // 棒グラフを描画する関数を追加
+  function drawBarChart(data) {
+    const ctxBar = document.getElementById('myBarChart').getContext('2d');
+    const barChart = new Chart(ctxBar, {
+      type: 'bar',
+      data: {
+        labels: data.map(item => item.name), // 各dAppの名前
+        datasets: [{
+          label: 'Total Staked',
+          data: data.map(item => item.totalStaked), // 各dAppのTotal Staked
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
         }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
       }
-    }
-  });
-}
+    });
+  }
 
 </script>
 
