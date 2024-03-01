@@ -68,8 +68,6 @@
 <h2> Category </h2>
 <canvas id="myChart" width="400" height="400"></canvas> <!-- グラフを表示するためのcanvasタグを追加 -->
 
-<canvas id="barChart" width="400" height="400"></canvas>
-
 <h2> Data Table </h2>
 <table id="dataTable">
   <thead></thead> <!-- theadタグを追加 -->
@@ -150,19 +148,6 @@
       const amountPerStakerTd = tr.insertCell();
       amountPerStakerTd.textContent = amountPerStaker;
     }
-  // Total Stakedの値を降順にソートする処理を追加
-  const sortedData = [];
-  for (let i = 1; i < lines.length; i++) {
-    if(lines[i].trim() === '') continue;
-    const cells = lines[i].split(',');
-    const totalStaked = parseFloat(cells[headers.indexOf('TotalStaked')].replace(/"/g, ''));
-    sortedData.push({ category: cells[headers.indexOf('Category')].replace(/"/g, ''), totalStaked: totalStaked });
-  }
-  sortedData.sort((a, b) => b.totalStaked - a.totalStaked);
-
-  // グラフを描画するためにdrawChart関数を呼び出す
-  drawChart(categoryTotals, sortedData);
-}
   }
 
   function sortTableByColumn(table, columnIndex) {
@@ -254,7 +239,7 @@
   }
 
   // drawChart関数を追加して、カテゴリごとのTotalStakedを集計し、円グラフを描画します
-  function drawChart(data,barData) {
+  function drawChart(data) {
     const ctx = document.getElementById('myChart').getContext('2d');
     const chart = new Chart(ctx, {
       type: 'pie', // グラフの種類を指定
@@ -286,30 +271,6 @@
         responsive: false, // レスポンシブ対応を無効に設定
         legend: {
           position: 'right', // 凡例の位置を指定
-        }
-      }
-    });
-    // 棒グラフの描画処理を追加
-    const barCtx = document.getElementById('barChart').getContext('2d');
-    const barChart = new Chart(barCtx, {
-      type: 'bar',
-      data: {
-        labels: barData.map(item => item.category),
-        datasets: [{
-          label: 'Total Staked',
-          data: barData.map(item => item.totalStaked),
-          backgroundColor: 'rgba(0, 123, 255, 0.5)',
-          borderColor: 'rgba(0, 123, 255, 1)',
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
         }
       }
     });
