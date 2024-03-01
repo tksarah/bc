@@ -98,12 +98,8 @@
   }
 
   function parseCSV(text) {
-
-    const excludedHeaders = ['Address', 'dAppId']; // 除外するヘッダー
-
     const lines = text.split(/\r\n|\n/);
-    //const headers = lines[0].split(',');
-    const headers = lines[0].split(',').filter(header => !excludedHeaders.includes(header.replace(/"/g, '')));
+    const headers = lines[0].split(',');
     headers.push('Current Tier'); // 'Current Tier' ヘッダーを追加
     headers.push('Amount/Staker'); // 'Amount/Staker' ヘッダーを追加
     const table = document.getElementById('dataTable');
