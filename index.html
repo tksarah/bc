@@ -57,6 +57,13 @@
   background-color: royalblue;
   text-align: center;
 }
+/* Tier 4のセルのスタイル */
+.newlisted {
+  font-weight: bold;
+  background-color: LightSkyBlue;
+  text-color: black;
+  text-align: center;
+}
 
 </style>
 </head>
@@ -167,7 +174,8 @@
          	 tier = 'Tier 99(No Tier)';
      	      }
 	} else {
-	  	 tier = 'next period';
+	  	 tierClass = 'newlisted'; // Tier newのクラスを追加
+		 tier = 'Tier (new listed) ';
 
 	}
       const tierTd = tr.insertCell();
