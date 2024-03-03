@@ -1,5 +1,8 @@
 #!/bin/bash
 
+### Backup data file
+#cp data "data_$(data +%Y-%m-%d)"
+
 ### Run
 perl ./script.pl
 echo "Done script"
