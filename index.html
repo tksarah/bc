@@ -76,6 +76,10 @@
 <canvas id="myBarChart" width="400" height="400"></canvas> <!-- 棒グラフを表示するためのcanvasタグを追加 -->
 
 <h2> Data Table </h2>
+
+<!-- フィルター用の入力フィールドを追加 -->
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Categories..">
+
 <table id="dataTable">
   <thead></thead> <!-- theadタグを追加 -->
   <tbody></tbody> <!-- tbodyタグを追加 -->
@@ -282,6 +286,25 @@
         }
       }
     });
+  }
+
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("dataTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0]; // "Category"列を指定
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
   }
 
 </script>
