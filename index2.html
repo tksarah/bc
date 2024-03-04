@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>dApp Staking data list</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ビューポートの設定を追加 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.jsを追加 -->
 <style>
   body {
@@ -46,7 +45,6 @@
     }
   }
 
-
 /* Tier 1のセルのスタイル */
 .tier1 {
   font-weight: bold;
@@ -72,16 +70,21 @@
   background-color: royalblue;
   text-align: center;
 }
+/* Tier 4のセルのスタイル */
+.newlisted {
+  font-weight: bold;
+  background-color: LightSkyBlue;
+  text-color: black;
+  text-align: center;
+}
 
 </style>
 </head>
 <body>
 
-<h1> dApp Staking / dApp list 2024/03/03 10:45 JST</h1>
+<h1> dApp Staking / dApp list 2024/03/04 20:10 JST</h1>
 
 <p>
-<h2> "Category" pieChart </h2>
-<canvas id="myChart" width="400" height="400"></canvas> <!-- 円グラフを表示するためのcanvasタグを追加 -->
 <h2>"Total Staked" barChart </h2>
 <canvas id="myBarChart" width="400" height="400"></canvas> <!-- 棒グラフを表示するためのcanvasタグを追加 -->
 
@@ -110,61 +113,6 @@
       reader.onerror = error => reject(error);
       reader.readAsText(file);
     });
-  }
-
-  function parseCSV(text) {
-    const lines = text.split(/\r\n|\n/);
-    const headers = lines[0].split(',');
-    headers.push('Current Tier'); // 'Current Tier' ヘッダーを追加
-    headers.push('Amount/Staker'); // 'Amount/Staker' ヘッダーを追加
-    const table = document.getElementById('dataTable');
-    const tbody = table.querySelector('tbody'); // tbodyを選択
-    tbody.innerHTML = ''; // tbodyの中身をクリア
-    const thead = table.createTHead();
-    thead.innerHTML = ''; // theadの中身をクリア
-    const row = thead.insertRow();
-    for (const header of headers) {
-      const th = document.createElement('th');
-      th.textContent = header.replace(/"/g, ''); // ヘッダーのダブルコーテーションを削除
-      th.addEventListener('click', () => sortTableByColumn(table, headers.indexOf(header))); // onclickからaddEventListenerに変更
-      row.appendChild(th);
-    }
-    for (let i = 1; i < lines.length; i++) {
-      if(lines[i].trim() === '') continue; // 空行をスキップ
-      const cells = lines[i].split(',');
-      const tr = tbody.insertRow(); // tbodyに行を追加
-      for (let j = 0; j < cells.length; j++) {
-        const td = tr.insertCell();
-        let cellText = cells[j];
-        // Name 列のダブルコーテーションを削除
-        if (headers[j] === 'Name') {
-          cellText = cellText.replace(/"/g, '');
-        }
-        td.textContent = cellText;
-      }
-      // 'Current Tier' カラムの値を設定
-      const totalStaked = parseFloat(cells[headers.indexOf('TotalStaked')].replace(/"/g, ''));
-      let tier = '';
-      if (totalStaked >= 200000000) {
-        tier = 'Tier 1';
-      } else if (totalStaked >= 50000000 && totalStaked < 300000000) {
-        tier = 'Tier 2';
-      } else if (totalStaked >= 15000000 && totalStaked < 50000000) {
-        tier = 'Tier 3';
-      } else if (totalStaked >= 1500000 && totalStaked < 15000000) {
-        tier = 'Tier 4';
-      } else if (totalStaked < 1500000) { 
-        tier = 'Tier 99(No Tier)';
-      }
-      const tierTd = tr.insertCell();
-      tierTd.textContent = tier;
-
-      // 'Amount/Staker' カラムの値を計算して設定
-      const stakers = parseFloat(cells[headers.indexOf('Stakers')].replace(/"/g, ''));
-      const amountPerStaker = (stakers !== 0) ? (totalStaked / stakers).toFixed(2) : '0'; // 0で割ることを避ける
-      const amountPerStakerTd = tr.insertCell();
-      amountPerStakerTd.textContent = amountPerStaker;
-    }
   }
 
   function sortTableByColumn(table, columnIndex) {
@@ -214,25 +162,33 @@
         }
         td.textContent = cellText;
       }
+      // 'Voting' カラムの値を設定
+      const Voting = parseFloat(cells[headers.indexOf('Voting')].replace(/"/g, ''));
       // 'Current Tier' カラムの値を設定
       const totalStaked = parseFloat(cells[headers.indexOf('TotalStaked')].replace(/"/g, ''));
       let tier = '';
       let tierClass = '';
-      if (totalStaked >= 200000000) {
-        tier = 'Tier 1';
-  	tierClass = 'tier1'; // Tier 1のクラスを追加
-      } else if (totalStaked >= 50000000 && totalStaked < 300000000) {
-        tier = 'Tier 2';
-  	tierClass = 'tier2'; // Tier 2のクラスを追加
-      } else if (totalStaked >= 15000000 && totalStaked < 50000000) {
-        tier = 'Tier 3';
-  	tierClass = 'tier3'; // Tier 3のクラスを追加
-      } else if (totalStaked >= 1500000 && totalStaked < 15000000) {
-        tier = 'Tier 4';
-  	tierClass = 'tier4'; // Tier 4のクラスを追加
-      } else if (totalStaked < 1500000) { 
-        tier = 'Tier 99(No Tier)';
-      }
+	if (Voting != 0.000){
+      		if (totalStaked >= 200000000) {
+	        tier = 'Tier 1';
+  		tierClass = 'tier1'; // Tier 1のクラスを追加
+ 	    	 } else if (totalStaked >= 50000000 && totalStaked < 300000000) {
+       		 tier = 'Tier 2';
+	       	 tierClass = 'tier2'; // Tier 2のクラスを追加
+	      } else if (totalStaked >= 15000000 && totalStaked < 50000000) {
+       	 	tier = 'Tier 3';
+  		tierClass = 'tier3'; // Tier 3のクラスを追加
+	      } else if (totalStaked >= 1500000 && totalStaked < 15000000) {
+       		 tier = 'Tier 4';
+	  	 tierClass = 'tier4'; // Tier 4のクラスを追加
+	      } else if (totalStaked < 1500000) { 
+         	 tier = 'Tier 99(NoTier)';
+     	      }
+	} else {
+	  	 tierClass = 'newlisted'; // Tier newのクラスを追加
+		 tier = 'Tier 98(Newlisted) ';
+
+	}
       const tierTd = tr.insertCell();
       tierTd.textContent = tier;
       tierTd.className = tierClass; // クラスを適用
@@ -342,6 +298,9 @@
   }
 
 </script>
+
+<h2> "Category" pieChart </h2>
+<canvas id="myChart" width="400" height="400"></canvas> <!-- 円グラフを表示するためのcanvasタグを追加 -->
 
 <script>
   // ページが読み込まれたときにloadCSVFile関数を呼び出します
