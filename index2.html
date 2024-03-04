@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>dApp Staking data list</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.jsを追加 -->
 <style>
   body {
@@ -31,7 +32,7 @@
     background-color: #555;
   }
 
- /* レスポンシブ対応のスタイル */
+  /* レスポンシブ対応のスタイル */
   @media (max-width: 600px) {
     h1, h2 {
       font-size: 18px;
@@ -86,7 +87,7 @@
 
 <p>
 <h2>"Total Staked" barChart </h2>
-<canvas id="myBarChart" width="400" height="400"></canvas> <!-- 棒グラフを表示するためのcanvasタグを追加 -->
+<canvas id="myBarChart"></canvas> <!-- 棒グラフを表示するためのcanvasタグを追加 -->
 
 <h2> Data Table </h2>
 <table id="dataTable">
@@ -300,7 +301,7 @@
 </script>
 
 <h2> "Category" pieChart </h2>
-<canvas id="myChart" width="400" height="400"></canvas> <!-- 円グラフを表示するためのcanvasタグを追加 -->
+<canvas id="myChart"></canvas> <!-- 円グラフを表示するためのcanvasタグを追加 -->
 
 <script>
   // ページが読み込まれたときにloadCSVFile関数を呼び出します
