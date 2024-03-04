@@ -26,7 +26,7 @@ while (my $row = $csv->getline($fh2)) {
 # for Header1
 #print $fh_out "Address,Name,Category,dAppId,Stakers,Voting,BuildAndEarn,TotalStaked\n";
 # for Header2
-print $fh_out "Name,Category,Stakers,Voting,TotalStaked\n";
+print $fh_out "Name,Category,Stakers,Voting,BuildAndearn,TotalStaked\n";
 
 while (my $row = $csv->getline($fh1)) {
     if (my $match = $file2{$row->[$index1]}) {
