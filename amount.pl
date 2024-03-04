@@ -27,22 +27,32 @@ open my $refh, '<', $input_data or die "Could not open file: $!";
 
 my $x = 0;
 my $y = 0;
-my @voting;
-my @bAe;
+my $z = 0;
+my @staked_voting;
+my @staked_bAe;
+my @staked_future_bAe;
 
 while (my $row = <$refh>) {
   chomp $row;
   if ($row =~ /\sstaked: \{$/) {
-    $row = <$refh>;  # 次の行を読み込む
+    $row = <$refh>;  # (voting)を読み込む
     chomp $row;
     ($x) = $row =~ /\s*voting:\s(\d{0,3}(,\d{3})*)/;
     #	print "$x\n";
     $x =~ s/,//g;
     $x = $x/1000000000000000000;
     my $formatted_x = sprintf("%.3f", $x);
-    push @voting, $formatted_x;
+    push @staked_voting, $formatted_x;
 
-  <$refh>;
+    $row = <$refh>;  # (buildAndEarn)を読み込む
+    chomp $row;
+    ($z) = $row =~ /\s*buildAndEarn:\s(\d{0,3}(,\d{3})*)/;
+    #	print "$x\n";
+    $z =~ s/,//g;
+    $z = $z/1000000000000000000;
+    my $formatted_z = sprintf("%.3f", $z);
+    push @staked_bAe, $formatted_z;
+
   <$refh>;
   <$refh>;
   <$refh>;
@@ -58,10 +68,10 @@ while (my $row = <$refh>) {
     $y =~ s/,//g;
     $y = $y/1000000000000000000;
     my $formatted_y = sprintf("%.3f", $y);
-    push @bAe, $formatted_y;
-    }else{
+    push @staked_future_bAe, $formatted_y;
+    }else{ # "stakedFuture: null"
     my $formatted_y = 0;
-    push @bAe, $formatted_y;
+    push @staked_future_bAe, $formatted_y;
     }
   }
 }
@@ -72,8 +82,14 @@ open my $out, '>', $output_data or die "Cannot open '$output_data': $!";
 
 print $out "dappId,Voting,BuildAndEarn,TotalStaked\n";
 for my $i (0..$#id) {
-    my $sum = $voting[$i] + $bAe[$i];
-    print $out "$id[$i],$voting[$i],$bAe[$i],$sum\n";
+    if ($staked_future_bAe[$i] != 0){
+    	my $sum = $staked_voting[$i] + $staked_future_bAe[$i];
+    	print $out "$id[$i],$staked_voting[$i],$staked_future_bAe[$i],$sum\n";
+    }else{
+    	my $sum = $staked_voting[$i] + $staked_bAe[$i];
+    	print $out "$id[$i],$staked_voting[$i],$staked_bAe[$i],$sum\n";
+    }
+
 }
 close $out;
 
