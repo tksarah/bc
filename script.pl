@@ -5,7 +5,7 @@ use LWP::Simple;
 use JSON;
 use Text::CSV;
 
-# JSON ファイルをダウンロードして保存する関数
+# Download JSON file and then save
 sub download_json {
     my ($url, $filename) = @_;
     my $content = get($url);
@@ -14,7 +14,7 @@ sub download_json {
     close $fh;
 }
 
-# JSON ファイルを読み込んで CSV ファイルに保存する関数
+# Read JSON file and then save to csv
 sub json_to_csv {
     my ($json_file, $csv_file, @fields) = @_;
     my $json_text = do {
@@ -35,14 +35,14 @@ sub json_to_csv {
     close $fh or die "$csv_file: $!";
 }
 
-# JSON ファイルをダウンロードして CSV ファイルに保存
+# Download JSON file and then save to CSV
 download_json('https://api.astar.network/api/v1/astar/dapps-staking/dappssimple', 'dappssimple.json');
 json_to_csv('dappssimple.json', 'dappssimple.csv', 'address', 'name', 'mainCategory');
 
 download_json('https://api.astar.network/api/v3/astar/dapps-staking/chaindapps', 'chaindapps.json');
 json_to_csv('chaindapps.json', 'chaindapps.csv', 'contractAddress', 'dappId', 'stakersCount');
 
-# CSV ファイルを読み込んで比較
+# Read CSV file and then compare 
 my $csv1 = Text::CSV->new({ binary => 1, auto_diag => 1 });
 my $csv2 = Text::CSV->new({ binary => 1, auto_diag => 1 });
 
@@ -78,4 +78,3 @@ foreach my $row1 (@rows1) {
 close $fh1;
 close $fh2;
 close $fh_out;
-

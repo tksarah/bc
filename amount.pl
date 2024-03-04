@@ -7,16 +7,12 @@ my $output_data = "after_voting.csv";
 
 my @id;
 
-# ファイルを開く
 open my $fh, '<', $input_data or die "Could not open file: $!";
 
-# ファイルを行ごとに読み込みます
 while (my $row = <$fh>) {
   chomp $row;
 
-  # 行が一桁または二桁の数字だけで構成されているか確認します
   if ($row =~ /^\s*(\d{1,2})\s*$/) {
-    # 数字を変数に格納します
     push @id, $1;
   }
 }
@@ -35,7 +31,7 @@ my @staked_future_bAe;
 while (my $row = <$refh>) {
   chomp $row;
   if ($row =~ /\sstaked: \{$/) {
-    $row = <$refh>;  # (voting)を読み込む
+    $row = <$refh>;  # Read (voting)
     chomp $row;
     ($x) = $row =~ /\s*voting:\s(\d{0,3}(,\d{3})*)/;
     #	print "$x\n";
@@ -44,7 +40,7 @@ while (my $row = <$refh>) {
     my $formatted_x = sprintf("%.3f", $x);
     push @staked_voting, $formatted_x;
 
-    $row = <$refh>;  # (buildAndEarn)を読み込む
+    $row = <$refh>;  # Read (buildAndEarn)
     chomp $row;
     ($z) = $row =~ /\s*buildAndEarn:\s(\d{0,3}(,\d{3})*)/;
     #	print "$x\n";

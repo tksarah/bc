@@ -5,36 +5,38 @@ use Text::CSV;
 
 my $csv = Text::CSV->new({ binary => 1, auto_diag => 1, eol => $/ });
 
-# ファイルを開く
 open my $fh1, "<:encoding(utf8)", "api_data.csv" or die "api_data.csv: $!";
 open my $fh2, "<:encoding(utf8)", "after_voting.csv" or die "after_voting.csv $!";
-open my $fh_out, ">:encoding(utf8)", "comp.csv" or die "comp.csv: $!";
+open my $fh_out, ">:encoding(utf8)", "data.csv" or die "data.csv: $!";
 
-# ヘッダー行を読み込む
+# Read header
 my $row1 = $csv->getline($fh1);
 my $row2 = $csv->getline($fh2);
 
-# "dappId"列のインデックスを見つける
+# Find index "dappId"
 my ($index1) = grep { $row1->[$_] eq 'dappId' } 0..$#$row1;
 my ($index2) = grep { $row2->[$_] eq 'dappId' } 0..$#$row2;
 
-# ファイル2をハッシュに読み込む
+# Read file2 into hash
 my %file2;
 while (my $row = $csv->getline($fh2)) {
     $file2{$row->[$index2]} = $row;
 }
 
-# Header
-print $fh_out "Address,Name,Category,dAppId,Stakers,Voting,BuildAndEarn,TotalStaked\n";
+# for Header1
+#print $fh_out "Address,Name,Category,dAppId,Stakers,Voting,BuildAndEarn,TotalStaked\n";
+# for Header2
+print $fh_out "Name,Category,Stakers,TotalStaked\n";
 
-# ファイル1を読み込み、マッチする行を結合する
 while (my $row = $csv->getline($fh1)) {
     if (my $match = $file2{$row->[$index1]}) {
-        $csv->print($fh_out, [@$row, @$match[1..$#$match]]);
+	# for Header1
+	#$csv->print($fh_out, [@$row, @$match[1..$#$match]]);
+	# for Header2
+        $csv->print($fh_out, [@$row[1,2,3,4], @$match[1..$#$match]]);
     }
 }
 
-# ファイルを閉じる
 close $fh1;
 close $fh2;
 close $fh_out;
