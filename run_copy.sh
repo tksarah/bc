@@ -27,6 +27,7 @@ echo "Done copy"
 echo -n "Run save data -> "
 mv ./data  $SDIR/$sfile
 tar czf $SDIR/$sfile.tar.gz $SDIR/$sfile
+touch ./data
 echo "Done save"
 
 ### Cleanup
