@@ -198,8 +198,17 @@ h2 {
      	      }
 	} else {
 	  	 tierClass = 'newlisted'; // Tier newのクラスを追加
-		 tier = 'Tier 98(Newlisted) ';
-
+      	 	 if (totalStaked >= 200000000) {
+	         tier = 'Tier 1(Newlisted)';
+ 	    	  } else if (totalStaked >= 50000000 && totalStaked < 300000000) {
+       		  tier = 'Tier 2(Newlisted)';
+	       } else if (totalStaked >= 15000000 && totalStaked < 50000000) {
+       	     	  tier = 'Tier 3(Newlisted)';
+	       } else if (totalStaked >= 1500000 && totalStaked < 15000000) {
+       	   	  tier = 'Tier 4(Newlisted)';
+	       } else if (totalStaked < 1500000) { 
+         	 tier = 'Tier 99(NoTier-NewListed)';
+     	       }
 	}
       const tierTd = tr.insertCell();
       tierTd.textContent = tier;
