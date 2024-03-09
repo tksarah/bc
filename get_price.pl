@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# https://coinmarketcap.com/api/documentation/v1/
 use strict;
 use warnings;
 use JSON;
@@ -6,7 +7,7 @@ use LWP::Simple;
 use Data::Dumper;
 
 my $url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest';
-my $api_key = 'API_KEY';
+my $api_key = 'YOUR_API_KEY';
 my $headers = '-H "X-CMC_PRO_API_KEY: '.$api_key.'" -H "Accept: application/json"';
 
 # for USD
@@ -47,4 +48,4 @@ print "\n";
 print "JPY:\n";
 printf("  ETH  : %.2f\n", $eth_price_jpy);
 printf("  ASTR : %.2f\n", $astr_price_jpy);
-print "-------\n\n";
+print "-------------\n\n";
