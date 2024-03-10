@@ -1,33 +1,38 @@
 #!/bin/bash
 
-# Get current date
-current_date=$(date +"%Y%m%d_%H%M%S")
+# Data file name
+file="data"
+
 # Save directory 
 SDIR="./save"
-# Save file name
-sfile="${current_date}_data"
 
 ### Run
 echo -n "Run script -> "
 perl ./script.pl
 echo "Done script"
 echo -n "Run amount -> "
-perl ./amount.pl ./data
+perl ./amount.pl ./$file
 echo "Done amount"
 echo -n "Run combine -> "
 perl ./combined.pl
 echo "Done combine"
 
+# Get timestamp of source file
+timestamp=$(date -r "$file" +"%Y%m%d%H%M%S")
+
+# Save file name
+sfile="${timestamp}-${file}.csv"
+
 ### Copy (From WSL to Win11)
 echo -n "Run copy to Desktop -> "
-cp ./data.csv /mnt/c/Users/sarah/Desktop/
+cp ./$file.csv /mnt/c/Users/sarah/Desktop/
 echo "Done copy"
 
 ### Save org data file
 echo -n "Run save data -> "
-mv ./data  $SDIR/$sfile
-tar czf $SDIR/$sfile.tar.gz $SDIR/$sfile
-touch ./data
+cp -p ./$file.csv  $SDIR/$sfile
+(cd $SDIR; tar czf $sfile.tar.gz $sfile )
+touch ./$file
 echo "Done save"
 
 ### Cleanup
