@@ -37,5 +37,6 @@ echo "Done save"
 
 ### Cleanup
 echo -n "Run cleanup -> "
-rm $SDIR/$sfile chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv after_voting.csv 
+rm $SDIR/$sfile chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv after_voting.csv data
 echo "Done cleanup"
+touch data
