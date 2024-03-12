@@ -37,15 +37,39 @@ my $decoded_json_jpy = decode_json($json_jpy);
 my $eth_price_jpy = $decoded_json_jpy->{'data'}{'ETH'}{'quote'}{'JPY'}{'price'};
 my $astr_price_jpy = $decoded_json_jpy->{'data'}{'ASTR'}{'quote'}{'JPY'}{'price'};
 
+my $token = $ARGV[0];
+
+
 # Output
-print "\n--- Price ---\n";
-print "\$/Yen:\n";
-printf("  %.2f\n\n", $eth_price_jpy/$eth_price_usd);
-print "USD:\n";
-printf("  ETH  : %.2f\n", $eth_price_usd);
-printf("  ASTR : %.4f\n", $astr_price_usd);
-print "\n";
-print "JPY:\n";
-printf("  ETH  : %.2f\n", $eth_price_jpy);
-printf("  ASTR : %.2f\n", $astr_price_jpy);
-print "-------------\n\n";
+if($token eq "e"){
+	print "\n--- Price ---\n";
+	print "\$/Yen:\n";
+	printf("  %.2f\n", $eth_price_jpy/$eth_price_usd);
+	print "ETH\n";
+	printf("  USD  : %.2f\n", $eth_price_usd);
+	printf("  JPY  : %.2f\n", $eth_price_jpy);
+	print "-------------\n\n";
+}elsif($token eq "a"){
+	print "\n--- Price ---\n";
+	print "\$/Yen:\n";
+	printf("  %.2f\n", $eth_price_jpy/$eth_price_usd);
+	print "ASTR\n";
+	printf("  USD : %.4f\n", $astr_price_usd);
+	printf("  JPY : %.2f\n", $astr_price_jpy);
+	print "-------------\n\n";
+
+}else{
+	print "\n--- Price ---\n";
+	print "\$/Yen:\n";
+	printf("  %.2f\n\n", $eth_price_jpy/$eth_price_usd);
+	print "USD:\n";
+	printf("  ETH  : %.2f\n", $eth_price_usd);
+	printf("  ASTR : %.4f\n", $astr_price_usd);
+	print "\n";
+	print "JPY:\n";
+	printf("  ETH  : %.2f\n", $eth_price_jpy);
+	printf("  ASTR : %.2f\n", $astr_price_jpy);
+	print "-------------\n\n";
+}
+
+exit(0);
