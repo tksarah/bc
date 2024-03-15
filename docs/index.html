@@ -106,7 +106,7 @@ h2 {
 <script>
   // loadCSVFile関数をfetchを使用してファイルを読み込むように変更します
   function loadCSVFile() {
-    fetch('../store/data.csv')
+    fetch('/docs/../store/data.csv')
       .then(response => response.text())
       .then(content => {
         parseCSV(content);
