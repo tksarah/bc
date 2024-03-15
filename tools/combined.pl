@@ -3,11 +3,13 @@ use strict;
 use warnings;
 use Text::CSV;
 
+
+my $sdir = '../store/';
 my $csv = Text::CSV->new({ binary => 1, auto_diag => 1, eol => $/ });
 
 open my $fh1, "<:encoding(utf8)", "api_data.csv" or die "api_data.csv: $!";
 open my $fh2, "<:encoding(utf8)", "after_voting.csv" or die "after_voting.csv $!";
-open my $fh_out, ">:encoding(utf8)", "data.csv" or die "data.csv: $!";
+open my $fh_out, ">:encoding(utf8)", "../store/data.csv" or die "../store/data.csv: $!";
 
 # Read header
 my $row1 = $csv->getline($fh1);
