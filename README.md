@@ -18,7 +18,8 @@ In this list, you can check the following information (the information is update
 - Current Total Staking Amount
 - Current Tier Level
 - Staking Amount per Staker
-  ![image](https://github.com/tksarah/bc/assets/11060137/fd59ec2b-4824-4d04-b8d3-6de180dbf574)
+
+![image](https://github.com/tksarah/bc/assets/11060137/fd59ec2b-4824-4d04-b8d3-6de180dbf574)
 
 
 ## Visualizations
