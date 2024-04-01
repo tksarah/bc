@@ -18,10 +18,15 @@ In this list, you can check the following information (the information is update
 - Current Total Staking Amount
 - Current Tier Level
 - Staking Amount per Staker
+  ![image](https://github.com/tksarah/bc/assets/11060137/fd59ec2b-4824-4d04-b8d3-6de180dbf574)
+
 
 ## Visualizations
-- Bar Graph
-- Pie Chart by Category
+
+![image](https://github.com/tksarah/bc/assets/11060137/767c075b-06e3-45ed-885d-40842f880edd)
+
+![image](https://github.com/tksarah/bc/assets/11060137/0f50e0e3-8903-43d7-a0a5-53afb3d52733)
+
 
 Tools
 =============
