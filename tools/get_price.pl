@@ -37,7 +37,7 @@ my $decoded_json_jpy = decode_json($json_jpy);
 my $eth_price_jpy = $decoded_json_jpy->{'data'}{'ETH'}{'quote'}{'JPY'}{'price'};
 my $astr_price_jpy = $decoded_json_jpy->{'data'}{'ASTR'}{'quote'}{'JPY'}{'price'};
 
-my $token = $ARGV[0];
+my $token = $ARGV[0] // 'default'
 
 
 # Output
