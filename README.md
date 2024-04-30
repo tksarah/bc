@@ -32,6 +32,12 @@ In this list, you can check the following information (the information is update
 Tools
 =============
 
+## R script
+
+**/tools/R_script.R**
+
+This R script reads CSV files saved weekly and creates a line graph for each project, with the amount staked during the ‘Build&Earn’ period as the Y-axis.
+
 ## Current Price of ETH and ASTR
 
 **/tools/get_prise.pl**
