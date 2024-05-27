@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>dApp Staking data list</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.jsを追加 -->
 <style>
   body {
@@ -32,19 +31,26 @@
     background-color: #555;
   }
 
-  /* レスポンシブ対応のスタイル */
-  @media (max-width: 600px) {
-    h1, h2 {
-      font-size: 18px;
-    }
-    canvas {
-      width: 300px !important;
-      height: 300px !important;
-    }
-    .tier1, .tier2, .tier3, .tier4 {
-      font-size: 14px;
-    }
-  }
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f0f0f0; 
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #d0d0d0; 
+    border-bottom: 1px solid #bbb; 
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+
 
 /* Tier 1のセルのスタイル */
 .tier1 {
@@ -83,13 +89,15 @@
 </head>
 <body>
 
-<h1> dApp Staking / dApp list 2024/03/04 20:10 JST</h1>
+<h1> dApp Staking / dApp list DATEJST</h1>
 
 <p>
-<h2>"Total Staked" barChart </h2>
-<canvas id="myBarChart"></canvas> <!-- 棒グラフを表示するためのcanvasタグを追加 -->
-
 <h2> Data Table </h2>
+
+<!-- フィルター用の入力フィールドを追加 -->
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Categories..">
+<p>
+
 <table id="dataTable">
   <thead></thead> <!-- theadタグを追加 -->
   <tbody></tbody> <!-- tbodyタグを追加 -->
@@ -98,7 +106,7 @@
 <script>
   // loadCSVFile関数をfetchを使用してファイルを読み込むように変更します
   function loadCSVFile() {
-    fetch('data.csv')
+    fetch("data.csv")
       .then(response => response.text())
       .then(content => {
         parseCSV(content);
@@ -170,25 +178,34 @@
       let tier = '';
       let tierClass = '';
 	if (Voting != 0.000){
-      		if (totalStaked >= 200000000) {
+      		if (totalStaked >= TIERMtop) {
 	        tier = 'Tier 1';
   		tierClass = 'tier1'; // Tier 1のクラスを追加
- 	    	 } else if (totalStaked >= 50000000 && totalStaked < 300000000) {
+ 	    	 } else if (totalStaked >= TIER2M && totalStaked < TIER1M) {
        		 tier = 'Tier 2';
 	       	 tierClass = 'tier2'; // Tier 2のクラスを追加
-	      } else if (totalStaked >= 15000000 && totalStaked < 50000000) {
+	      } else if (totalStaked >= TIER3M && totalStaked < TIER2M) {
        	 	tier = 'Tier 3';
   		tierClass = 'tier3'; // Tier 3のクラスを追加
-	      } else if (totalStaked >= 1500000 && totalStaked < 15000000) {
+	      } else if (totalStaked >= TIER4 && totalStaked < TIER3M) {
        		 tier = 'Tier 4';
 	  	 tierClass = 'tier4'; // Tier 4のクラスを追加
-	      } else if (totalStaked < 1500000) { 
+	      } else if (totalStaked < TIER4) { 
          	 tier = 'Tier 99(NoTier)';
      	      }
 	} else {
 	  	 tierClass = 'newlisted'; // Tier newのクラスを追加
-		 tier = 'Tier 98(Newlisted) ';
-
+      	 	 if (totalStaked >= TIERMtop) {
+	         tier = 'Tier 1(Newlisted)';
+ 	    	  } else if (totalStaked >= TIER2M && totalStaked < TIER1M) {
+       		  tier = 'Tier 2(Newlisted)';
+	       } else if (totalStaked >= TIER3M && totalStaked < TIER2M) {
+       	     	  tier = 'Tier 3(Newlisted)';
+	       } else if (totalStaked >= TIER4 && totalStaked < TIER3M) {
+       	   	  tier = 'Tier 4(Newlisted)';
+	       } else if (totalStaked < TIER4) { 
+         	 tier = 'Tier 99(NoTier-NewListed)';
+     	       }
 	}
       const tierTd = tr.insertCell();
       tierTd.textContent = tier;
@@ -298,10 +315,36 @@
     });
   }
 
+  function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("dataTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[1]; // "Category"列を指定
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
+  }
+
 </script>
 
-<h2> "Category" pieChart </h2>
-<canvas id="myChart"></canvas> <!-- 円グラフを表示するためのcanvasタグを追加 -->
+<p>
+
+<h1>"Total Staked" barChart </h1>
+<canvas id="myBarChart" width="400" height="400"></canvas> <!-- 棒グラフを表示するためのcanvasタグを追加 -->
+
+<p>
+
+<h1> "Category" pieChart </h1>
+<canvas id="myChart" width="400" height="400"></canvas> <!-- 円グラフを表示するためのcanvasタグを追加 -->
 
 <script>
   // ページが読み込まれたときにloadCSVFile関数を呼び出します

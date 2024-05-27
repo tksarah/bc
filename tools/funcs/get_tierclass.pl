@@ -2,12 +2,14 @@
 use strict;
 use warnings;
 
+my $input = $ARGV[0];
+
 my $x = 0;
 my $y = 0;
 my $z = 0;
 my $t4 = 15000000;
 
-open my $refh, '<', 'file.json' or die "Could not open file: $!";
+open my $refh, '<', $input or die "Could not open file: $!";
 
 while (my $row = <$refh>) {
   chomp $row;
