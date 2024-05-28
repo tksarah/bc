@@ -8,16 +8,21 @@
             margin: 0;
             padding: 0;
             color: #333;
+            line-height: 1.6;
         }
         h2 {
             text-align: center;
             margin-top: 20px;
+            color: #34b7f1;
         }
         .container {
-	    max-width: 1200px;
-            width: 100%;
+            width: 80%;
             margin: auto;
             overflow: hidden;
+            padding: 0 20px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+            background: #fff;
+            border-radius: 5px;
         }
         table {
             width: 100%;
@@ -28,9 +33,9 @@
             border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
-	    width: 33%;
+            width: 33%;
         }
-	th:first-child, td:first-child, th:last-child, th:nth-child(2), td:nth-child(2) {
+        th:first-child, td:first-child, th:last-child, th:nth-child(2), td:nth-child(2) {
             text-align: center;
         }
         td:last-child {
@@ -47,8 +52,11 @@
             padding: 10px;
             width: 200px;
             margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
         }
-	.footer {
+        .footer {
             text-align: center;
             padding: 20px;
             background-color: #f4f4f4;
@@ -57,14 +65,7 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-        }
-	@media screen and (max-width: 600px) {
-            .container {
-                width: 100%;
-            }
-            select {
-                width: 100%;
-            }
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
