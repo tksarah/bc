@@ -70,15 +70,23 @@
 		<li>dApp のリスト自体は 2024/5/28 のデータです</li>
 		<li>予告なく仕様変更やdApp のリストの更新遅延などがある点はご了承ください</li>
 	</ul>
+	<p>
+	<ul>
+		<li>Displays a list of stakers for each dApp in dAppStaking.</li>
+		<li>The data is formatted from on-chain data.</li>
+		<li>By default, it is displayed in descending order of staking amount (switchable via the table header).</li>
+		<li>dApps with many stakers may take some time to display.</li>
+		<li>The list of dApps itself is based on the data from May 28, 2024.<li>
+	</ul>
         <select id="name-select">
             <!-- Options will be populated here -->
-            <option selected disabled>dApp を選択してください</option>
+            <option selected disabled>dApp を選択してください(Please select a dApp)</option>
         </select>
         <table id="data-table">
             <tr>
                 <th>No.</th>
-                <th>ステーカー</th>
-                <th id="amount-header" style="cursor:pointer;">ステーキング量</th>
+                <th>ステーカー (Staker)</th>
+                <th id="amount-header" style="cursor:pointer;">ステーキング量 (Amount)</th>
             </tr>
             <!-- Table rows will be populated here -->
         </table>
