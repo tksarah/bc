@@ -51,9 +51,9 @@
         </select>
         <table id="data-table">
             <tr>
-                <th>番号</th> <!-- 通し番号の列を追加 -->
-                <th>stakerAddress</th>
-                <th id="amount-header" style="cursor:pointer;">amount</th> <!-- amountの列をクリック可能にする -->
+                <th>No.</th>
+                <th>ステーカー</th>
+                <th id="amount-header" style="cursor:pointer;">ステーキング量</th>
             </tr>
             <!-- Table rows will be populated here -->
         </table>
@@ -62,7 +62,7 @@
     <script>
         let select = document.getElementById('name-select');
         let sectionName = document.getElementById('section-name');
-        let isAscending = false; // 昇順かどうかを判定するフラグ
+        let isAscending = false;
 
         fetch("api_data.csv")
             .then(response => response.text())
@@ -87,11 +87,11 @@
                 .then(data => {
                     let sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
                     let table = document.getElementById('data-table');
-                    table.innerHTML = '<tr><th>番号</th><th>stakerAddress</th><th id="amount-header" style="cursor:pointer;">amount</th></tr>';
+                    table.innerHTML = '<tr><th>No.</th><th>ステーカー</th><th id="amount-header" style="cursor:pointer;">ステーキング量</th></tr>';
                     sortedData.forEach((item, index) => {
                         let row = document.createElement('tr');
                         let cell0 = document.createElement('td');
-                        cell0.textContent = index + 1; // 通し番号を追加
+                        cell0.textContent = index + 1;
                         let cell1 = document.createElement('td');
                         cell1.textContent = item.stakerAddress;
                         let cell2 = document.createElement('td');
@@ -103,9 +103,9 @@
                     });
                     // amountの列をクリックしたときの処理
                     document.getElementById('amount-header').addEventListener('click', () => {
-                        isAscending = !isAscending; // 昇順と降順を切り替える
+                        isAscending = !isAscending;
                         let event = new Event('change');
-                        select.dispatchEvent(event); // selectのchangeイベントを発火させる
+                        select.dispatchEvent(event);
                     });
                 })
                 .catch(error => console.error('Error:', error));
