@@ -47,13 +47,13 @@
         <h2 id="section-name">Section Name</h2>
         <select id="name-select">
             <!-- Options will be populated here -->
-	    <option selected disabled>dApp を選択してください</option>
+            <option selected disabled>dApp を選択してください</option>
         </select>
         <table id="data-table">
             <tr>
-		<th>順位</th>
+                <th>番号</th> <!-- 通し番号の列を追加 -->
                 <th>stakerAddress</th>
-		<th id="amount-header" style="cursor:pointer;">amount</th>
+                <th id="amount-header" style="cursor:pointer;">amount</th> <!-- amountの列をクリック可能にする -->
             </tr>
             <!-- Table rows will be populated here -->
         </table>
@@ -62,8 +62,8 @@
     <script>
         let select = document.getElementById('name-select');
         let sectionName = document.getElementById('section-name');
-	let amountHeader = document.getElementById('amount-header');
-        let isAscending = false; 
+        let amountHeader = document.getElementById('amount-header');
+        let isAscending = false; // 昇順かどうかを判定するフラグ
 
         fetch("api_data.csv")
             .then(response => response.text())
@@ -86,24 +86,31 @@
             fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
                 .then(data => {
-		    let sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
+                    let sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
                     let table = document.getElementById('data-table');
-		    table.innerHTML = '<tr><th>順位</th><th>stakerAddress</th><th id="amount-header" style="cursor:pointer;">amount</th></tr>';
+                    table.innerHTML = '<tr><th>番号</th><th>stakerAddress</th><th id="amount-header" style="cursor:pointer;">amount</th></tr>';
                     sortedData.forEach((item, index) => {
-			let row = document.createElement('tr');
+                        let row = document.createElement('tr');
                         let cell0 = document.createElement('td');
                         cell0.textContent = index + 1; // 通し番号を追加
                         let cell1 = document.createElement('td');
                         cell1.textContent = item.stakerAddress;
                         let cell2 = document.createElement('td');
                         cell2.textContent = (item.amount / 1000000000000000000).toFixed(3);
-			row.appendChild(cell0);
+                        row.appendChild(cell0);
                         row.appendChild(cell1);
                         row.appendChild(cell2);
                         table.appendChild(row);
                     });
                 })
                 .catch(error => console.error('Error:', error));
+        });
+
+        // amountの列をクリックしたときの処理
+        amountHeader.addEventListener('click', () => {
+            isAscending = !isAscending; // 昇順と降順を切り替える
+            let event = new Event('change');
+            select.dispatchEvent(event); // selectのchangeイベントを発火させる
         });
     </script>
 </body>
