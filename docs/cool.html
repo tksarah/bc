@@ -28,6 +28,12 @@
             padding: 10px;
             text-align: left;
         }
+	th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) {
+            text-align: center;
+        }
+        th:last-child, td:last-child {
+            text-align: right;
+        }
         th {
             background-color: #34b7f1;
             color: white;
@@ -93,7 +99,7 @@
                         let cell0 = document.createElement('td');
                         cell0.textContent = index + 1;
                         let cell1 = document.createElement('td');
-                        cell1.textContent = item.stakerAddress.slice(0, 5) + '...' + item.stakerAddress.slice(-5);
+                        cell1.textContent = item.stakerAddress.slice(0, 5) + ' ... ' + item.stakerAddress.slice(-5);
                         let cell2 = document.createElement('td');
                         cell2.textContent = (item.amount / 1000000000000000000).toFixed(3);
                         row.appendChild(cell0);
