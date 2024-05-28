@@ -62,7 +62,6 @@
     <script>
         let select = document.getElementById('name-select');
         let sectionName = document.getElementById('section-name');
-        let amountHeader = document.getElementById('amount-header');
         let isAscending = false; // 昇順かどうかを判定するフラグ
 
         fetch("api_data.csv")
@@ -102,15 +101,14 @@
                         row.appendChild(cell2);
                         table.appendChild(row);
                     });
+                    // amountの列をクリックしたときの処理
+                    document.getElementById('amount-header').addEventListener('click', () => {
+                        isAscending = !isAscending; // 昇順と降順を切り替える
+                        let event = new Event('change');
+                        select.dispatchEvent(event); // selectのchangeイベントを発火させる
+                    });
                 })
                 .catch(error => console.error('Error:', error));
-        });
-
-        // amountの列をクリックしたときの処理
-        amountHeader.addEventListener('click', () => {
-            isAscending = !isAscending; // 昇順と降順を切り替える
-            let event = new Event('change');
-            select.dispatchEvent(event); // selectのchangeイベントを発火させる
         });
     </script>
 </body>
