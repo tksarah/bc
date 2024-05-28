@@ -52,6 +52,12 @@
 <body>
     <div class="container">
         <h2 id="section-name">Section Name</h2>
+	<ul>
+		<li>dAppStaking のdApp毎のステーカーリスト</li>
+		<li>オンチェーンデーターから整形</li>
+		<li>デフォルトはステーキング量で降順（テーブルヘッダーで切り替え可能）</li>
+		<li>dApp のリスト自体は 2024/5/28 のもの</li>
+	</ul>
         <select id="name-select">
             <!-- Options will be populated here -->
             <option selected disabled>dApp を選択してください</option>
@@ -118,5 +124,10 @@
                 .catch(error => console.error('Error:', error));
         });
     </script>
+    </p>
+    <hr>
+    <div class="footer">
+        © 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.
+    </div>
 </body>
 </html>
