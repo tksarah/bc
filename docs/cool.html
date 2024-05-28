@@ -93,7 +93,7 @@
                         let cell0 = document.createElement('td');
                         cell0.textContent = index + 1;
                         let cell1 = document.createElement('td');
-                        cell1.textContent = item.stakerAddress;
+                        cell1.textContent = item.stakerAddress.slice(0, 5) + '...' + item.stakerAddress.slice(-5);
                         let cell2 = document.createElement('td');
                         cell2.textContent = (item.amount / 1000000000000000000).toFixed(3);
                         row.appendChild(cell0);
