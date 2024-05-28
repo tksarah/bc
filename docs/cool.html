@@ -3,37 +3,63 @@
 <head>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
         }
         th {
-            background-color: #4CAF50;
+            background-color: #34b7f1;
             color: white;
         }
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+        select {
+            padding: 10px;
+            width: 200px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <select id="name-select"></select>
-    <table id="data-table">
-        <tr>
-            <th>stakerAddress</th>
-            <th>amount</th>
-        </tr>
-    </table>
+    <div class="container">
+        <h2 id="section-name">Section Name</h2>
+        <select id="name-select">
+            <!-- Options will be populated here -->
+        </select>
+        <table id="data-table">
+            <tr>
+                <th>stakerAddress</th>
+                <th>amount</th>
+            </tr>
+            <!-- Table rows will be populated here -->
+        </table>
+    </div>
 
     <script>
         let select = document.getElementById('name-select');
+        let sectionName = document.getElementById('section-name');
         fetch("api_data.csv")
             .then(response => response.text())
             .then(data => {
@@ -51,6 +77,7 @@
 
         select.addEventListener('change', () => {
             let address = select.value;
+            sectionName.textContent = select.options[select.selectedIndex].text;
             fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
                 .then(data => {
