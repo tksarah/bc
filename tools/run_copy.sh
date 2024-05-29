@@ -54,6 +54,6 @@ echo "Done"
 
 ### Cleanup
 echo -n "Run cleanup -> "
-rm $file $file.csv $SDIR/$sfile chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv after_voting.csv
+rm $file $file.csv $SDIR/$sfile chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv after_voting.csv index.html
 echo "Done"
 touch $file
