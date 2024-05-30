@@ -2,6 +2,8 @@
 use strict;
 use warnings;
 
+# $input = api_data.csv: created by script.pl
+# This file needs adjustment.
 my $input = $ARGV[0];
 
 my $x = 0;

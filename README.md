@@ -2,7 +2,7 @@
 
 This page independently develops and publishes tools and documentation related to the Astar Network.
 
-Custom Tier Leaderboard for dApp Staking
+Custom Tier Leaderboard for dAppStaking
 =============
 
 https://agent.sun-t-sarah.work/
@@ -28,28 +28,14 @@ In this list, you can check the following information (the information is update
 
 ![image](https://github.com/tksarah/bc/assets/11060137/0f50e0e3-8903-43d7-a0a5-53afb3d52733)
 
-
-Tools
+Staker list / dApps
 =============
 
-## R script
+https://agent.sun-t-sarah.work/cool.html
 
-**/tools/R_script.R**
+Displays a list of stakers for each dApp in dAppStaking.
 
-This R script reads CSV files saved weekly and creates a line graph for each project, with the amount staked during the ‘Build&Earn’ period as the Y-axis.
-
-![スクリーンショット 2024-04-30 181917](https://github.com/tksarah/bc/assets/11060137/8fa7cee2-d6b5-406f-ae22-69a5faee8b49)
-
-
-## Current Price of ETH and ASTR
-
-**/tools/get_prise.pl**
- 
-You can find out the current dollar and yen prices of ETH and ASTR, as well as the USD/JPY exchange rate.
-However, in order to run this script, you must first obtain an API key from [CoinMarketCap](https://coinmarketcap.com/).
-
-
-Disclaimer
-=============
-Many of the items are still under development, and no license is attached. Use is free, but the developer assumes no responsibility for any purpose.
-
+- The data is formatted from on-chain data.
+- By default, it is displayed in descending order of staking amount (switchable via the table header).
+- dApps with many stakers may take some time to display.
+- The list of dApps itself is based on the data from **May 28, 2024**.
