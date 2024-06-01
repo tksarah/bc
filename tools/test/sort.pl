@@ -6,7 +6,7 @@ use LWP::Simple;
 
 my $value = 0;
 my $CONT = "0x7672f18994d876a319502f356efea726c4354f39";
-#$CONT = $ARGV[0];
+#my $CONT = $ARGV[0];
 
 # URLからJSONデータを取得
 my $url = "https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/$CONT";
