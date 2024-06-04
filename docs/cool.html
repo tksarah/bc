@@ -84,6 +84,7 @@
 	<p>
 	<ul>
 		<li>Displays a list of stakers for each dApp in dAppStaking.</li>
+		<li>The number next to the dApp Name represents the total number of stakers.</li>
 		<li>The data is formatted from on-chain data.</li>
 		<li>By default, it is displayed in descending order of staking amount (switchable via the table header).</li>
 		<li>dApps with many stakers may take some time to display.</li>
@@ -145,10 +146,10 @@
                         row.appendChild(cell2);
                         table.appendChild(row);
                     });
-	            // ここでオブジェクト数を数えて表示します
+	            // 
                     let totalObjects = sortedData.length;
                     sectionName.textContent = select.options[select.selectedIndex].text + ' (' + totalObjects + ')';
-                    // amountの列をクリックしたときの処理
+                    // 
                     document.getElementById('amount-header').addEventListener('click', () => {
                         isAscending = !isAscending;
                         let event = new Event('change');
