@@ -71,7 +71,7 @@
 </head>
 <body>
     <div class="container">
-        <h2 id="section-name">dApp Name - <span id="object-count"></span></h2>
+        <h2 id="section-name">dApp Name</h2>
 	<ul>
 		<li>dAppStaking の dApp 毎のステーカーリストを表示します</li>
 		<li>オンチェーンデーターから整形しています</li>
@@ -105,7 +105,6 @@
     <script>
         let select = document.getElementById('name-select');
         let sectionName = document.getElementById('section-name');
-	let objectCount = document.getElementById('object-count');
         let isAscending = false;
 
         fetch("api_data.csv")
@@ -129,7 +128,6 @@
             fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
                 .then(data => {
-		    objectCount.textContent = ' (' + data.length + ')'; // Display object count
                     let sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
                     let table = document.getElementById('data-table');
                     table.innerHTML = '<tr><th>No.</th><th>ステーカー</th><th id="amount-header" style="cursor:pointer;">ステーキング量</th></tr>';
@@ -146,6 +144,9 @@
                         row.appendChild(cell2);
                         table.appendChild(row);
                     });
+	            // ここでオブジェクト数を数えて表示します
+                    let totalObjects = sortedData.length;
+                    sectionName.textContent = select.options[select.selectedIndex].text + ' (' + totalObjects + ')';
                     // amountの列をクリックしたときの処理
                     document.getElementById('amount-header').addEventListener('click', () => {
                         isAscending = !isAscending;
