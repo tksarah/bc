@@ -19,10 +19,10 @@
             width: 80%;
             margin: auto;
             overflow: hidden;
-            padding: 0 20px;
+            padding: 20px 20px;
             box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
             background: #fff;
-            border-radius: 5px;
+            border-radius: 10px;
         }
         table {
             width: 100%;
@@ -94,14 +94,16 @@
             <!-- Options will be populated here -->
             <option selected disabled>dApp を選択してください (Please select a dApp)</option>
         </select>
+	<br><br>
+	<!-- 
         <table id="data-table">
             <tr>
                 <th>No.</th>
                 <th>ステーカー (Staker)</th>
                 <th id="amount-header" style="cursor:pointer;">ステーキング量 (Amount)</th>
             </tr>
-            <!-- Table rows will be populated here -->
         </table>
+	-->
     </div>
 
     <script>
@@ -132,7 +134,7 @@
                 .then(data => {
                     let sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
                     let table = document.getElementById('data-table');
-                    table.innerHTML = '<tr><th>No.</th><th>ステーカー</th><th id="amount-header" style="cursor:pointer;">ステーキング量</th></tr>';
+                    table.innerHTML = '<tr><th>No.</th><th>ステーカー (Staker)</th><th id="amount-header" style="cursor:pointer;">ステーキング量 (Amount)</th></tr>';
                     sortedData.forEach((item, index) => {
                         let row = document.createElement('tr');
                         let cell0 = document.createElement('td');
