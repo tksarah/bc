@@ -97,9 +97,8 @@
             <option selected disabled>dApp を選択してください (Please select a dApp)</option>
         </select>
 
-	<canvas id="donut-chart"></canvas> <!-- ドーナツグラフを描画するためのcanvas要素 -->
+	<canvas id="donut-chart" width="400" height="400" style="max-width: 100%;"></canvas>
 
-	<br>
         <table id="data-table">
             <tr>
                 <th>No.</th>
@@ -182,7 +181,7 @@
                 options: {
                     responsive: true,
                     legend: {
-                        position: 'top',
+                        position: 'right',
                     },
                     animation: {
                         animateScale: true,
