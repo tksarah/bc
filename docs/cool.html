@@ -175,7 +175,7 @@
        	 	chart.destroy();
 	    }
 
-	    new Chart(ctx, {
+	    chart = new Chart(ctx, {
        		type: 'doughnut',
 		data: {
 		labels: allData.map(item => item.stakerAddress),
