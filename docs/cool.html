@@ -169,28 +169,27 @@
 	// Function creating donut chart
         function createDonutChart(data) {
             let ctx = document.getElementById('donut-chart').getContext('2d');
-            let top10Data = data.slice(0, 10);
+            // let top10Data = data.slice(0, 10);
+            let allData = data;
 
             if (chart) {
-                chart.data.labels = top10Data.map(item => item.stakerAddress);
-                chart.data.datasets[0].data = top10Data.map(item => item.amount);
+                chart.data.labels = allData.map(item => item.stakerAddress);
+                chart.data.datasets[0].data = allData.map(item => item.amount);
                 chart.update();
             } else {
                 chart = new Chart(ctx, {
                     type: 'doughnut',
                     data: {
-                        labels: top10Data.map(item => item.stakerAddress),
+                        labels: allData.map(item => item.stakerAddress),
                         datasets: [{
-                            data: top10Data.map(item => item.amount),
-                            backgroundColor: top10Data.map(() => '#' + Math.floor(Math.random()*16777215).toString(16))
+                            data: allData.map(item => item.amount),
+                            backgroundColor: allData.map(() => '#' + Math.floor(Math.random()*16777215).toString(16))
                         }]
                     },
                     options: {
                         responsive: true,
                         legend: {
                             position: 'right',
-                            labels: {
-                                boxWidth: 10
                             }
                         },
                         animation: {
