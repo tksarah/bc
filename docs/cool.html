@@ -111,6 +111,7 @@
         let select = document.getElementById('name-select');
         let sectionName = document.getElementById('section-name');
         let isAscending = false;
+	let chart;
 
         fetch("api_data.csv")
             .then(response => response.text())
@@ -169,6 +170,11 @@
         function createDonutChart(data) {
             let ctx = document.getElementById('donut-chart').getContext('2d');
 	    let top10Data = data.slice(0, 10);
+
+            if (chart) {
+                chart.destroy();
+            }
+
             new Chart(ctx, {
                 type: 'doughnut',
                 data: {
@@ -182,6 +188,9 @@
                     responsive: true,
                     legend: {
                         position: 'right',
+			labels: {
+			    boxWidth: 10
+	                }
                     },
                     animation: {
                         animateScale: true,
