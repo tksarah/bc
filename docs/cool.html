@@ -93,7 +93,6 @@
 		<li>The list of dApps itself is based on the data from May 28, 2024.</li>
 	</ul>
         <select id="name-select">
-            <!-- Options will be populated here -->
             <option selected disabled>dApp を選択してください (Please select a dApp)</option>
         </select>
 
@@ -160,22 +159,23 @@
                         select.dispatchEvent(event);
                     });
 
-		    // ドーナツグラフを作成
+		    // create donut chart
 		    createDonutChart(sortedData);
                 })
                 .catch(error => console.error('Error:', error));
         });
 
-	// ドーナツグラフを作成する関数
+	// Function creating donut chart
         function createDonutChart(data) {
             let ctx = document.getElementById('donut-chart').getContext('2d');
+	    let top10Data = data.slice(0, 10);
             new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: data.map(item => item.stakerAddress), // 凡例は「stakerAddress」の値
+                    labels: top10Data.map(item => item.stakerAddress),
                     datasets: [{
-                        data: data.map(item => item.amount), // 「amount」データ
-                        backgroundColor: data.map(() => '#' + Math.floor(Math.random()*16777215).toString(16)) // ランダムな色
+                        data: top10Data.map(item => item.amount),
+                        backgroundColor: top10Data.map(() => '#' + Math.floor(Math.random()*16777215).toString(16)) 
                     }]
                 },
                 options: {
