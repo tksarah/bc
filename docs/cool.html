@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Staker/dApp Amount</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -68,6 +69,7 @@
             border-top: 1px solid #ddd;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.jsライブラリを読み込む -->
 </head>
 <body>
     <div class="container">
@@ -94,6 +96,9 @@
             <!-- Options will be populated here -->
             <option selected disabled>dApp を選択してください (Please select a dApp)</option>
         </select>
+
+	<canvas id="donut-chart"></canvas> <!-- ドーナツグラフを描画するためのcanvas要素 -->
+
 	<br>
         <table id="data-table">
             <tr>
@@ -155,9 +160,37 @@
                         let event = new Event('change');
                         select.dispatchEvent(event);
                     });
+
+		    // ドーナツグラフを作成
+		    createDonutChart(sortedData);
                 })
                 .catch(error => console.error('Error:', error));
         });
+
+	// ドーナツグラフを作成する関数
+        function createDonutChart(data) {
+            let ctx = document.getElementById('donut-chart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: data.map(item => item.stakerAddress), // 凡例は「stakerAddress」の値
+                    datasets: [{
+                        data: data.map(item => item.amount), // 「amount」データ
+                        backgroundColor: data.map(() => '#' + Math.floor(Math.random()*16777215).toString(16)) // ランダムな色
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    legend: {
+                        position: 'top',
+                    },
+                    animation: {
+                        animateScale: true,
+                        animateRotate: true
+                    }
+                }
+            });
+        }
     </script>
     </br>
     </br>
