@@ -120,11 +120,13 @@
                 let lines = data.split('\n');
                 lines.shift();
                 lines.forEach(line => {
+		if (line.trim() !== '') {
                     let parts = line.split(',');
                     let option = document.createElement('option');
                     option.value = parts[0];
                     option.textContent = parts[1];
                     select.appendChild(option);
+		   }
                 });
             })
             .catch(error => console.error('Error:', error));
@@ -179,7 +181,7 @@
 	    chart = new Chart(ctx, {
        		type: 'doughnut',
 		data: {
-		labels: allData.map(item => item.stakerAddress),
+		labels: allData.map(item => item.stakerAddress.slice(0, 5) + '...' + item.stakerAddress.slice(-5)),
 		datasets: [{
                		data: allData.map(item => item.amount),
 			backgroundColor: allData.map(() => '#' + Math.floor(Math.random()*16777215).toString(16))
