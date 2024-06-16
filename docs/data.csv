@@ -1,83 +1,81 @@
 Name,Category,Stakers,Voting,BuildAndearn,TotalStaked
-ACryptoS,defi,1,0.000,0.000,0
-AirLyft.One,utility,13,0.000,0.000,0
-Algem,defi,15,0.000,0.000,0
-Archisinal,nft,3,0.000,0.000,0
-ArtZero,nft,0,66780.000,20701.360,87481.36
-ArthSwap,defi,22,0.000,0.000,0
-"Astar Blockchain Node Service",utility,11,0.000,0.000,0
-"Astar Core Contributors",tooling,254,0.000,0.000,0
-"Astar Degens",nft,116,0.000,0.000,0
-"Astar Dex StarSwap",defi,8,0.000,0.000,0
-"Astar Exchange",defi,70,0.000,0.000,0
-"Astar Farm",defi,12,0.000,0.000,0
-"Astar Safe",tooling,4,0.000,0.000,0
-"Astar Sign Witch",nft,11,0.000,0.000,0
-"Astar Web3 Domains",utility,1,0.000,0.000,0
-AstarCats,nft,3,0.000,0.000,0
-AstridDAO,defi,5,0.000,0.000,0
-Avault,defi,1,0.000,0.000,0
-"Bandit Network - The Growth Tookit for Web3",utility,0,0.000,14470.095,14470.095
-"Bluez NFT Marketplace",nft,0,11650891.280,12487789.614,24138680.894
-"Bware Labs and Blast API",utility,0,464920.896,69636.369,534557.265
-"CANDY GIRL",nft,7,0.000,0.000,0
-COSMIZE,others,2,0.000,0.000,0
-"Ceres Liquidity and Token Lockers",defi,0,226634.441,8463.000,235097.441
-ChainChaser,tooling,1,0.000,0.000,0
-"Community Treasury",utility,36,0.000,0.000,0
-D8A,tooling,8,0.000,0.000,0
-DappRadar,tooling,0,0.000,160310.560,160310.56
-DeForm,tooling,0,0.000,1677323.749,1677323.749
-DeStore,nft,78,0.000,0.000,0
-Dwellir,utility,2,0.000,0.000,0
-"D’CENT Wallet",utility,6,0.000,0.000,0
-FiDi,utility,0,1971631.247,495440.873,2467072.12
-Grabber,tooling,1,0.000,0.000,0
-"HAHA Coin",others,60,0.000,0.000,0
-HEALTHREE,nft,279,0.000,0.000,0
-"Heroic Animals",nft,3,0.000,0.000,0
-"I am xAlice",nft,5,0.000,0.000,0
-InsureDAO,tooling,3,0.000,0.000,0
-JPYC,defi,25,0.000,0.000,0
-KEKKAI,tooling,4,0.000,0.000,0
-KIRIFUDA,nft,1,0.000,0.000,0
-"Kaiso Finance",others,2,0.000,0.000,0
-L2X.pro,defi,5,0.000,0.000,0
-Lucky,others,33,0.000,0.000,0
-Metadomo,unstoppable-grants,9,0.000,0.000,0
-Metasky,tooling,1,0.000,0.000,0
-MoonFit,nft,3,0.000,0.000,0
-NEET,others,5,0.000,0.000,0
-"NFT Pocket | LOYLE",tooling,0,116303.891,560.000,116863.891
-NFTs2Me,nft,0,0.000,3200.000,3200
-"Neurolanche X Labs",others,496,0.000,0.000,0
-"Nova Wallet",others,15,0.000,0.000,0
-OnFinality,utility,19,0.000,0.000,0
-PINKY,nft,3,0.000,0.000,0
-Paras,nft,21,0.000,0.000,0
-Polkaholic.io,utility,0,354754.000,13532.000,368286
-"Polkasafe Multisig",utility,1,0.000,0.000,0
-"Prometheus - AI Dex by Balance AI",defi,2,0.000,0.000,0
-ProofX,nft,0,158622.934,193.000,158815.934
-Protofire,tooling,0,45568.155,28624.000,74192.155
-QuickSwap,defi,36,0.000,0.000,0
-RAIR,nft,0,8701.000,834150.000,842851
-Rarible,nft,0,0.000,618648.542,618648.542
-Sentio,utility,1,0.000,0.000,0
-"SiO2 Finance",defi,7,0.000,0.000,0
-Singular,nft,15,0.000,0.000,0
-"SkyLab Corporation",unstoppable-grants,15,0.000,0.000,0
-"Slash Vision Labs",defi,3,0.000,0.000,0
-"Starlay Finance",defi,5,0.000,0.000,0
-SushiTop,nft,4,0.000,0.000,0
-"Talisman 🪬",utility,35,0.000,0.000,0
-"The Royal Raffle",nft,5,0.000,0.000,0
-"VeryLongSwap (Staking airdrop)",defi,210,0.000,0.000,0
-Web3alert,tooling,2,0.000,0.000,0
-"XO - Web3 Social",others,1,0.000,0.000,0
-"XY Finance",defi,2,0.000,0.000,0
-Zenlink,defi,5,0.000,0.000,0
-"apeXchimpz (AXC)",nft,34,0.000,0.000,0
-beyondClub,nft,0,675578.527,1170.000,676748.527
-mooon,nft,11,0.000,0.000,0
-tofuNFT,nft,5,0.000,0.000,0
+ACryptoS,defi,16,118098.000,38076.600,156174.6
+AirLyft.One,unstoppable-grants,200,8656764.467,37673.529,8694437.996
+Algem,defi,666,165512296.422,365650.651,165877947.073
+Archisinal,nft,15,68427.299,22263.900,90691.199
+ArtZero,nft,21,66780.000,20701.360,87481.36
+ArthSwap,defi,1074,25129003.282,3294858.962,28423862.244
+"Astar Blockchain Node Service",utility,94,677491.062,6474.359,683965.421
+"Astar Core Contributors",tooling,4855,333977370.074,124426610.554,458403980.628
+"Astar Degens",nft,1461,80432489.437,11173498.414,91605987.851
+"Astar Dex StarSwap",defi,147,2421144.626,111675.888,2532820.514
+"Astar Exchange",defi,1086,8926141.160,7855946.910,16782088.07
+"Astar Farm",defi,220,25828205.841,757581.220,26585787.061
+"Astar Safe",tooling,91,5176580.983,5077445.371,10254026.354
+"Astar Sign Witch",nft,155,1525846.674,84561.600,1610408.274
+"Astar Web3 Domains",utility,113,1567454.656,16337.540,1583792.196
+AstarCats,nft,114,639541.701,102848.970,742390.671
+AstridDAO,defi,299,57844887.606,978446.504,58823334.11
+Avault,defi,46,251990.244,0.000,251990.244
+"Bandit Network - The Growth Tookit for Web3",utility,3,0.000,14470.095,14470.095
+"Bluez NFT Marketplace",nft,80,11650891.280,12487789.614,24138680.894
+"Bware Labs and Blast API",utility,30,464920.896,69636.369,534557.265
+"CANDY GIRL",nft,107,7672974.902,352519.748,8025494.65
+COSMIZE,others,66,169381.210,0.000,169381.21
+"Ceres Liquidity and Token Lockers",defi,26,226634.441,8463.000,235097.441
+ChainChaser,tooling,14,0.000,338712.000,338712
+"Community Treasury",utility,959,100894873.438,95871485.895,196766359.333
+DappRadar,tooling,34,0.000,160310.560,160310.56
+DeForm,tooling,12,0.000,1678923.749,1678923.749
+DeStore,nft,1043,88335466.669,18597927.456,106933394.125
+Dwellir,utility,79,804207.000,125037.337,929244.337
+"D’CENT Wallet",utility,16,0.000,3365503.810,3365503.81
+FiDi,utility,169,1971631.247,496640.873,2468272.12
+Grabber,tooling,10,24306.000,1053.000,25359
+"HAHA Coin",others,20,0.000,171083.000,171083
+HEALTHREE,nft,372,13233227.194,5361472.873,18594700.067
+"Heroic Animals",nft,35,132675.933,5200.000,137875.933
+"I am xAlice",nft,74,1616432.912,57255.884,1673688.796
+InsureDAO,tooling,53,204697.000,56474.427,261171.427
+JPYC,defi,325,9448575.550,1172435.812,10621011.362
+KEKKAI,tooling,126,1494500.586,197365.735,1691866.321
+KIRIFUDA,nft,26,317906.364,48999.000,366905.364
+L2X.pro,defi,10,0.000,23506.000,23506
+Lucky,others,451,15036429.233,1319793.384,16356222.617
+Metadomo,unstoppable-grants,48,376405.000,108000.000,484405
+Metasky,tooling,16,1531584.665,37878.000,1569462.665
+MoonFit,nft,132,1306039.594,0.000,1306039.594
+NEET,others,59,0.000,867596.906,867596.906
+"NFT Pocket | LOYLE",tooling,11,116303.891,560.000,116863.891
+NFTs2Me,nft,3,0.000,3200.000,3200
+"Neurolanche X Labs",others,4664,270781464.714,49250542.143,320032006.857
+"Nova Wallet",others,575,17703969.970,1124026.321,18827996.291
+OnFinality,utility,222,51578574.258,3692593.784,55271168.042
+PINKY,nft,83,0.000,41623.497,41623.497
+Paras,nft,78,2069339.818,216894.677,2286234.495
+Polkaholic.io,utility,25,354754.000,13532.000,368286
+"Polkasafe Multisig",utility,27,18055003.000,0.000,18055003
+"Prometheus - AI Dex by Balance AI",defi,123,1244165.533,27000.000,1271165.533
+ProofX,nft,27,158622.934,193.000,158815.934
+Protofire,tooling,10,45568.155,28624.000,74192.155
+QuickSwap,defi,116,0.000,1468335.415,1468335.415
+RAIR,nft,7,8701.000,834150.000,842851
+Rarible,nft,34,0.000,618648.542,618648.542
+Sentio,utility,19,298630.000,5529.316,304159.316
+"SiO2 Finance",defi,227,52891187.395,882240.963,53773428.358
+Singular,nft,735,7612991.821,3201265.289,10814257.11
+"SkyLab Corporation",unstoppable-grants,129,15973817.663,860514.164,16834331.827
+"Slash Vision Labs",defi,45,289761.667,0.000,289761.667
+"Starlay Finance",defi,295,14434776.951,1212622.971,15647399.922
+SushiTop,nft,61,587874.298,21719.000,609593.298
+"Talisman 🪬",utility,1026,28069752.399,8725353.206,36795105.605
+"The Royal Raffle",nft,73,1365983.176,0.000,1365983.176
+"VeryLongSwap (Staking airdrop)",defi,604,0.000,13369010.241,13369010.241
+Web3alert,tooling,33,1949692.282,32049.596,1981741.878
+"XO - Web3 Social",others,5,0.000,18000.000,18000
+"XY Finance",defi,87,863618.120,30.000,863648.12
+Zenlink,defi,215,3483886.155,508300.759,3992186.914
+"apeXchimpz (AXC)",nft,476,7588901.599,2002351.303,9591252.902
+beyondClub,nft,71,675578.527,1170.000,676748.527
+mooon,nft,89,3563925.025,184504.110,3748429.135
+tofuNFT,nft,205,4115411.857,93834.000,4209245.857
