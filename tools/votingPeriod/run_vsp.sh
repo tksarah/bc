@@ -41,7 +41,8 @@ perl ./update_html.pl index.org index.html
 echo "Done"
 
 # Fixing the incorrect string
-sed -i 's/ApeXChimpz (stake 4 NFT 2.0 airdrops, check video!)/ApeXChimpz/g' $sfile
+#sed -i 's/ApeXChimpz (stake 4 NFT 2.0 airdrops, check video!)/ApeXChimpz/g' $sfile
+#sed -i 's/ApeXChimpz[^]*/ApeXChimpz/g' filename.txt
 
 # Copy
 echo -n "Run copy to DOCS -> "
