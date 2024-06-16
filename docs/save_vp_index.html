@@ -3,26 +3,20 @@
 <head>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #F5F5F5;
-            color: #212121;
-        }
-        h2 {
-            color: #3F51B5;
+            font-family: Arial, sans-serif;
         }
         table {
             border-collapse: collapse;
             width: 100%;
             margin-top: 20px;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
         }
         th, td {
-            padding: 16px;
+            padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #3F51B5;
+            background-color: #4CAF50;
             color: white;
             cursor: pointer;
         }
@@ -43,8 +37,7 @@ async function getData() {
     const response = await fetch('vp_data.csv');
     const data = await response.text();
     const rows = data.split('\n').slice(1).filter(row => row.trim().length > 0);
-    let html = `<tr><th onclick="sortTable(0, false)">Rank</th><th onclick="sortTable(1, true)">Name</th><th onclick="sortTable(2, true)">Category</th><th onclick="sortTable(3, false)">Stakers</th><th
- onclick="sortTable(4, false)">VotingStaked</th></tr>`;
+    let html = `<tr><th onclick="sortTable(0, false)">Rank</th><th onclick="sortTable(1, true)">Name</th><th onclick="sortTable(2, true)">Category</th><th onclick="sortTable(3, false)">Stakers</th><th onclick="sortTable(4, false)">VotingStaked</th></tr>`;
     rows.sort((a, b) => parseFloat(b.split(',')[3]) - parseFloat(a.split(',')[3]));
     rows.forEach((row, index) => {
         const cols = row.split(',');
@@ -87,7 +80,7 @@ function sortTable(n, isString) {
         if (shouldSwitch) {
             rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
             switching = true;
-            switchcount ++;
+            switchcount ++;      
         } else {
             if (switchcount == 0 && dir == "asc") {
                 dir = "desc";
