@@ -33,14 +33,14 @@
 </head>
 <body>
 
-<h2 style="color: #FFFFFF;">CSV Data</h2>
+<h2 style="color: #FFFFFF;">Stake Rankings During the Voting Subperiod at 11:00 on June 16, 2024</h2>
 
 <table id="csvTable">
 </table>
 
 <script>
 async function getData() {
-    const response = await fetch('vp_data.csv');
+    const response = await fetch('vsp_data.csv');
     const data = await response.text();
     const rows = data.split('\n').slice(1).filter(row => row.trim().length > 0);
     let html = `<tr><th onclick="sortTable(0, false)">Rank</th><th onclick="sortTable(1, true)">Name</th><th onclick="sortTable(2, true)">Category</th><th onclick="sortTable(3, false)">Stakers</th><th

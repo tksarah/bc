@@ -54,7 +54,7 @@ for my $i (0..$#id) {
 close $out;
 
 # Check
-for my $i (0..$#staked_future_voting) {
-    print "$staked_future_voting[$i]\n";
+#for my $i (0..$#staked_future_voting) {
+#    print "$staked_future_voting[$i]\n";
     #print "$id[$i],$voting[$i],$bAe[$i]\n";
-}
+#}
