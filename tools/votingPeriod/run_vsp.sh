@@ -50,5 +50,5 @@ echo "Done"
 
 ### Cleanup
 echo -n "Run cleanup -> "
-rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv vsp_data.csv 
+rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv vsp_data.csv index.html
 echo "Done"
