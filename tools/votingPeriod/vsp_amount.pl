@@ -2,7 +2,8 @@
 use strict;
 use warnings;
 
-#my $period = $ARGV[1];
+# input current period
+my $period = $ARGV[1];
 my $input_data = $ARGV[0];
 my $output_data = "voting_period.csv";
 
@@ -24,6 +25,7 @@ close $fh;
 open my $refh, '<', $input_data or die "Could not open file: $!";
 
 my $x = 0;
+my $formatted_x = 0;
 my @staked_future_voting;
 
 while (my $row = <$refh>) {
@@ -36,10 +38,19 @@ while (my $row = <$refh>) {
     $x =~ s/,//g;
     $x = $x/1000000000000000000;
     my $formatted_x = sprintf("%.3f", $x);
-    push @staked_future_voting, $formatted_x;
+
+    <$refh>;
+    <$refh>;
+    $row = <$refh>;
+
+    if ($row =~ /\speriod: $period$/) {
+    	push @staked_future_voting, $formatted_x;
+    
+    } else {
+    	push @staked_future_voting, 0;
+    }
     }elsif($row =~ /\sstakedFuture: null$/){ # "stakedFuture: null"
-    my $formatted_x = 0;
-    push @staked_future_voting, $formatted_x;
+    push @staked_future_voting, 0;
   }
 }
 
