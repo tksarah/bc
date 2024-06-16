@@ -37,7 +37,7 @@ async function getData() {
     const response = await fetch('vp_data.csv');
     const data = await response.text();
     const rows = data.split('\n').slice(1).filter(row => row.trim().length > 0);
-    let html = `<tr><th onclick="sortTable(0)">Rank</th><th onclick="sortTable(1)">Name</th><th onclick="sortTable(2)">Category</th><th onclick="sortTable(3)">Stakers</th><th onclick="sortTable(4)">VotingStaked</th></tr>`;
+    let html = `<tr><th onclick="sortTable(0, false)">Rank</th><th onclick="sortTable(1, true)">Name</th><th onclick="sortTable(2, true)">Category</th><th onclick="sortTable(3, false)">Stakers</th><th onclick="sortTable(4, false)">VotingStaked</th></tr>`;
     rows.sort((a, b) => parseFloat(b.split(',')[3]) - parseFloat(a.split(',')[3]));
     rows.forEach((row, index) => {
         const cols = row.split(',');
@@ -47,7 +47,7 @@ async function getData() {
     document.getElementById('csvTable').innerHTML = html;
 }
 
-function sortTable(n) {
+function sortTable(n, isString) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("csvTable");
     switching = true;
@@ -60,12 +60,18 @@ function sortTable(n) {
             x = rows[i].getElementsByTagName("TD")[n];
             y = rows[i + 1].getElementsByTagName("TD")[n];
             if (dir == "asc") {
-                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                if (isString && x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                } else if (!isString && parseFloat(x.innerHTML) > parseFloat(y.innerHTML)) {
                     shouldSwitch = true;
                     break;
                 }
             } else if (dir == "desc") {
-                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                if (isString && x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                } else if (!isString && parseFloat(x.innerHTML) < parseFloat(y.innerHTML)) {
                     shouldSwitch = true;
                     break;
                 }
@@ -89,4 +95,3 @@ getData();
 
 </body>
 </html>
-
