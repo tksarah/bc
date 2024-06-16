@@ -3,7 +3,9 @@
 <head>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', monospace;
+            background-color: #000000;
+            color: #FFFFFF;
         }
         table {
             border-collapse: collapse;
@@ -14,6 +16,7 @@
             padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ddd;
+            color: #FFFFFF;
         }
         th {
             background-color: #4CAF50;
@@ -21,13 +24,16 @@
             cursor: pointer;
         }
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #222222;
+        }
+        tr:nth-child(-n+11) {
+            color: #FFFF00;
         }
     </style>
 </head>
 <body>
 
-<h2>CSV Data</h2>
+<h2 style="color: #FFFFFF;">CSV Data</h2>
 
 <table id="csvTable">
 </table>
@@ -37,7 +43,8 @@ async function getData() {
     const response = await fetch('vp_data.csv');
     const data = await response.text();
     const rows = data.split('\n').slice(1).filter(row => row.trim().length > 0);
-    let html = `<tr><th onclick="sortTable(0, false)">Rank</th><th onclick="sortTable(1, true)">Name</th><th onclick="sortTable(2, true)">Category</th><th onclick="sortTable(3, false)">Stakers</th><th onclick="sortTable(4, false)">VotingStaked</th></tr>`;
+    let html = `<tr><th onclick="sortTable(0, false)">Rank</th><th onclick="sortTable(1, true)">Name</th><th onclick="sortTable(2, true)">Category</th><th onclick="sortTable(3, false)">Stakers</th><th
+ onclick="sortTable(4, false)">VotingStaked</th></tr>`;
     rows.sort((a, b) => parseFloat(b.split(',')[3]) - parseFloat(a.split(',')[3]));
     rows.forEach((row, index) => {
         const cols = row.split(',');
@@ -80,7 +87,7 @@ function sortTable(n, isString) {
         if (shouldSwitch) {
             rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
             switching = true;
-            switchcount ++;      
+            switchcount ++;
         } else {
             if (switchcount == 0 && dir == "asc") {
                 dir = "desc";
