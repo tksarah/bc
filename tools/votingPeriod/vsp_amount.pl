@@ -3,8 +3,8 @@ use strict;
 use warnings;
 
 # input current period
-my $period = $ARGV[1];
 my $input_data = $ARGV[0];
+my $period = $ARGV[1];
 my $output_data = "voting_period.csv";
 
 my @id;

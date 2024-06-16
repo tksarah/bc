@@ -1,71 +1,54 @@
 #!/bin/bash
 
+# Current period number
+# Edit required before running
+period=2
+
+# Data from https://polkadot.js.org/apps/#/chainstate
+file="data"
+
+# Save file name
+sfile="vsp_data.csv"
+
+DIR="../../docs/vsp"
+
 ###
-./vsp_amount.pl data
-# IN ./data <- on chain data
-# Out voting_period.csv
-./vsp_combine.pl
-# IN ./voting_period.csv
-# IN ./api_data.csv <- from runing ../script
-# OUT ../../docs/vsp/vsp_data.csv
-###
-
-# Data file name
-file="../store/data"
-# tiers data file name
-json="../store/tiers.json"
-
-# Save directory 
-SDIR="../store/save"
-
-# docs directory 
-DOCS="../docs"
-
+# IN from API
+# Out api_data.csv, etc
 ### Run
 echo -n "Run script -> "
 perl ./script.pl
 echo "Done"
 
-echo -n "Run amount -> "
-perl ./amount.pl $file
+###
+# IN ./data <- on chain data
+# Out voting_period.csv
+echo -n "Run vsp_amount.pl -> "
+perl ./vsp_amount.pl $file $period
 echo "Done"
 
-echo -n "Run combine -> "
-perl ./combined.pl
+# IN ./voting_period.csv
+# IN ./api_data.csv <- from runing ./script.pl
+# OUT ../../docs/vsp/vsp_data.csv
+echo -n "Run vsp_combine.pl -> "
+perl ./vsp_combine.pl
+echo "Done"
+###
+
+# Update index.html
+echo -n "Run update html -> "
+perl ./update_html.pl index.org index.html
 echo "Done"
 
-echo -n "Run update Tier -> "
-perl ./update_tier.pl $json index.org index.html
-echo "Done"
+# Fixing the incorrect string
+sed -i 's/ApeXChimpz (stake 4 NFT 2.0 airdrops, check video!)/ApeXChimpz/g' $sfile
 
-# Get timestamp of source file
-timestamp=$(date -r "$file" +"%Y%m%d%H%M%S")
-
-# Save file name
-sfile="${timestamp}-data.csv"
-
-### Copy 
-echo -n "Run copy to Desktop ->" 
-cp $file.csv /mnt/c/Users/sarah/Desktop/
-echo "Done"
-
+# Copy
 echo -n "Run copy to DOCS -> "
-cp $file.csv index.html $DOCS/
-echo "Done"
-
-echo -n "Run save data -> "
-cp -p $file.csv  $SDIR/$sfile
-echo "Done"
-
-### Save org data file
-echo -n "CSV Data saving -> "
-(cd $SDIR; tar czf $sfile.tar.gz $sfile )
+cp -p $sfile index.html $DIR/
 echo "Done"
 
 ### Cleanup
 echo -n "Run cleanup -> "
-rm $file $file.csv $SDIR/$sfile chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv after_voting.csv index.html
-# Leave api_data.csv
-#rm $file $file.csv $SDIR/$sfile chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json after_voting.csv index.html
+rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv vsp_data.csv 
 echo "Done"
-touch $file
