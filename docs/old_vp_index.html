@@ -30,12 +30,10 @@ async function getData() {
     const response = await fetch('vp_data.csv');
     const data = await response.text();
     const rows = data.split('\n').slice(1);
-    let html = `<tr><th onclick="sortTable(0)">Rank</th><th onclick="sortTable(1)">Name</th><th onclick="sortTable(2)">Category</th><th onclick="sortTable(3)">Stakers</th><th onclick="sortTable(4)">VotingStaked</th></tr>`;
-    rows.sort((a, b) => parseFloat(b.split(',')[3]) - parseFloat(a.split(',')[3]));
-    rows.forEach((row, index) => {
+    let html = `<tr><th onclick="sortTable(0)">Name</th><th onclick="sortTable(1)">Category</th><th onclick="sortTable(2)">Stakers</th><th onclick="sortTable(3)">VotingStaked</th></tr>`;
+    rows.forEach(row => {
         const cols = row.split(',');
-        cols[0] = cols[0].replace(/"/g, '');
-        html += `<tr><td>${index + 1}</td><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
+        html += `<tr><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
     });
     document.getElementById('csvTable').innerHTML = html;
 }
@@ -82,4 +80,3 @@ getData();
 
 </body>
 </html>
-
