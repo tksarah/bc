@@ -92,11 +92,14 @@
 		<li>dApps with many stakers may take some time to display.</li>
 		<li>The list of dApps itself is based on the data from <font color="red">June 15, 2024</font>.</li>
 	</ul>
+
+
         <select id="name-select">
             <option selected disabled>dApp を選択してください (Please select a dApp)</option>
         </select>
 	<p>
-
+        <button id="export-btn">データをCSVでエクスポート</button>
+        <p>
 	<canvas id="donut-chart" width=10px height=10px style="max-width: 100%;"></canvas>
 
         <table id="data-table">
@@ -202,13 +205,37 @@
                 }
     	    });
 	}
+    document.getElementById('export-btn').addEventListener('click', function() {
+        let data = [];
+        let rows = document.querySelectorAll('table tr');
+        for (let i = 0; i < rows.length; i++) {
+            let row = [], cols = rows[i].querySelectorAll('td, th');
+            for (let j = 0; j < cols.length; j++) {
+                // 'stakerAddress' と 'amount' のデータだけを選択
+                if (j === 1 || j === 2) {
+                    row.push(cols[j].innerText);
+                }
+            }
+            data.push(row.join(','));
+        }
+        let csvContent = 'data:text/csv;charset=utf-8,' + data.join('\n');
+        let encodedUri = encodeURI(csvContent);
+        let link = document.createElement('a');
+        link.setAttribute('href', encodedUri);
+        link.setAttribute('download', 'stakers_data.csv');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+
     </script>
     </br>
     </br>
     </br>
     <p>
     <div class="footer">
-        © 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.
+        c 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.
     </div>
 </body>
 </html>
+
