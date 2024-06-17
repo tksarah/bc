@@ -66,11 +66,11 @@
 <h1 style="color: #FFFFFF;">Stake Rankings During the Voting Subperiod</h1>
 <h2 style="color: #FFFFFF;">Update: 2024-06-17 16:11:06</h2>
 
-<table id="csvTable">
-</table>
-
 <!-- Display DonutChart -->
 <div id="donutChart" style="width: 900px; height: 500px;"></div>
+
+<table id="csvTable">
+</table>
 
 <script>
 // Load Setting Google Charts 
@@ -89,9 +89,8 @@ async function getData() {
         cols[0] = cols[0].replace(/"/g, '');
         html += `<tr><td>${index + 1}</td><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
     });
-
-    drawChart(); // Display Chart
     document.getElementById('csvTable').innerHTML = html;
+    drawChart(); // Display Chart
 }
 
 function sortTable(n, isString) {
