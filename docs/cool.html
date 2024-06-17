@@ -112,6 +112,10 @@
     </div>
 
     <script>
+
+
+	let sortedData = [];
+
         let select = document.getElementById('name-select');
         let sectionName = document.getElementById('section-name');
         let isAscending = false;
@@ -140,7 +144,7 @@
             fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
                 .then(data => {
-                    let sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
+                    sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
                     let table = document.getElementById('data-table');
                     table.innerHTML = '<tr><th>No.</th><th>ステーカー (Staker)</th><th id="amount-header" style="cursor:pointer;">ステーキング量 (Amount)</th></tr>';
                     sortedData.forEach((item, index) => {
@@ -216,7 +220,8 @@
                     let stakerAddress = sortedData[i-1].stakerAddress;
                     row.push(stakerAddress);
                 } else if (j === 2 && i !== 0) {
-                    row.push(cols[j].innerText);
+                    let amount = sortedData[i-1].amount / 1000000000000000000;
+                    row.push(amount.toFixed(3));
                 }
             }
             if (i === 0) {
