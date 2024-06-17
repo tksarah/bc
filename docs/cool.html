@@ -98,7 +98,7 @@
             <option selected disabled>dApp を選択してください (Please select a dApp)</option>
         </select>
 	<p>
-        <button id="export-btn">データをCSVでエクスポート</button>
+        <button id="export-btn">Export CSV Data</button>
         <p>
 	<canvas id="donut-chart" width=10px height=10px style="max-width: 100%;"></canvas>
 
@@ -205,14 +205,17 @@
                 }
     	    });
 	}
+    // Add Export CSV 
     document.getElementById('export-btn').addEventListener('click', function() {
         let data = [];
         let rows = document.querySelectorAll('table tr');
         for (let i = 0; i < rows.length; i++) {
             let row = [], cols = rows[i].querySelectorAll('td, th');
             for (let j = 0; j < cols.length; j++) {
-                // 'stakerAddress' と 'amount' のデータだけを選択
-                if (j === 1 || j === 2) {
+                if (j === 1) {
+                    let stakerAddress = sortedData[i-1].stakerAddress;
+                    row.push(stakerAddress);
+                } else if (j === 2) {
                     row.push(cols[j].innerText);
                 }
             }
@@ -238,4 +241,3 @@
     </div>
 </body>
 </html>
-
