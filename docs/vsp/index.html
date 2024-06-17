@@ -90,6 +90,7 @@ async function getData() {
         html += `<tr><td>${index + 1}</td><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
     });
     document.getElementById('csvTable').innerHTML = html;
+    drawChart(); // Display Chart
 }
 
 function sortTable(n, isString) {
