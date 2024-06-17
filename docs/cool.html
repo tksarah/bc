@@ -212,12 +212,16 @@
         for (let i = 0; i < rows.length; i++) {
             let row = [], cols = rows[i].querySelectorAll('td, th');
             for (let j = 0; j < cols.length; j++) {
-                if (j === 1) {
+                if (j === 1 && i !== 0) {
                     let stakerAddress = sortedData[i-1].stakerAddress;
                     row.push(stakerAddress);
-                } else if (j === 2) {
+                } else if (j === 2 && i !== 0) {
                     row.push(cols[j].innerText);
                 }
+            }
+            if (i === 0) {
+                // Set CSV file header
+                row = ['StakerAddress', 'Amount'];
             }
             data.push(row.join(','));
         }
