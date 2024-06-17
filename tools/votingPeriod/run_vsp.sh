@@ -41,8 +41,8 @@ perl ./update_html.pl index.org index.html
 echo "Done"
 
 # Fixing the incorrect string
-#sed -i 's/ApeXChimpz (stake 4 NFT 2.0 airdrops, check video!)/ApeXChimpz/g' $sfile
-#sed -i 's/ApeXChimpz[^]*/ApeXChimpz/g' filename.txt
+# "ApeXChimpz (*******************)",nft,76,1598439.339
+sed 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",\2,\3,\4/' $sfile
 
 # Copy
 echo -n "Run copy to DOCS -> "
