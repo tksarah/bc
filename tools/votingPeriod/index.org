@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Loading Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <style>
         body {
             font-family: 'Courier New', monospace;
@@ -59,6 +62,10 @@
     </style>
 </head>
 <body>
+
+
+<!-- Display DonutChart -->
+<div id="donutChart" style="width: 900px; height: 500px;"></div>
 
 <h1 style="color: #FFFFFF;">Stake Rankings During the Voting Subperiod</h1>
 <h2 style="color: #FFFFFF;">Update: DATEJST</h2>
@@ -124,6 +131,27 @@ function sortTable(n, isString) {
         }
     }
 }
+
+function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Name');
+    data.addColumn('number', 'VotingStaked');
+    // CSV データからグラフのデータを生成
+    var rows = document.getElementById('csvTable').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+    for (var i = 1; i < rows.length; i++) {
+        var name = rows[i].getElementsByTagName('td')[1].textContent;
+        var votingStaked = parseFloat(rows[i].getElementsByTagName('td')[4].textContent);
+        data.addRow([name, votingStaked]);
+    }
+    var options = {
+        title: 'Voting Staked by Name',
+        pieHole: 0.4,
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('donutChart'));
+    chart.draw(data, options);
+}
+
+
 
 getData();
 </script>
