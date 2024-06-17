@@ -89,8 +89,9 @@ async function getData() {
         cols[0] = cols[0].replace(/"/g, '');
         html += `<tr><td>${index + 1}</td><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
     });
-    document.getElementById('csvTable').innerHTML = html;
+
     drawChart(); // Display Chart
+    document.getElementById('csvTable').innerHTML = html;
 }
 
 function sortTable(n, isString) {
@@ -140,7 +141,6 @@ function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Name');
     data.addColumn('number', 'VotingStaked');
-    // CSV データからグラフのデータを生成
     var rows = document.getElementById('csvTable').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
     for (var i = 1; i < rows.length; i++) {
         var name = rows[i].getElementsByTagName('td')[1].textContent;
@@ -150,6 +150,10 @@ function drawChart() {
     var options = {
         title: 'Voting Staked by Name',
         pieHole: 0.4,
+        backgroundColor: '#000000', 
+        colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'], 
+        titleTextStyle: { color: '#FFFFFF' }, 
+        legend: {textStyle: {color: '#FFFFFF'}} 
     };
     var chart = new google.visualization.PieChart(document.getElementById('donutChart'));
     chart.draw(data, options);
