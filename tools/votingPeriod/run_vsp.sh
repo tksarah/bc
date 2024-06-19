@@ -42,7 +42,7 @@ echo "Done"
 
 # Fixing the incorrect string
 # "ApeXChimpz (*******************)",nft,76,1598439.339
-sed 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",\2,\3,\4/' $sfile
+sed -i 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",\2,\3,\4/' $sfile 
 
 # Copy
 echo -n "Run copy to DOCS -> "
