@@ -151,7 +151,7 @@ function drawChart() {
         pieHole: 0.4,
         backgroundColor: '#000000', 
         //colors: ['#e0440e', '#e6693e', '#ec8f6e', '#f3b49f', '#f6c7b6'], 
-        titleTextStyle: { color: '#FFFFFF' }, 
+        titleTextStyle: { color: '#FFFFFF' , fontSize:20 }, 
         legend: {textStyle: {color: '#FFFFFF'}} 
     };
     var chart = new google.visualization.PieChart(document.getElementById('donutChart'));
