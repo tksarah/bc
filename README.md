@@ -35,7 +35,10 @@ https://agent.sun-t-sarah.work/cool.html
 
 Displays a list of stakers for each dApp in dAppStaking.
 
+- The number next to the dApp Name represents the total number of stakers.
 - The data is formatted from on-chain data.
 - By default, it is displayed in descending order of staking amount (switchable via the table header).
 - dApps with many stakers may take some time to display.
-- The list of dApps itself is based on the data from **May 28, 2024**.
+- By selecting a dApp and pressing “Export CSV Data,” you can export a file that lists stakers and their stake amounts.
+- The list of dApps itself is based on the data from **June 15, 2024**.
+- Please be aware that there may be changes to specifications or delays in updating the list of dApps without prior notice.
