@@ -37,7 +37,7 @@ sub json_to_csv {
 
 # Download JSON file and then save to CSV
 download_json('https://api.astar.network/api/v1/astar/dapps-staking/dappssimple', 'dappssimple.json');
-json_to_csv('dappssimple.json', 'dappssimple.csv', 'address', 'name', 'mainCategory');
+json_to_csv('dappssimple.json', 'dappssimple.csv', 'address', 'name', 'mainCategory', 'iconUrl');
 
 download_json('https://api.astar.network/api/v3/astar/dapps-staking/chaindapps', 'chaindapps.json');
 json_to_csv('chaindapps.json', 'chaindapps.csv', 'contractAddress', 'dappId', 'stakersCount');
@@ -58,7 +58,7 @@ $csv2->column_names(@$header2);
 my @rows1 = @{$csv1->getline_hr_all($fh1)};
 my @rows2 = @{$csv2->getline_hr_all($fh2)};
 
-$csv1->say($fh_out, ['address', 'name', 'mainCategory', 'dappId', 'stakersCount']);
+$csv1->say($fh_out, ['address', 'name', 'mainCategory', 'iconUrl', 'dappId', 'stakersCount']);
 
 my $cate;
 foreach my $row1 (@rows1) {
@@ -70,7 +70,7 @@ foreach my $row1 (@rows1) {
 	    }else{
 		    $cate = $row1->{'mainCategory'}
 	    }
-            $csv1->say($fh_out, [$row1->{'address'}, $row1->{'name'}, $cate, $row2->{'dappId'}, $row2->{'stakersCount'}]);
+            $csv1->say($fh_out, [$row1->{'address'}, $row1->{'name'}, $cate, $row1->{'iconUrl'}, $row2->{'dappId'}, $row2->{'stakersCount'}]);
         }
     }
 }

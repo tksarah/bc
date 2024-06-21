@@ -87,7 +87,8 @@ async function getData() {
     rows.forEach((row, index) => {
         const cols = row.split(',');
         cols[0] = cols[0].replace(/"/g, '');
-        html += `<tr><td>${index + 1}</td><td>${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`;
+	const iconUrl = cols[4]; // Assuming the iconUrl is in the 5th column
+	html += `<tr><td>${index + 1}</td><td><img src="${iconUrl}" width="20" height="20"> ${cols[0]}</td><td>${cols[1]}</td><td>${cols[2]}</td><td>${cols[3]}</td></tr>`; // Embed the icon before the name
     });
     document.getElementById('csvTable').innerHTML = html;
     drawChart(); // Display Chart
