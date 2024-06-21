@@ -143,7 +143,7 @@ function drawChart() {
     data.addColumn('number', 'VotingStaked');
     var rows = document.getElementById('csvTable').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
     for (var i = 1; i < rows.length; i++) {
-        var name = rows[i].getElementsByTagName('td')[1].textContent;
+        var name = rows[i].getElementsByTagName('td')[1].innerHTML;
         var votingStaked = parseFloat(rows[i].getElementsByTagName('td')[4].textContent);
         data.addRow([name, votingStaked]);
     }
