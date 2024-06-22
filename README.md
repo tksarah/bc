@@ -40,5 +40,13 @@ Displays a list of stakers for each dApp in dAppStaking.
 - By default, it is displayed in descending order of staking amount (switchable via the table header).
 - dApps with many stakers may take some time to display.
 - By selecting a dApp and pressing “Export CSV Data,” you can export a file that lists stakers and their stake amounts.
-- The list of dApps itself is based on the data from **June 15, 2024**.
+- The list of dApps itself is based on the data from **June 22, 2024**.
 - Please be aware that there may be changes to specifications or delays in updating the list of dApps without prior notice.
+
+Stake Rankings During the Voting Subperiod
+=============
+
+https://agent.sun-t-sarah.work/vsp/
+
+This page displays the rankings during the "Voting Subperiod". 
+Currently, it is manually operated to update once or twice a day during the "Voting Subperiod".
