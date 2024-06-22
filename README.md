@@ -43,6 +43,9 @@ Displays a list of stakers for each dApp in dAppStaking.
 - The list of dApps itself is based on the data from **June 22, 2024**.
 - Please be aware that there may be changes to specifications or delays in updating the list of dApps without prior notice.
 
+![スクリーンショット 2024-06-22 194648](https://github.com/tksarah/bc/assets/11060137/511fd8eb-0348-4864-a8f7-18c3606d0ed1)
+![スクリーンショット 2024-06-22 194717](https://github.com/tksarah/bc/assets/11060137/b31664ef-51b6-4859-bb5d-92076ecca45b)
+
 Stake Rankings During the Voting Subperiod
 =============
 
