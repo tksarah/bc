@@ -53,3 +53,7 @@ https://agent.sun-t-sarah.work/vsp/
 
 This page displays the rankings during the "Voting Subperiod". 
 Currently, it is manually operated to update once or twice a day during the "Voting Subperiod".
+
+![スクリーンショット 2024-06-22 195245](https://github.com/tksarah/bc/assets/11060137/10273c1f-564d-4b50-bec7-3cf15823bdec)
+
+
