@@ -143,7 +143,6 @@
 
         select.addEventListener('change', () => {
 	    let address = window.location.pathname.split('/')[2];
-            let address = select.value;
             sectionName.textContent = select.options[select.selectedIndex].text;
             fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
