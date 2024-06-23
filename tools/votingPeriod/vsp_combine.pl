@@ -25,11 +25,11 @@ while (my $row = $csv->getline($fh2)) {
 }
 
 # for Header
-print $fh_out "Name,Category,Stakers,VotingStaked,iconUrl\n";
+print $fh_out "Name,Category,Stakers,VotingStaked,iconUrl,dappId\n";
 
 while (my $row = $csv->getline($fh1)) {
     if (my $match = $file2{$row->[$index1]}) {
-        $csv->print($fh_out, [@$row[1,2,5], @$match[1..$#$match], @$row[3]]);
+        $csv->print($fh_out, [@$row[1,2,5], @$match[1..$#$match], @$row[3], @$row[4]]);
     }
 }
 
