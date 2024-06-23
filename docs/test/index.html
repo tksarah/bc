@@ -124,14 +124,7 @@
         let isAscending = false;
 	let chart;
 
-        let path = window.location.pathname;
-        // パスを'/'で分割
-        let parts = path.split('/');
-        // 'address'の値を取得
-        let address = parts[parts.length - 2];
-
-
-        fetch("dapps.csv")
+        fetch("api_data.csv")
             .then(response => response.text())
             .then(data => {
                 let lines = data.split('\n');
@@ -143,15 +136,13 @@
                     option.value = parts[0];
                     option.textContent = parts[1];
                     select.appendChild(option);
-		    if (parts[0] === address) {
-                            option.selected = true;
-                        }
 		   }
                 });
             })
             .catch(error => console.error('Error:', error));
 
         select.addEventListener('change', () => {
+	    let address = window.location.pathname.split('/')[2];
             let address = select.value;
             sectionName.textContent = select.options[select.selectedIndex].text;
             fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
