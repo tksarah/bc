@@ -93,12 +93,12 @@
 
 	let sortedData = [];
 
-        // let sectionName = document.getElementById('section-name');
+        let sectionName = document.getElementById('section-name');
         let isAscending = false;
 	let chart;
 
 	let address = window.location.pathname.split('/')[2];
-	// sectionName.textContent = address;
+	sectionName.textContent = address;
 	fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
                 .then(data => {
@@ -120,7 +120,7 @@
                     });
 	            // 
                     let totalObjects = sortedData.length;
-                    sectionName.textContent = select.options[select.selectedIndex].text + ' (' + totalObjects + ')';
+                    sectionName.textContent = address + ' (' + totalObjects + ')';
                     // 
                     document.getElementById('amount-header').addEventListener('click', () => {
                         isAscending = !isAscending;
