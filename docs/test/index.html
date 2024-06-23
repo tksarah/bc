@@ -97,7 +97,7 @@
         let isAscending = false;
 	let chart;
 
-	let address = "dapp";
+	let address = window.location.pathname.split('/')[2];
 	sectionName.textContent = address;
 	fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
