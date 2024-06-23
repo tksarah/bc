@@ -74,33 +74,7 @@
 <body>
     <div class="container">
         <h2 id="section-name">dApp Name</h2>
-	<ul>
-		<li>dAppStaking の dApp 毎のステーカーリストを表示します</li>
-		<li>dApp Name のとなりの（数値）はステーカーの総数を表示しています</li>
-		<li>オンチェーンデーターから整形しています</li>
-		<li>デフォルトはステーキング量で降順で表示されます（テーブルヘッダーで切り替え可能）</li>
-		<li>ステーカーが多い dApp は表示に若干時間がかかる場合があります</li>
-		<li>dAppを選んでから「Export CSV Data」を押す事でステーカーとそのステーク量を出力したファイルをエクスポートできます</li>
-		<li>dApp のリスト自体は <font color="red">2024/6/22</font> のデータです</li>
-		<li>予告なく仕様変更やdApp のリストの更新遅延などがある点はご了承ください</li>
-	</ul>
-	<p>
-	<ul>
-		<li>Displays a list of stakers for each dApp in dAppStaking.</li>
-		<li>The number next to the dApp Name represents the total number of stakers.</li>
-		<li>The data is formatted from on-chain data.</li>
-		<li>By default, it is displayed in descending order of staking amount (switchable via the table header).</li>
-		<li>dApps with many stakers may take some time to display.</li>
-		<li>By selecting a dApp and pressing “Export CSV Data,” you can export a file that lists stakers and their stake amounts.</li>
-		<li>The list of dApps itself is based on the data from <font color="red">June 22, 2024</font>.</li>
-		<li>Please be aware that there may be changes to specifications or delays in updating the list of dApps without prior notice.</li>
-	</ul>
 
-
-        <select id="name-select">
-            <option selected disabled>dApp を選択してください (Please select a dApp)</option>
-        </select>
-	<p>
         <button id="export-btn">Export CSV Data</button>
         <p>
 	<canvas id="donut-chart" width=10px height=10px style="max-width: 100%;"></canvas>
@@ -119,32 +93,13 @@
 
 	let sortedData = [];
 
-        let select = document.getElementById('name-select');
         let sectionName = document.getElementById('section-name');
         let isAscending = false;
 	let chart;
 
-        fetch("api_data.csv")
-            .then(response => response.text())
-            .then(data => {
-                let lines = data.split('\n');
-                lines.shift();
-                lines.forEach(line => {
-		if (line.trim() !== '') {
-                    let parts = line.split(',');
-                    let option = document.createElement('option');
-                    option.value = parts[0];
-                    option.textContent = parts[1];
-                    select.appendChild(option);
-		   }
-                });
-            })
-            .catch(error => console.error('Error:', error));
-
-        select.addEventListener('change', () => {
-	    let address = window.location.pathname.split('/')[2];
-            sectionName.textContent = select.options[select.selectedIndex].text;
-            fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
+	let address = "dapp";
+	sectionName.textContent = address;
+	fetch('https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/' + address)
                 .then(response => response.json())
                 .then(data => {
                     sortedData = data.sort((a, b) => isAscending ? a.amount - b.amount : b.amount - a.amount);
