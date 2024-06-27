@@ -3,70 +3,97 @@
 <head>
     <title>Stake Rankings During the Build&Earn Subperiod</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #333;
-            color: #fff;
-        }
         table {
-            width: 100%;
             border-collapse: collapse;
+            width: 100%;
         }
         th, td {
-            padding: 15px;
+            padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
         th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:hover {background-color: #666;}
-        footer {
-            margin-top: 20px;
+            cursor: pointer;
         }
     </style>
-    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 <body>
     <h1>Stake Rankings During the Build&Earn Subperiod</h1>
-    <table class="sortable" id="data-table">
+    <table id="rankingTable">
         <thead>
             <tr>
-                <th>Rank</th>
-                <th>Name</th>
-                <th>Category</th>
-                <th>TotalStaked</th>
+                <th onclick="sortTable(0)">Rank</th>
+                <th onclick="sortTable(1)">Name</th>
+                <th onclick="sortTable(2)">Category</th>
+                <th onclick="sortTable(3)">TotalStaked</th>
             </tr>
         </thead>
         <tbody>
+            <!-- CSVデータがここに挿入されます -->
         </tbody>
     </table>
     <footer>
         <p>© 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</p>
     </footer>
+
     <script>
-        d3.csv("TotalAmount.csv").then(function(data) {
-            data.sort((a, b) => d3.descending(+a.TotalStaked, +b.TotalStaked));
-            data.forEach((d, i) => d.Rank = i + 1);
-            var table = d3.select("#data-table");
-            var tbody = table.select("tbody");
-            var rows = tbody.selectAll("tr")
-                .data(data)
-                .enter()
-                .append("tr");
-            rows.selectAll("td")
-                .data(function (d) {
-                    return Object.values(d);
-                })
-                .enter()
-                .append("td")
-                .text(function (d) {
-                    return d;
-                });
-            sorttable.makeSortable(document.getElementById('data-table'));
-        });
+        // CSVデータを読み込む
+        fetch('TotalAmount.csv')
+            .then(response => response.text())
+            .then(data => {
+                let parsedData = Papa.parse(data, {header: true}).data;
+                parsedData.sort((a, b) => b.TotalStaked - a.TotalStaked);
+                let table = document.getElementById('rankingTable');
+                for(let i = 0; i < parsedData.length; i++) {
+                    let row = table.insertRow(-1);
+                    let cell1 = row.insertCell(0);
+                    let cell2 = row.insertCell(1);
+                    let cell3 = row.insertCell(2);
+                    let cell4 = row.insertCell(3);
+                    cell1.innerHTML = i + 1;
+                    cell2.innerHTML = parsedData[i].Name;
+                    cell3.innerHTML = parsedData[i].Category;
+                    cell4.innerHTML = parsedData[i].TotalStaked;
+                }
+            });
+
+        // テーブルをソートする関数
+        function sortTable(n) {
+            let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("rankingTable");
+            switching = true;
+            dir = "asc";
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount ++;
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
     </script>
 </body>
 </html>
