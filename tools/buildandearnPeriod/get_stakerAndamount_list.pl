@@ -8,6 +8,7 @@ use POSIX 'strftime';
 
 # Output TotalAmount
 my $total_amount = "TotalAmount.csv";
+print "$total_amount";
 
 # 新しいCSVモジュールを使用するための準備
 my $csv = Text::CSV->new({ binary => 1, auto_diag => 1 });
