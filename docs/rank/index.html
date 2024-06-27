@@ -1,99 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stake Rankings During the Build&Earn Subperiod</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Stake Rankings During the Build&Earn Subperiod</h1>
-    <table id="rankingTable">
-        <thead>
-            <tr>
-                <th onclick="sortTable(0)">Rank</th>
-                <th onclick="sortTable(1)">Name</th>
-                <th onclick="sortTable(2)">Category</th>
-                <th onclick="sortTable(3)">TotalStaked</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- CSVデータがここに挿入されます -->
-        </tbody>
-    </table>
-    <footer>
-        <p>© 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</p>
+    <div class="container">
+        <h1 class="mt-5">Stake Rankings During the Build&Earn Subperiod</h1>
+        <table id="rankingTable" class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Rank</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">TotalStaked</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</span>
+        </div>
     </footer>
-
     <script>
-        // CSVデータを読み込む
-        fetch('TotalAmount.csv')
-            .then(response => response.text())
-            .then(data => {
-                let parsedData = Papa.parse(data, {header: true}).data;
-                parsedData.sort((a, b) => b.TotalStaked - a.TotalStaked);
-                let table = document.getElementById('rankingTable');
-                for(let i = 0; i < parsedData.length; i++) {
-                    let row = table.insertRow(-1);
-                    let cell1 = row.insertCell(0);
-                    let cell2 = row.insertCell(1);
-                    let cell3 = row.insertCell(2);
-                    let cell4 = row.insertCell(3);
-                    cell1.innerHTML = i + 1;
-                    cell2.innerHTML = parsedData[i].Name;
-                    cell3.innerHTML = parsedData[i].Category;
-                    cell4.innerHTML = parsedData[i].TotalStaked;
+        $(document).ready(function() {
+            Papa.parse('TotalAmount.csv', {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    var data = results.data;
+                    data.sort((a, b) => parseFloat(b.TotalStaked) - parseFloat(a.TotalStaked));
+                    data.forEach((row, index) => {
+                        $('#rankingTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td>${parseFloat(row.TotalStaked).toLocaleString()}</td></tr>`);
+                    });
                 }
             });
-
-        // テーブルをソートする関数
-        function sortTable(n) {
-            let table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-            table = document.getElementById("rankingTable");
-            switching = true;
-            dir = "asc";
-            while (switching) {
-                switching = false;
-                rows = table.rows;
-                for (i = 1; i < (rows.length - 1); i++) {
-                    shouldSwitch = false;
-                    x = rows[i].getElementsByTagName("TD")[n];
-                    y = rows[i + 1].getElementsByTagName("TD")[n];
-                    if (dir == "asc") {
-                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                        }
-                    } else if (dir == "desc") {
-                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                        }
-                    }
-                }
-                if (shouldSwitch) {
-                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                    switching = true;
-                    switchcount ++;
-                } else {
-                    if (switchcount == 0 && dir == "asc") {
-                        dir = "desc";
-                        switching = true;
-                    }
-                }
-            }
-        }
+        });
     </script>
 </body>
 </html>
