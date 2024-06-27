@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stake Rankings During the Build&Earn Subperiod</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1 class="mt-5">Stake Rankings During the Build&Earn Subperiod</h1>
-        <table id="rankingTable" class="table table-striped mt-3">
+        <h1>Stake Rankings During the Build&Earn Subperiod</h1>
+        <table id="myTable" class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">Rank</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Category</th>
-                    <th scope="col">TotalStaked</th>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>TotalStaked</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
     </div>
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer">
         <div class="container">
             <span class="text-muted">© 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</span>
         </div>
@@ -36,10 +34,11 @@
                 header: true,
                 complete: function(results) {
                     var data = results.data;
-                    data.sort((a, b) => parseFloat(b.TotalStaked) - parseFloat(a.TotalStaked));
+                    data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
-                        $('#rankingTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td>${parseFloat(row.TotalStaked).toLocaleString()}</td></tr>`);
+                        $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td>${row.TotalStaked}</td></tr>`);
                     });
+                    $("#myTable").tablesorter();
                 }
             });
         });
