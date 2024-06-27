@@ -6,6 +6,10 @@ use LWP::Simple;
 use Text::CSV;
 use POSIX 'strftime';
 
+# Output TotalAmount
+my $total_amount = "TotalAmount.csv";
+print "$total_amount";
+
 # 新しいCSVモジュールを使用するための準備
 my $csv = Text::CSV->new({ binary => 1, auto_diag => 1 });
 
@@ -15,8 +19,27 @@ open my $fh, "<:encoding(utf8)", "dapps_list.dat" or die "dapps_list.dat $!";
 # CSVファイルのヘッダーを読み飛ばす
 $csv->getline($fh);
 
+# Get timestamp
+my $timestamp = strftime "%Y-%m-%d-%H", localtime;
+$total_amount = $timestamp . "_" . $total_amount;
+# Open TotalAmount
+open my $output_fh2, ">>:encoding(utf8)", $total_amount or die "$total_amount: $!";
+print $output_fh2 "Name,Category,TotalStaked\n";
+
 while (my $row = $csv->getline($fh)) {
     my ($address, $name, $mainCategory) = @$row;
+
+    # 保存するファイル名を生成する-1
+    my $filename = $timestamp . "_" . $name . ".csv";
+    $filename =~ s/\s/_/g;
+    $filename =~ s/:/-/g;
+    $filename =~ s/,/_/g;
+    $filename =~ s/\(/_/g;
+    $filename =~ s/\)/_/g;
+    $filename =~ s/\|/_/g;
+    
+    # for TotalAmount 
+    my $sum = 0;
 
     # APIのURLを組み立てる
     my $url = "https://api.astar.network/api/v3/astar/dapps-staking/stakerslist/$address";
@@ -28,20 +51,8 @@ while (my $row = $csv->getline($fh)) {
     # データを金額でソートする
     my @sorted_data = sort { $b->{amount} <=> $a->{amount} } @$data;
 
-    # 結果を保存するファイル名を生成する
-    my $timestamp = strftime "%Y-%m-%d-%H", localtime;
-    my $filename = $timestamp . "_" . $name . ".csv";
-    $filename =~ s/\s/_/g;
-    $filename =~ s/:/-/g;
-    $filename =~ s/,/_/g;
-    $filename =~ s/\(/_/g;
-    $filename =~ s/\)/_/g;
-    $filename =~ s/\|/_/g;
-
-    # 結果を保存するファイルを開く
+    ### FH
     open my $output_fh, ">:encoding(utf8)", $filename or die "$filename: $!";
-
-    # ヘッダーを出力
     print $output_fh "stakerAddress, amount\n";
 
     # 各データ項目を出力
@@ -49,11 +60,17 @@ while (my $row = $csv->getline($fh)) {
         my $value = $item->{amount}/1000000000000000000;
         my $formatted_value = sprintf("%.3f", $value);
         print $output_fh "$item->{stakerAddress}, $formatted_value\n";
-    }
 
+	$sum += $formatted_value;
+    }
     close $output_fh;
     
-}
+    # For total amount
+    print $output_fh2 "$name,$mainCategory,$sum\n";
 
+}
 close $fh;
+
+close $output_fh2;
+
 
