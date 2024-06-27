@@ -46,8 +46,7 @@
                     data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
                         if (row.Name) {
-                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(r
-ow.TotalStaked).toLocaleString()}</td></tr>`);
+                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td></tr>`);
                         }
                     });
                     $("#myTable").tablesorter();
