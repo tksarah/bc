@@ -5,6 +5,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
         }
         table {
             width: 100%;
@@ -19,7 +21,10 @@
             background-color: #4CAF50;
             color: white;
         }
-        tr:hover {background-color: #f5f5f5;}
+        tr:hover {background-color: #666;}
+        footer {
+            margin-top: 20px;
+        }
     </style>
     <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -29,6 +34,7 @@
     <table class="sortable" id="data-table">
         <thead>
             <tr>
+                <th>Rank</th>
                 <th>Name</th>
                 <th>Category</th>
                 <th>TotalStaked</th>
@@ -42,6 +48,8 @@
     </footer>
     <script>
         d3.csv("TotalAmount.csv").then(function(data) {
+            data.sort((a, b) => d3.descending(+a.TotalStaked, +b.TotalStaked));
+            data.forEach((d, i) => d.Rank = i + 1);
             var table = d3.select("#data-table");
             var tbody = table.select("tbody");
             var rows = tbody.selectAll("tr")
@@ -57,7 +65,9 @@
                 .text(function (d) {
                     return d;
                 });
+            sorttable.makeSortable(document.getElementById('data-table'));
         });
     </script>
 </body>
 </html>
+
