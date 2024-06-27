@@ -31,6 +31,10 @@ echo "Done"
 # Get timestamp of source file
 timestamp=$(date -r "$file" +"%Y%m%d%H%M%S")
 
+# Fixing the incorrect string
+# "ApeXChimpz (*******************)",nft,76,1598439.339
+sed -i 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",\2,\3,\4,\5/' $file.csv
+
 # Save file name
 sfile="${timestamp}-data.csv"
 
@@ -51,6 +55,7 @@ echo "Done"
 echo -n "CSV Data saving -> "
 (cd $SDIR; tar czf $sfile.tar.gz $sfile )
 echo "Done"
+
 
 ### Cleanup
 echo -n "Run cleanup -> "
