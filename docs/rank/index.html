@@ -2,7 +2,12 @@
 <html>
 <head>
     <title>Stake Rankings During the Build&Earn Subperiod</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+    <style>
+        body, h1, th, td, .text-muted {
+            color: #fff !important;
+        }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
@@ -37,7 +42,8 @@
                     data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
                         if (row.Name) {
-                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td></tr>`);
+                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(r
+ow.TotalStaked).toLocaleString()}</td></tr>`);
                         }
                     });
                     $("#myTable").tablesorter();
