@@ -36,7 +36,9 @@
                     var data = results.data;
                     data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
-                        $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td>${row.TotalStaked}</td></tr>`);
+                        if (row.Name) {
+                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td></tr>`);
+                        }
                     });
                     $("#myTable").tablesorter();
                 }
@@ -45,4 +47,3 @@
     </script>
 </body>
 </html>
-
