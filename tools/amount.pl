@@ -65,11 +65,12 @@ while (my $row = <$refh>) {
     $row = <$refh>;  
     chomp $row;
     ($y) = $row =~ /\s*buildAndEarn:\s(\d{0,3}(,\d{3})*)/;
-    if($y == 0){
-	    $y = $stakeFuture_voting;
-    }
     #	print "$y\n";
     $y =~ s/,//g;
+    if($y == 0){
+	    $y = $stakeFuture_voting;
+            $y =~ s/,//g;
+    }
     $y = $y/1000000000000000000;
     my $formatted_y = sprintf("%.3f", $y);
     push @staked_future_bAe, $formatted_y;

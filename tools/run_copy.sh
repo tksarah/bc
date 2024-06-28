@@ -33,7 +33,7 @@ timestamp=$(date -r "$file" +"%Y%m%d%H%M%S")
 
 # Fixing the incorrect string
 # "ApeXChimpz (*******************)",nft,76,1598439.339
-sed -i 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",\2,\3,\4,\5/' $file.csv
+#sed -i 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",\2,\3,\4,\5/' ../docs/$file.csv
 
 # Save file name
 sfile="${timestamp}-data.csv"
