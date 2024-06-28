@@ -30,6 +30,10 @@ my @staked_voting;
 my @staked_bAe;
 my @staked_future_bAe;
 
+my @flags_staked;
+
+my $sum = 0;
+
 while (my $row = <$refh>) {
   chomp $row;
   if ($row =~ /\sstaked: \{$/) {
@@ -57,26 +61,28 @@ while (my $row = <$refh>) {
 
   $row = <$refh>;  
   chomp $row;
-  if ($row =~ /\sstakedFuture: \{$/) {
-    $row = <$refh>;
-    chomp $row;
-    ($stakeFuture_voting) = $row =~ /\s*voting:\s(\d{0,3}(,\d{3})*)/;
+    if ($row =~ /\sstakedFuture: \{$/) {
+      $row = <$refh>;
+      chomp $row;
+      ($stakeFuture_voting) = $row =~ /\s*voting:\s(\d{0,3}(,\d{3})*)/;
 
-    $row = <$refh>;  
-    chomp $row;
-    ($y) = $row =~ /\s*buildAndEarn:\s(\d{0,3}(,\d{3})*)/;
-    #	print "$y\n";
-    $y =~ s/,//g;
-    if($y == 0){
-	    $y = $stakeFuture_voting;
+      $row = <$refh>;  
+      chomp $row;
+      ($y) = $row =~ /\s*buildAndEarn:\s(\d{0,3}(,\d{3})*)/;
+      #	print "$y\n";
+      $y =~ s/,//g;
+      if($y == 0){
+  	    $y = $stakeFuture_voting;
             $y =~ s/,//g;
-    }
-    $y = $y/1000000000000000000;
-    my $formatted_y = sprintf("%.3f", $y);
-    push @staked_future_bAe, $formatted_y;
+            push @flags_staked, 1;
+      }
+      $y = $y/1000000000000000000;
+      my $formatted_y = sprintf("%.3f", $y);
+      push @staked_future_bAe, $formatted_y;
     }else{ # "stakedFuture: null"
-    my $formatted_y = 0;
-    push @staked_future_bAe, $formatted_y;
+      my $formatted_y = 0;
+      push @staked_future_bAe, $formatted_y;
+      push @flags_staked, 0;
     }
   }
 }
@@ -87,11 +93,16 @@ open my $out, '>', $output_data or die "Cannot open '$output_data': $!";
 
 print $out "dappId,Voting,BuildAndEarn,TotalStaked\n";
 for my $i (0..$#id) {
+    $flags_staked[$i] //= 0;
     if ($staked_future_bAe[$i] != 0){
-    	my $sum = $staked_voting[$i] + $staked_future_bAe[$i];
+	if($flags_staked[$i] == 0){
+    		$sum = $staked_voting[$i] + $staked_future_bAe[$i];
+	}else{
+    		$sum = $staked_future_bAe[$i];
+	}
     	print $out "$id[$i],$staked_voting[$i],$staked_future_bAe[$i],$sum\n";
     }else{
-    	my $sum = $staked_voting[$i] + $staked_bAe[$i];
+    	$sum = $staked_voting[$i] + $staked_bAe[$i];
     	print $out "$id[$i],$staked_voting[$i],$staked_bAe[$i],$sum\n";
     }
 
