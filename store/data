@@ -1,0 +1,1569 @@
+[
+  [
+    [
+      0
+    ]
+    {
+      staked: {
+        voting: 118,401,376,989,000,000,000,000,000
+        buildAndEarn: 1,140,625,862,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 118,401,376,989,000,000,000,000,000
+        buildAndEarn: 1,151,899,862,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      29
+    ]
+    {
+      staked: {
+        voting: 35,372,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 35,372,000,000,000,000,000,000
+        buildAndEarn: 22,970,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      24
+    ]
+    {
+      staked: {
+        voting: 5,995,552,274,000,000,000,000,000
+        buildAndEarn: 141,608,268,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 5,995,552,274,000,000,000,000,000
+        buildAndEarn: 141,715,447,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      67
+    ]
+    {
+      staked: {
+        voting: 3,808,082,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+      stakedFuture: {
+        voting: 3,808,082,000,000,000,000,000,000
+        buildAndEarn: 5,000,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      49
+    ]
+    {
+      staked: {
+        voting: 23,063,440,557,448,170,237,781,317
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: null
+    }
+  ]
+  [
+    [
+      78
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 124,980,417,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      18
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 132,000,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      3
+    ]
+    {
+      staked: {
+        voting: 4,726,304,238,000,000,000,000,000
+        buildAndEarn: 36,640,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 4,726,304,238,000,000,000,000,000
+        buildAndEarn: 41,105,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      14
+    ]
+    {
+      staked: {
+        voting: 186,706,066,842,595,649,817,988,495
+        buildAndEarn: 6,803,187,514,728,942,382,757,664
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 186,706,066,842,595,649,817,988,495
+        buildAndEarn: 7,008,375,692,728,942,382,757,664
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      2
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 204,503,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      39
+    ]
+    {
+      staked: {
+        voting: 401,746,374,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+      stakedFuture: {
+        voting: 401,746,374,000,000,000,000,000
+        buildAndEarn: 5,000,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      63
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 789,501,703,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      56
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 50,500,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      88
+    ]
+    {
+      staked: {
+        voting: 42,206,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 42,206,000,000,000,000,000,000
+        buildAndEarn: 10,600,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      31
+    ]
+    {
+      staked: {
+        voting: 26,749,378,133,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+      stakedFuture: {
+        voting: 26,749,378,133,000,000,000,000,000
+        buildAndEarn: 2,000,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      58
+    ]
+    {
+      staked: {
+        voting: 651,718,076,497,050,000,000,000
+        buildAndEarn: 70,303,577,426,290,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 651,718,076,497,050,000,000,000
+        buildAndEarn: 70,740,267,415,880,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      21
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 25,331,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      25
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 9,501,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      75
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 1,550,078,944,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      12
+    ]
+    {
+      staked: {
+        voting: 11,007,310,119,159,218,557,785,850
+        buildAndEarn: 618,369,476,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 11,007,310,119,159,218,557,785,850
+        buildAndEarn: 671,509,476,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      87
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 296,506,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      13
+    ]
+    {
+      staked: {
+        voting: 1,191,768,161,000,000,000,000,000
+        buildAndEarn: 0
+        era: 766
+        period: 2
+      }
+      stakedFuture: null
+    }
+  ]
+  [
+    [
+      4
+    ]
+    {
+      staked: {
+        voting: 17,980,600,781,000,000,000,000,000
+        buildAndEarn: 1,159,158,749,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 17,980,600,781,000,000,000,000,000
+        buildAndEarn: 1,244,487,680,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      8
+    ]
+    {
+      staked: {
+        voting: 302,931,514,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 302,931,514,000,000,000,000,000
+        buildAndEarn: 1,850,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      73
+    ]
+    {
+      staked: {
+        voting: 40,726,902,256,740,000,000,000,000
+        buildAndEarn: 532,147,304,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 40,726,902,256,740,000,000,000,000
+        buildAndEarn: 540,033,304,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      65
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 85,823,520,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      59
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 43,066,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      79
+    ]
+    {
+      staked: {
+        voting: 2,063,103,807,000,000,000,000,000
+        buildAndEarn: 500,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 2,063,103,807,000,000,000,000,000
+        buildAndEarn: 584,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      32
+    ]
+    {
+      staked: {
+        voting: 107,594,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 107,594,000,000,000,000,000,000
+        buildAndEarn: 1,500,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      38
+    ]
+    {
+      staked: {
+        voting: 82,134,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 82,134,000,000,000,000,000,000
+        buildAndEarn: 34,430,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      11
+    ]
+    {
+      staked: {
+        voting: 66,301,296,565,659,845,792,434,906
+        buildAndEarn: 508,003,527,613,957,371,458,820
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 66,301,296,565,659,845,792,434,906
+        buildAndEarn: 567,203,527,613,957,371,458,820
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      64
+    ]
+    {
+      staked: {
+        voting: 395,801,344,343,522,196,217,735
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 395,801,344,343,522,196,217,735
+        buildAndEarn: 605,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      26
+    ]
+    {
+      staked: {
+        voting: 655,357,098,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 655,357,098,000,000,000,000,000
+        buildAndEarn: 2,709,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      28
+    ]
+    {
+      staked: {
+        voting: 1,156,156,874,000,000,000,000,000
+        buildAndEarn: 600,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 1,156,156,874,000,000,000,000,000
+        buildAndEarn: 2,600,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      62
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 46,000,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      68
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 179,680,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      34
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 16,130,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      16
+    ]
+    {
+      staked: {
+        voting: 7,291,529,361,000,000,000,000,000
+        buildAndEarn: 56,440,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 7,291,529,361,000,000,000,000,000
+        buildAndEarn: 57,040,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      86
+    ]
+    {
+      staked: {
+        voting: 1,590,743,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 1,590,743,000,000,000,000,000,000
+        buildAndEarn: 10,000,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      71
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 1,630,035,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      55
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 500,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      52
+    ]
+    {
+      staked: {
+        voting: 76,824,827,652,936,720,000,000,000
+        buildAndEarn: 804,299,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 76,824,827,652,936,720,000,000,000
+        buildAndEarn: 855,493,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      47
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 1,501,251,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      70
+    ]
+    {
+      staked: {
+        voting: 617,284,118,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 617,284,118,000,000,000,000,000
+        buildAndEarn: 9,200,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      51
+    ]
+    {
+      staked: {
+        voting: 152,291,960,198,000,000,000,000,000
+        buildAndEarn: 881,389,383,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 152,291,960,198,000,000,000,000,000
+        buildAndEarn: 888,755,322,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      36
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 271,158,088,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      42
+    ]
+    {
+      staked: {
+        voting: 195,553,620,571,556,286,373,018,303
+        buildAndEarn: 1,541,340,150,653,435,567,234,748
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 195,553,620,571,556,286,373,018,303
+        buildAndEarn: 1,559,291,665,653,435,567,234,748
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      85
+    ]
+    {
+      staked: {
+        voting: 5,051,023,458,000,000,000,000,000
+        buildAndEarn: 21,534,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 5,051,023,458,000,000,000,000,000
+        buildAndEarn: 24,272,800,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      6
+    ]
+    {
+      staked: {
+        voting: 5,360,960,318,606,063,582,951,736
+        buildAndEarn: 316,362,930,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 5,360,960,318,606,063,582,951,736
+        buildAndEarn: 355,167,550,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      74
+    ]
+    {
+      staked: {
+        voting: 6,029,489,874,000,000,000,000,000
+        buildAndEarn: 22,032,726,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 6,029,489,874,000,000,000,000,000
+        buildAndEarn: 48,322,726,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      69
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 56,181,666,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      5
+    ]
+    {
+      staked: {
+        voting: 158,737,564,280,262,658,264,919,039
+        buildAndEarn: 10,160,199,163,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 158,737,564,280,262,658,264,919,039
+        buildAndEarn: 10,378,127,020,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      45
+    ]
+    {
+      staked: {
+        voting: 39,800,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+      stakedFuture: {
+        voting: 40,300,000,000,000,000,000,000
+        buildAndEarn: 2,500,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      22
+    ]
+    {
+      staked: {
+        voting: 88,110,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 88,110,000,000,000,000,000,000
+        buildAndEarn: 7,200,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      33
+    ]
+    {
+      staked: {
+        voting: 14,812,760,521,440,960,473,488,214
+        buildAndEarn: 254,325,252,499,764,785,431,686
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 14,812,760,521,440,960,473,488,214
+        buildAndEarn: 311,293,977,967,357,140,039,292
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      57
+    ]
+    {
+      staked: {
+        voting: 932,554,700,000,000,000,000,000
+        buildAndEarn: 3,800,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 932,554,700,000,000,000,000,000
+        buildAndEarn: 4,355,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      41
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 2,000,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      30
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 8,559,558,500,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      46
+    ]
+    {
+      staked: {
+        voting: 308,450,399,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 308,450,399,000,000,000,000,000
+        buildAndEarn: 500,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      43
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 121,501,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      7
+    ]
+    {
+      staked: {
+        voting: 46,360,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 46,360,000,000,000,000,000,000
+        buildAndEarn: 1,500,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      76
+    ]
+    {
+      staked: {
+        voting: 158,600,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 158,600,000,000,000,000,000,000
+        buildAndEarn: 10,000,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      48
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 25,500,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      27
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 787,557,228,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      53
+    ]
+    {
+      staked: {
+        voting: 2,285,598,062,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 2,286,265,062,000,000,000,000,000
+        buildAndEarn: 0
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      66
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 3,471,423,007,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      40
+    ]
+    {
+      staked: {
+        voting: 1,416,715,577,000,000,000,000,000
+        buildAndEarn: 47,000,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 1,416,715,577,000,000,000,000,000
+        buildAndEarn: 47,500,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      61
+    ]
+    {
+      staked: {
+        voting: 436,395,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 436,395,000,000,000,000,000,000
+        buildAndEarn: 1,000,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      9
+    ]
+    {
+      staked: {
+        voting: 585,725,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 585,725,000,000,000,000,000,000
+        buildAndEarn: 1,000,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      81
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 14,612,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      60
+    ]
+    {
+      staked: {
+        voting: 430,946,000,000,000,000,000,000
+        buildAndEarn: 1,500,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 430,946,000,000,000,000,000,000
+        buildAndEarn: 4,714,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      35
+    ]
+    {
+      staked: {
+        voting: 4,501,576,000,000,000,000,000,000
+        buildAndEarn: 28,901,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 4,501,576,000,000,000,000,000,000
+        buildAndEarn: 32,901,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      50
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 29,842,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      15
+    ]
+    {
+      staked: {
+        voting: 739,477,000,000,000,000,000,000
+        buildAndEarn: 8,725,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 739,477,000,000,000,000,000,000
+        buildAndEarn: 8,726,420,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      77
+    ]
+    {
+      staked: {
+        voting: 4,056,944,183,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+      stakedFuture: {
+        voting: 4,056,944,183,000,000,000,000,000
+        buildAndEarn: 5,000,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      54
+    ]
+    {
+      staked: {
+        voting: 28,304,000,000,000,000,000,000
+        buildAndEarn: 500,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 28,304,000,000,000,000,000,000
+        buildAndEarn: 507,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      72
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 57,000,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      17
+    ]
+    {
+      staked: {
+        voting: 10,842,071,062,482,411,150,000,000
+        buildAndEarn: 22,841,250,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 10,842,071,062,482,411,150,000,000
+        buildAndEarn: 22,853,250,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      10
+    ]
+    {
+      staked: {
+        voting: 1,001,627,813,000,000,000,000,000
+        buildAndEarn: 513,651,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 1,001,627,813,000,000,000,000,000
+        buildAndEarn: 557,683,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      1
+    ]
+    {
+      staked: {
+        voting: 1,245,165,450,000,000,000,000,000
+        buildAndEarn: 501,000,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 1,245,165,450,000,000,000,000,000
+        buildAndEarn: 501,500,000,000,000,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      84
+    ]
+    {
+      staked: {
+        voting: 382,139,609,690,200,000,000,000
+        buildAndEarn: 17,000,000,000,000,000,000,000
+        era: 765
+        period: 2
+      }
+      stakedFuture: {
+        voting: 382,139,609,690,200,000,000,000
+        buildAndEarn: 18,500,000,000,000,000,000,000
+        era: 766
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      23
+    ]
+    {
+      staked: {
+        voting: 0
+        buildAndEarn: 0
+        era: 0
+        period: 0
+      }
+      stakedFuture: {
+        voting: 246,655,000,000,000,000,000,000
+        buildAndEarn: 0
+        era: 764
+        period: 2
+      }
+    }
+  ]
+  [
+    [
+      20
+    ]
+    {
+      staked: {
+        voting: 2,645,944,075,245,580,000,000,000
+        buildAndEarn: 6,510,901,499,500,000,000,000
+        era: 766
+        period: 2
+      }
+      stakedFuture: {
+        voting: 2,645,944,075,245,580,000,000,000
+        buildAndEarn: 17,221,644,540,590,000,000,000
+        era: 767
+        period: 2
+      }
+    }
+  ]
+]

@@ -24,8 +24,6 @@ open my $refh, '<', $input_data or die "Could not open file: $!";
 my $x = 0;
 my $y = 0;
 my $z = 0;
-
-my $stakeFuture_voting;
 my @staked_voting;
 my @staked_bAe;
 my @staked_future_bAe;
@@ -58,16 +56,10 @@ while (my $row = <$refh>) {
   $row = <$refh>;  
   chomp $row;
   if ($row =~ /\sstakedFuture: \{$/) {
-    $row = <$refh>;
-    chomp $row;
-    ($stakeFuture_voting) = $row =~ /\s*voting:\s(\d{0,3}(,\d{3})*)/;
-
+    <$refh>;
     $row = <$refh>;  
     chomp $row;
     ($y) = $row =~ /\s*buildAndEarn:\s(\d{0,3}(,\d{3})*)/;
-    if($y == 0){
-	    $y = $stakeFuture_voting;
-    }
     #	print "$y\n";
     $y =~ s/,//g;
     $y = $y/1000000000000000000;
