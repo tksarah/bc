@@ -70,6 +70,10 @@
             margin: 0;
             color: #ddd;
         }
+	.menu a.active {
+            color: #4CAF50;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +89,18 @@
         <iframe name="iframe_a" src="https://agent.sun-t-sarah.work/dlist/" style="height:100vh;"></iframe>
     </div>
     <footer>
-        <p>c 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</p>
+        <p>© 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</p>
     </footer>
+
+    <script>
+        function makeActive(element) {
+            var menuItems = document.querySelectorAll('.menu a');
+            menuItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+
 </body>
 </html>
