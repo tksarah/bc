@@ -81,9 +81,9 @@
         <h1>dApp Staking Data</h1>
     </header>
     <div class="menu">
-        <a href="https://agent.sun-t-sarah.work/dlist/" target="iframe_a">Staking Amount by dApp Staker</a>
-        <a href="https://agent.sun-t-sarah.work/rank/" target="iframe_a">dApp Ranking During BuildAndEarn Subperiod</a>
-        <a href="https://agent.sun-t-sarah.work/vsp/" target="iframe_a">dApp Ranking During Voting Subperiod</a>
+        <a id="menu1" href="https://agent.sun-t-sarah.work/dlist/" target="iframe_a" onclick="makeActive('menu1')">Staking Amount by dApp Staker</a>
+        <a id="menu2" href="https://agent.sun-t-sarah.work/rank/" target="iframe_a" onclick="makeActive('menu2')">dApp Ranking During BuildAndEarn Subperiod</a>
+        <a id="menu3" href="https://agent.sun-t-sarah.work/vsp/" target="iframe_a" onclick="makeActive('menu3')">dApp Ranking During Voting Subperiod</a>
     </div>
     <div class="content">
         <iframe name="iframe_a" src="https://agent.sun-t-sarah.work/dlist/" style="height:100vh;"></iframe>
@@ -93,14 +93,17 @@
     </footer>
 
     <script>
-        function makeActive(element) {
+        function makeActive(menuId) {
             var menuItems = document.querySelectorAll('.menu a');
             menuItems.forEach(function(item) {
                 item.classList.remove('active');
             });
-            element.classList.add('active');
+            document.getElementById(menuId).classList.add('active');
         }
-    </script>
 
+        window.onload = function() {
+            makeActive('menu1');
+        };
+    </script>
 </body>
 </html>
