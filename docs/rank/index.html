@@ -4,15 +4,59 @@
     <title>Stake Rankings During the Build&Earn Subperiod</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
     <style>
-        body, h1, th, td, .text-muted {
-            color: #fff !important;
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #000000;
+            color: #FFFFFF;
         }
-	.footer {
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            color: #FFFFFF;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        tr:nth-child(even) {
+            background-color: #222222;
+        }
+        tr:nth-child(-n+11) {
+            color: #FFFF00;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d0d0d0;
+            border-bottom: 1px solid #bbb;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d0d0d0;
+            border-bottom: 1px solid #bbb;
+            padding-bottom: 2px;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 0.8em;
             position: fixed;
-            left: 0;
             bottom: 0;
             width: 100%;
-            text-align: center;
+            border-top: 1px solid #ddd;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
