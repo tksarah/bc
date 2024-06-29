@@ -63,7 +63,7 @@
 </head>
 <body>
 
-<h1 style="color: #FFFFFF;">Stake Rankings During the Voting Subperiod</h1>
+<h1 style="color: #FFFFFF;">dApp Ranking During Voting Subperiod</h1>
 <h2 style="color: #FFFFFF;">Update: DATEJST</h2>
 
 <!-- Display DonutChart -->
@@ -168,8 +168,5 @@ getData();
     </br>
     <p>
 
-    <div class="footer">
-        © 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.
-    </div>
 </body>
 </html>
