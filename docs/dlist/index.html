@@ -74,7 +74,7 @@
 <body>
     <div class="container">
         <h2 id="section-name">dApp Name</h2>
-	<ul>
+	<ul id="info-list-jp">
 		<li>dAppStaking の dApp 毎のステーカーリストを表示します</li>
 		<li>dApp Name のとなりの（数値）はステーカーの総数を表示しています</li>
 		<li>オンチェーンデーターから整形しています</li>
@@ -85,7 +85,7 @@
 		<li>予告なく仕様変更やdApp のリストの更新遅延などがある点はご了承ください</li>
 	</ul>
 	<p>
-	<ul>
+	<ul id="info-list-en">
 		<li>Displays a list of stakers for each dApp in dAppStaking.</li>
 		<li>The number next to the dApp Name represents the total number of stakers.</li>
 		<li>The data is formatted from on-chain data.</li>
@@ -175,6 +175,8 @@
 
 		    // create donut chart
 		    createDonutChart(sortedData);
+		    document.getElementById('info-list-jp').style.display = 'none';
+		    document.getElementById('info-list-en').style.display = 'none';
                 })
                 .catch(error => console.error('Error:', error));
         });
