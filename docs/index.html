@@ -29,16 +29,14 @@
         }
         header h1 {
             margin: 0;
-	    padding: 20px 0;
-	    color: #DAA520;
+            padding: 20px 0;
+            color: #DAA520;
             font-size: 2.5em;
             text-shadow: 2px 2px 4px #000;
         }
-	nav {
-            margin-bottom: 20px;
-        }
+
         .menu {
-            top: 50px;
+            top: 100px;
             background: #444;
             padding: 10px 0;
             text-align: center;
@@ -56,7 +54,7 @@
         .content {
             flex: 1;
             padding: 20px;
-            padding-top: 100px; /* Added padding to account for fixed header and menu */
+            padding-top: 160px; /* Added padding to account for fixed header and menu */
             background: #222;
             border-radius: 5px;
         }
@@ -76,7 +74,7 @@
             margin: 0;
             color: #ddd;
         }
-	.menu a.active {
+        .menu a.active {
             color: #4CAF50;
             font-weight: bold;
         }
@@ -87,15 +85,18 @@
         <h1>dApp Staking Data</h1>
     </header>
     <div class="menu">
-        <a id="menu1" href="https://agent.sun-t-sarah.work/dlist/" target="iframe_a" onclick="makeActive('menu1')">Staking Amount by dApp Staker</a>
-        <a id="menu2" href="https://agent.sun-t-sarah.work/rank/" target="iframe_a" onclick="makeActive('menu2')">dApp Ranking During BuildAndEarn Subperiod</a>
-        <a id="menu3" href="https://agent.sun-t-sarah.work/vsp/" target="iframe_a" onclick="makeActive('menu3')">dApp Ranking During Voting Subperiod</a>
+        <a id="menu1" href="https://agent.sun-t-sarah.work/dlist/" target="iframe_a" onclick="makeActive('menu1')">Staking Amount by dApp Sta
+ker</a>
+        <a id="menu2" href="https://agent.sun-t-sarah.work/rank/" target="iframe_a" onclick="makeActive('menu2')">dApp Ranking During BuildAn
+dEarn Subperiod</a>
+        <a id="menu3" href="https://agent.sun-t-sarah.work/vsp/" target="iframe_a" onclick="makeActive('menu3')">dApp Ranking During Voting S
+ubperiod</a>
     </div>
     <div class="content">
         <iframe name="iframe_a" src="https://agent.sun-t-sarah.work/dlist/" style="height:100vh;"></iframe>
     </div>
     <footer>
-        <p>© 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</p>
+        <p>c 2024 Astar Ecosystem Agent tksarah. This page was created by tksarah from on-chain data.</p>
     </footer>
 
     <script>
