@@ -9,7 +9,7 @@ my $input = $ARGV[0];
 my $x = 0;
 my $y = 0;
 my $z = 0;
-my $t4 = 15000000;
+my $t4 = 1500000;
 
 open my $refh, '<', $input or die "Could not open file: $!";
 
@@ -26,7 +26,7 @@ while (my $row = <$refh>) {
     $x = $x/1000000000000000000;
     my $formatted_x = sprintf("%.3f", $x);
     #push @staked_voting, $formatted_x;
-    print "Tier 1 $formatted_x\n";
+    print "Tier 1,$formatted_x\n";
 
 
     <$refh>;
@@ -42,7 +42,7 @@ while (my $row = <$refh>) {
     $y = $y/1000000000000000000;
     my $formatted_y = sprintf("%.3f", $y);
     #push @staked_bAe, $formatted_y;
-    print "Tier 2 $formatted_y\n";
+    print "Tier 2,$formatted_y\n";
 
 
     <$refh>;
@@ -58,10 +58,10 @@ while (my $row = <$refh>) {
     $z = $z/1000000000000000000;
     my $formatted_z = sprintf("%.3f", $z);
     #push @staked_bAe, $formatted_y;
-    print "Tier 3 $formatted_z\n";
+    print "Tier 3,$formatted_z\n";
 
     my $formatted_t4 = sprintf("%.3f", $t4);
-    print "Tier 4 $formatted_t4\n";
+    print "Tier 4,$formatted_t4\n";
 
 
   }

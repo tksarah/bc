@@ -6,6 +6,10 @@ use LWP::Simple;
 use Text::CSV;
 use POSIX 'strftime';
 
+# Set Tier value
+my ($tier1, $tier2, $tier3, $tier4) = get_tier('tier.json');
+
+
 # Output TotalAmount
 my $total_amount = "TotalAmount.csv";
 print "$total_amount";
@@ -24,7 +28,7 @@ my $timestamp = strftime "%Y-%m-%d-%H", localtime;
 $total_amount = $timestamp . "_" . $total_amount;
 # Open TotalAmount
 open my $output_fh2, ">>:encoding(utf8)", $total_amount or die "$total_amount: $!";
-print $output_fh2 "Name,Category,TotalStaked\n";
+print $output_fh2 "Name,Category,TotalStaked,Tier\n";
 
 while (my $row = $csv->getline($fh)) {
     my ($address, $name, $mainCategory) = @$row;
@@ -65,12 +69,112 @@ while (my $row = $csv->getline($fh)) {
     }
     close $output_fh;
     
+    # Check Tier 
+    my $tier = check_tier($tier1,$tier2,$tier3,$tier4,$sum);
+
     # For total amount
-    print $output_fh2 "$name,$mainCategory,$sum\n";
+    print $output_fh2 "$name,$mainCategory,$sum,$tier\n";
 
 }
 close $fh;
 
 close $output_fh2;
 
+exit(0);
+
+sub get_tier {
+    my $input = shift;
+
+    my $x = 0;
+    my $y = 0;
+    my $z = 0;
+    my $t4 = 1500000;
+
+    my $formatted_t1;
+    my $formatted_t2;
+    my $formatted_t3;
+    my $formatted_t4;
+
+    open my $refh, '<', $input or die "Could not open file: $!";
+
+    while (my $row = <$refh>) {
+        chomp $row;
+        if ($row =~ /\stierThresholds:\s\[$/) {
+            <$refh>;
+            <$refh>;
+
+            $row = <$refh>;  # Read Teir1 Threshold
+            chomp $row;
+            ($x) = $row =~ /\s*amount:\s(\d{0,3}(,\d{3})*)/;
+            $x =~ s/,//g;
+            $x = $x/1000000000000000000;
+            $formatted_t1 = sprintf("%.3f", $x);
+	    #print "Tier 1 = $formatted_t1\n";
+
+            <$refh>;
+            <$refh>;
+            <$refh>;
+            <$refh>;
+            <$refh>;
+
+            $row = <$refh>;  # Read Teir2 Threshold
+            chomp $row;
+            ($y) = $row =~ /\s*amount:\s(\d{0,3}(,\d{3})*)/;
+            $y =~ s/,//g;
+            $y = $y/1000000000000000000;
+            $formatted_t2 = sprintf("%.3f", $y);
+	    #print "Tier 2 = $formatted_t2\n";
+
+            <$refh>;
+            <$refh>;
+            <$refh>;
+            <$refh>;
+            <$refh>;
+
+            $row = <$refh>;  # Read Teir3 Threshold
+            chomp $row;
+            ($z) = $row =~ /\s*amount:\s(\d{0,3}(,\d{3})*)/;
+            $z =~ s/,//g;
+            $z = $z/1000000000000000000;
+            $formatted_t3 = sprintf("%.3f", $z);
+	    #print "Tier 3 = $formatted_t3\n";
+
+            $formatted_t4 = sprintf("%.3f", $t4);
+	    #print "Tier 4 = $formatted_t4\n";
+        }
+    }
+
+    close $refh;
+
+    return ($formatted_t1, $formatted_t2, $formatted_t3, $formatted_t4);
+
+}
+
+sub check_tier{
+	my $tier1 = shift;
+	my $tier2 = shift;
+	my $tier3 = shift;
+	my $tier4 = shift;
+	my $sum = shift;
+
+	my $tier_value;
+
+	if ($sum >= $tier1){
+		$tier_value = "Tier 1";
+	}elsif($sum < $tier1 && $sum >= $tier2){
+		$tier_value = "Tier 2";
+	}elsif($sum < $tier2 && $sum >= $tier3){
+		$tier_value = "Tier 3";
+	}elsif($sum < $tier3 && $sum >= $tier4){
+		$tier_value = "Tier 4";
+	}else{
+		$tier_value = "No Tier";
+	}
+
+	return $tier_value;
+
+}
+
+
+1;
 

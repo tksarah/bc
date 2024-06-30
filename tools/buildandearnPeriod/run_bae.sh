@@ -1,6 +1,7 @@
 #!/bin/bash
 
 DIR="../../docs/rank"
+SDIR="../../store/Period2_data"
 
 echo -n "Run get_stakerAndamount_list.pl -> "
 perl ./get_stakerAndamount_list.pl
@@ -11,9 +12,12 @@ echo -n "Run update html -> "
 perl ./update_html.pl index.org index.html
 echo "Done"
 
-# Copy
-echo -n "Run copy to DOCS -> "
+# Copy & Gzip
+echo -n "Run copy & gzip & move  -> "
 cp -p *_TotalAmount.csv $DIR/TotalAmount.csv
+gzip *_TotalAmount.csv 
+mv *_TotalAmount.csv.gz $SDIR/
+
 cp -p index.html $DIR/
 echo "Done"
 

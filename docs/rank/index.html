@@ -65,7 +65,7 @@
 </head>
 <body>
 	<h2>dApp Ranking During Build&Earn Subperiod</h2>
-       	<h2>Update: 2024-06-30 06:12:45</h2>
+       	<h2>Update: 2024-06-30 22:11:06</h2>
        	<table id="myTable" class="table table-striped">
        		<thead>
        		<tr>
@@ -73,6 +73,7 @@
        		<th>Name</th>
        		<th>Category</th>
        		<th>TotalStaked</th>
+       		<th>Tier</th>
        		</tr>
        		</thead>
        		<tbody></tbody>
@@ -88,7 +89,7 @@
                     data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
                         if (row.Name) {
-                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td></tr>`);
+                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td>${row.Tier}</td></tr>`);
                         }
                     });
                     $("#myTable").tablesorter();
