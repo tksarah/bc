@@ -12,7 +12,6 @@ my ($tier1, $tier2, $tier3, $tier4) = get_tier('tier.json');
 
 # Output TotalAmount
 my $total_amount = "TotalAmount.csv";
-print "$total_amount";
 
 # 新しいCSVモジュールを使用するための準備
 my $csv = Text::CSV->new({ binary => 1, auto_diag => 1 });
@@ -68,6 +67,8 @@ while (my $row = $csv->getline($fh)) {
 	$sum += $formatted_value;
     }
     close $output_fh;
+
+    print "\n -> $filename -> Done\n";
     
     # Check Tier 
     my $tier = check_tier($tier1,$tier2,$tier3,$tier4,$sum);

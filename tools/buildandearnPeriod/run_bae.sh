@@ -12,7 +12,7 @@ echo -n "Run update html -> "
 perl ./update_html.pl index.org index.html
 echo "Done"
 
-# Copy & Gzip
+# Copy & Gzip & Move
 echo -n "Run copy & gzip & move  -> "
 cp -p *_TotalAmount.csv $DIR/TotalAmount.csv
 gzip *_TotalAmount.csv 

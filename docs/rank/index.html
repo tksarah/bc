@@ -3,11 +3,6 @@
 <head>
     <title>Stake Rankings During the Build&Earn Subperiod</title>
     <style>
-        .tier1 { color: #1f77b4; }
-        .tier2 { color: #ff7f0e; }
-        .tier3 { color: #2ca02c; }
-        .tier4 { color: #d62728; }
-
         body {
             font-family: 'Courier New', monospace;
             background-color: #000000;
@@ -70,7 +65,7 @@
 </head>
 <body>
 	<h2>dApp Ranking During Build&Earn Subperiod</h2>
-       	<h2>Update: 2024-06-30 22:11:06</h2>
+       	<h2>Update: 2024-07-01 07:10:48</h2>
        	<table id="myTable" class="table table-striped">
        		<thead>
        		<tr>
@@ -94,8 +89,7 @@
                     data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
                         if (row.Name) {
-			    var tierClass = 'tier' + row.Tier.charAt(5);
-                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td class="${tierClass}">${row.Tier}</td></tr>`);
+                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td>${row.Tier}</td></tr>`);
                         }
                     });
                     $("#myTable").tablesorter();
@@ -103,9 +97,5 @@
             });
         });
     </script>
-    </br>
-    </br>
-    <p>
-
 </body>
 </html>
