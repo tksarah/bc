@@ -86,6 +86,7 @@
                 header: true,
                 complete: function(results) {
                     var data = results.data;
+				    console.log(data);
                     data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
                         if (row.Name) {
