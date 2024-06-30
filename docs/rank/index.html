@@ -3,6 +3,11 @@
 <head>
     <title>Stake Rankings During the Build&Earn Subperiod</title>
     <style>
+        .tier1 { color: #1f77b4; }
+        .tier2 { color: #ff7f0e; }
+        .tier3 { color: #2ca02c; }
+        .tier4 { color: #d62728; }
+
         body {
             font-family: 'Courier New', monospace;
             background-color: #000000;
@@ -89,7 +94,8 @@
                     data.sort((a, b) => b.TotalStaked - a.TotalStaked);
                     data.forEach((row, index) => {
                         if (row.Name) {
-                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td>${row.Tier}</td></tr>`);
+			    var tierClass = 'tier' + row.Tier.charAt(5);
+                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td class="${tierClass}">${row.Tier}</td></tr>`);
                         }
                     });
                     $("#myTable").tablesorter();
