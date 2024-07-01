@@ -3,7 +3,7 @@
 DIR="../../docs/rank"
 SDIR="../../store/Period2_data"
 
-echo -n "Run get_stakerAndamount_list.pl -> "
+echo "Run get_stakerAndamount_list.pl -> "
 perl ./get_stakerAndamount_list.pl
 echo "Done"
 
