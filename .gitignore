@@ -1,0 +1,4 @@
+docs/*.csv
+docs/rank/*.csv
+docs/dlist/*.csv
+docs/vsp/*.csv
