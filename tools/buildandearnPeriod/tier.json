@@ -1,9 +1,9 @@
 {
-  numberOfSlots: 115
+  numberOfSlots: 116
   slotsPerTier: [
     6
     23
-    34
+    35
     52
   ]
   rewardPortion: [
@@ -15,19 +15,19 @@
   tierThresholds: [
     {
       DynamicTvlAmount: {
-        amount: 260,869,565,217,391,304,400,000,000
+        amount: 258,620,689,655,172,413,700,000,000
         minimumAmount: 200,000,000,000,000,000,000,000,000
       }
     }
     {
       DynamicTvlAmount: {
-        amount: 65,217,391,304,347,826,100,000,000
+        amount: 64,655,172,413,793,103,425,000,000
         minimumAmount: 50,000,000,000,000,000,000,000,000
       }
     }
     {
       DynamicTvlAmount: {
-        amount: 17,391,304,347,826,086,960,000,000
+        amount: 17,241,379,310,344,827,580,000,000
         minimumAmount: 15,000,000,000,000,000,000,000,000
       }
     }
