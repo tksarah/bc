@@ -18,7 +18,7 @@ sub get_tier_new {
     my $x = 0;
     my $y = 0;
     my $z = 0;
-    my $t4 = 1500000;
+    my $t4 = 0;
 
     my $formatted_t1;
     my $formatted_t2;
@@ -55,6 +55,11 @@ sub get_tier_new {
             $formatted_t3 = sprintf("%.3f", $z);
             print "Tier 3 = $formatted_t3\n";
 
+            $row = <$refh>;  # Read Teir4 Threshold
+            chomp $row;
+            ($t4) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+            $t4 =~ s/,//g;
+            $t4 = $t4/1000000000000000000;
             $formatted_t4 = sprintf("%.3f", $t4);
             print "Tier 4 = $formatted_t4\n";
         }
