@@ -100,7 +100,7 @@ sub get_tier {
 
     while (my $row = <$refh>) {
         chomp $row;
-        if ($row =~ /^tierThresholds:\s\[$/) {
+        if ($row =~ /^\s+tierThresholds:\s\[$/) {
 
             $row = <$refh>;  # Read Teir1 Threshold
             chomp $row;

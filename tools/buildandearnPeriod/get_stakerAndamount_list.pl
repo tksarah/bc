@@ -100,41 +100,27 @@ sub get_tier {
 
     while (my $row = <$refh>) {
         chomp $row;
-        if ($row =~ /\stierThresholds:\s\[$/) {
-            <$refh>;
-            <$refh>;
+        if ($row =~ /^\s+tierThresholds:\s\[$/) {
 
             $row = <$refh>;  # Read Teir1 Threshold
             chomp $row;
-            ($x) = $row =~ /\s*amount:\s(\d{0,3}(,\d{3})*)/;
+            ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
             $x =~ s/,//g;
             $x = $x/1000000000000000000;
             $formatted_t1 = sprintf("%.3f", $x);
 	    #print "Tier 1 = $formatted_t1\n";
 
-            <$refh>;
-            <$refh>;
-            <$refh>;
-            <$refh>;
-            <$refh>;
-
             $row = <$refh>;  # Read Teir2 Threshold
             chomp $row;
-            ($y) = $row =~ /\s*amount:\s(\d{0,3}(,\d{3})*)/;
+            ($y) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
             $y =~ s/,//g;
             $y = $y/1000000000000000000;
             $formatted_t2 = sprintf("%.3f", $y);
 	    #print "Tier 2 = $formatted_t2\n";
 
-            <$refh>;
-            <$refh>;
-            <$refh>;
-            <$refh>;
-            <$refh>;
-
             $row = <$refh>;  # Read Teir3 Threshold
             chomp $row;
-            ($z) = $row =~ /\s*amount:\s(\d{0,3}(,\d{3})*)/;
+            ($z) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
             $z =~ s/,//g;
             $z = $z/1000000000000000000;
             $formatted_t3 = sprintf("%.3f", $z);
