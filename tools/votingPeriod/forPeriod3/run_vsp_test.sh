@@ -2,7 +2,7 @@
 
 # Current period number
 # Edit required before running
-period=2
+period=3
 
 # Data from https://polkadot.js.org/apps/#/chainstate
 file="data"
@@ -10,7 +10,7 @@ file="data"
 # Save file name
 sfile="vsp_data.csv"
 
-#DIR="../../docs/vsp"
+DIR="../../docs/vsp"
 
 ###
 # IN from API
@@ -40,19 +40,17 @@ echo -n "Run update html -> "
 perl ./update_html.pl index.org index.html
 echo "Done"
 
-echo "All Done"
-
 # Fixing the incorrect string
 # "ApeXChimpz (*******************)",nft,76,1598439.339
 sed -i 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",\2,\3,\4/' $sfile 
 
 # Copy
-#echo -n "Run copy to DOCS -> "
-#cp -p $sfile index.html $DIR/
-#echo "Done"
+echo -n "Run copy to DOCS -> "
+cp -p $sfile index.html $DIR/
+echo "Done"
 
 ### Cleanup
-#echo -n "Run cleanup -> "
-#rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv vsp_data.csv index.html data
-#touch data
-#echo "Done"
+echo -n "Run cleanup -> "
+rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv vsp_data.csv index.html data
+touch data
+echo "Done"
