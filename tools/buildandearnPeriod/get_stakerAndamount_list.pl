@@ -7,15 +7,10 @@ use Text::CSV;
 use POSIX 'strftime';
 
 # Set Tier value
-my ($tier1, $tier2, $tier3, $tier4) = get_tier('tier.json');
+my ($tier1, $tier2, $tier3, $tier4) = get_threshold('tier.json');
 
-# Set Rank Value
-my $t2_rankV = ($tier1 - $tier2)/10;
-my $t3_rankV = ($tier2 - $tier3)/10;
-my $t4_rankV = ($tier3 - $tier4)/10;
-
-# Initialize
-my $rank = "";
+# Rank Initialize
+my $rank = 0;
 
 # Output TotalAmount
 my $total_amount = "TotalAmount.csv";
@@ -77,20 +72,8 @@ while (my $row = $csv->getline($fh)) {
 
     print "\n -> $filename -> Done\n";
     
-    # Check Tier 
-    my $tier = check_tier($tier1,$tier2,$tier3,$tier4,$sum);
-
-    if($tier =~ /1/){
-	    $rank = 0;
-    }elsif($tier =~/2/){
-	    $rank = int(($sum - $tier2)/$t2_rankV);
-    }elsif($tier =~ /3/){
-	    $rank = int(($sum - $tier3)/$t3_rankV);
-    }elsif($tier =~ /4/){
-	    $rank = int(($sum - $tier4)/$t4_rankV);
-    }else{
-	    $rank = "None";
-    }
+    # Get Tier and Rank
+    my ($tier,$rank) = get_tier($tier1,$tier2,$tier3,$tier4,$sum);
 
     # For total amount
     print $output_fh2 "$name,$mainCategory,$sum,$tier,$rank\n";
@@ -102,7 +85,7 @@ close $output_fh2;
 
 exit(0);
 
-sub get_tier {
+sub get_threshold {
     my $input = shift;
 
     my $x = 0;
@@ -161,28 +144,40 @@ sub get_tier {
 
 }
 
-sub check_tier{
+sub get_tier{
 	my $tier1 = shift;
 	my $tier2 = shift;
 	my $tier3 = shift;
 	my $tier4 = shift;
-	my $sum = shift;
+	my $stake_amount = shift;
 
 	my $tier_value;
 
-	if ($sum >= $tier1){
+	my $rank = 0;
+
+	# Set each rank divisor
+	my $t2_divisor = ($tier1 - $tier2)/10;
+	my $t3_divisor = ($tier2 - $tier3)/10;
+	my $t4_divisor = ($tier3 - $tier4)/10;
+
+	# Set rank/tier
+	if ($stake_amount >= $tier1){
 		$tier_value = "Tier 1";
-	}elsif($sum < $tier1 && $sum >= $tier2){
+	}elsif($stake_amount < $tier1 && $stake_amount >= $tier2){
 		$tier_value = "Tier 2";
-	}elsif($sum < $tier2 && $sum >= $tier3){
+		$rank = int(($stake_amount - $tier2)/$t2_divisor);
+	}elsif($stake_amount < $tier2 && $stake_amount >= $tier3){
 		$tier_value = "Tier 3";
-	}elsif($sum < $tier3 && $sum >= $tier4){
+	    	$rank = int(($stake_amount - $tier3)/$t3_divisor);
+	}elsif($stake_amount < $tier3 && $stake_amount >= $tier4){
 		$tier_value = "Tier 4";
+	    	$rank = int(($stake_amount - $tier4)/$t4_divisor);
 	}else{
 		$tier_value = "No Tier";
+	    	$rank = "None";
 	}
 
-	return $tier_value;
+	return ($tier_value,$rank);
 
 }
 
