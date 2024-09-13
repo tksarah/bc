@@ -9,6 +9,13 @@ use POSIX 'strftime';
 # Set Tier value
 my ($tier1, $tier2, $tier3, $tier4) = get_tier('tier.json');
 
+# Set Rank Value
+my $t2_rankV = ($tier1 - $tier2)/10;
+my $t3_rankV = ($tier2 - $tier3)/10;
+my $t4_rankV = ($tier3 - $tier4)/10;
+
+# Initialize
+my $rank = "";
 
 # Output TotalAmount
 my $total_amount = "TotalAmount.csv";
@@ -27,7 +34,7 @@ my $timestamp = strftime "%Y-%m-%d-%H", localtime;
 $total_amount = $timestamp . "_" . $total_amount;
 # Open TotalAmount
 open my $output_fh2, ">>:encoding(utf8)", $total_amount or die "$total_amount: $!";
-print $output_fh2 "Name,Category,TotalStaked,Tier\n";
+print $output_fh2 "Name,Category,TotalStaked,Tier,Rank\n";
 
 while (my $row = $csv->getline($fh)) {
     my ($address, $name, $mainCategory) = @$row;
@@ -73,8 +80,20 @@ while (my $row = $csv->getline($fh)) {
     # Check Tier 
     my $tier = check_tier($tier1,$tier2,$tier3,$tier4,$sum);
 
+    if($tier =~ /1/){
+	    $rank = 0;
+    }elsif($tier =~/2/){
+	    $rank = int(($sum - $tier2)/$t2_rankV);
+    }elsif($tier =~ /3/){
+	    $rank = int(($sum - $tier3)/$t3_rankV);
+    }elsif($tier =~ /4/){
+	    $rank = int(($sum - $tier4)/$t4_rankV);
+    }else{
+	    $rank = "None";
+    }
+
     # For total amount
-    print $output_fh2 "$name,$mainCategory,$sum,$tier\n";
+    print $output_fh2 "$name,$mainCategory,$sum,$tier,$rank\n";
 
 }
 close $fh;
