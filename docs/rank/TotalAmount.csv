@@ -1,91 +1,91 @@
-Name,Category,TotalStaked,Tier
-3ridge,tooling,17270938.414,Tier 4
-ACryptoS,defi,95346.628,No Tier
-(Delist)Age Of Chronos,nft,0,No Tier
-AirLyft.One,utility,3445258.18,Tier 4
-Algem,defi,195265831.092,Tier 2
-ApeXChimpz,nft,19831001.129,Tier 3
-Archisinal,nft,118855.622,No Tier
-ArtZero,nft,13711.349,No Tier
-ArthSwap,defi,15175794.261,Tier 4
-Astar Blockchain Node Service,utility,1048669.107,No Tier
-Astar Core Contributors,tooling,506799965.983999,Tier 1
-Astar Degens,nft,73737283.523,Tier 2
-Astar Dex StarSwap,defi,2529241.172,Tier 4
-Astar Exchange,defi,43393486.739,Tier 3
-Astar Farm,defi,30240441.156,Tier 3
-Astar Safe,tooling,8274905.088,Tier 4
-Astar Sign Witch,nft,473478.869,No Tier
-Astar Web3 Domains,utility,244577.814,No Tier
-AstarCats,nft,65530.648,No Tier
-AstridDAO,defi,553632.459,No Tier
-Avault,defi,305606.178,No Tier
-Bandit Network - The Growth Tookit for Web3,utility,4223710.096,Tier 4
-Bluez NFT Marketplace,nft,35744491.241,Tier 3
-Bware Labs and Blast API,utility,458653.763,No Tier
-C14 Finance,defi,20469613.104,Tier 3
-CANDY GIRL,nft,4457318.058,Tier 4
-COSMIZE,others,43905.424,No Tier
-Ceres Liquidity and Token Lockers,defi,52742.937,No Tier
-ChainChaser,tooling,291833.225,No Tier
-Community Treasury,utility,157395522.479,Tier 2
-D8A,tooling,330463.966,No Tier
-DappRadar,tooling,243488.112,No Tier
-DeForm,tooling,1670431.814,Tier 4
-DeStore,nft,124374206.859,Tier 2
-Dwellir,utility,612819.818,No Tier
-D’CENT Wallet,utility,2161238.289,Tier 4
-FiDi,utility,380174.789,No Tier
-GameDAO,unstoppable-grants,17133264.053,Tier 4
-Grabber,tooling,39105.798,No Tier
-HAHA Coin,others,5166941.773,Tier 4
-HEALTHREE,nft,156279154.114,Tier 2
-Heroic Animals,nft,40510.172,No Tier
-I am xAlice,nft,326293.954,No Tier
-InsureDAO,tooling,27293.807,No Tier
-JPYC,defi,8325864.575,Tier 4
-KEKKAI,tooling,1086197.461,No Tier
-KIRIFUDA,nft,71030.989,No Tier
-Kaiso Finance,others,115694.645,No Tier
-L2X.pro,defi,140899.424,No Tier
-Lotto,unstoppable-grants,257634.55,No Tier
-Lucky,others,11705270.781,Tier 4
-Metadomo,unstoppable-grants,1492104.272,No Tier
-Metasky,tooling,1258.215,No Tier
-MoonFit,nft,304184.732,No Tier
-NEET,others,60645.207,No Tier
-NFT Pocket | LOYLE,tooling,16141.349,No Tier
-NFTs2Me,nft,14914.591,No Tier
-Neemo Finance,defi,34005290.631,Tier 3
-Neurolanche X Labs,others,179981336.124,Tier 2
-Nova Wallet,others,6600690.064,Tier 4
-OnFinality,utility,3969000.999,Tier 4
-PINKY,nft,506415.566,No Tier
-Paras,nft,742074.802,No Tier
-Polkaholic.io,utility,443341.75,No Tier
-Polkasafe Multisig,utility,56566,No Tier
-Prometheus - AI Dex by Balance AI,defi,1028380.534,No Tier
-ProofX,nft,146740.242,No Tier
-Protofire,tooling,368107.559,No Tier
-QuickSwap,defi,19037805.891,Tier 3
-RAIR,nft,850500,No Tier
-Rarible,nft,59793.795,No Tier
-Sentio,utility,153743.109,No Tier
-SiO2 Finance,defi,1421302.431,No Tier
-Singular,nft,6263322.744,Tier 4
-SkyLab Corporation,unstoppable-grants,2022625.801,Tier 4
-Slash Vision Labs,defi,100761.14,No Tier
-Sonova,nft,18288431.124,Tier 4
-Starlay Finance,defi,993939.022,No Tier
-SushiTop,nft,94545.766,No Tier
-Talisman🪬,utility,24649242.016,Tier 3
-The Royal Raffle,nft,180414.202,No Tier
-VeryLongSwap (Staking airdrop),defi,62548231.725,Tier 3
-Web3alert,tooling,911534.997,No Tier
-XO - Web3 Social,others,190796.577,No Tier
-XY Finance,defi,51662.76,No Tier
-Zenlink,defi,3419245.974,Tier 4
-beyondClub,nft,130469.631,No Tier
-keyvault,unstoppable-grants,17100636.101,Tier 4
-mooon,nft,686984.218,No Tier
-tofuNFT,nft,3984269.618,Tier 4
+Name,Category,TotalStaked,Tier,Rank
+3ridge,tooling,17270938.414,Tier 4,9
+ACryptoS,defi,95346.628,No Tier,None
+(Delist)Age Of Chronos,nft,0,No Tier,None
+AirLyft.One,utility,3445258.18,Tier 4,1
+Algem,defi,195265869.246,Tier 2,5
+ApeXChimpz,nft,19831001.129,Tier 3,0
+Archisinal,nft,118855.622,No Tier,None
+ArtZero,nft,13711.349,No Tier,None
+ArthSwap,defi,15175801.982,Tier 4,7
+Astar Blockchain Node Service,utility,1048669.107,No Tier,None
+Astar Core Contributors,tooling,506799985.621999,Tier 1,0
+Astar Degens,nft,73737798.498,Tier 2,0
+Astar Dex StarSwap,defi,2529251.162,Tier 4,0
+Astar Exchange,defi,43403497.17,Tier 3,4
+Astar Farm,defi,30240441.156,Tier 3,2
+Astar Safe,tooling,8274905.088,Tier 4,3
+Astar Sign Witch,nft,473478.869,No Tier,None
+Astar Web3 Domains,utility,244577.814,No Tier,None
+AstarCats,nft,65530.648,No Tier,None
+AstridDAO,defi,553632.459,No Tier,None
+Avault,defi,305606.178,No Tier,None
+Bandit Network - The Growth Tookit for Web3,utility,4223710.096,Tier 4,1
+Bluez NFT Marketplace,nft,35744491.241,Tier 3,3
+Bware Labs and Blast API,utility,458653.763,No Tier,None
+C14 Finance,defi,20469613.104,Tier 3,0
+CANDY GIRL,nft,4457318.058,Tier 4,1
+COSMIZE,others,43905.424,No Tier,None
+Ceres Liquidity and Token Lockers,defi,52742.937,No Tier,None
+ChainChaser,tooling,291833.225,No Tier,None
+Community Treasury,utility,157395564.168,Tier 2,4
+D8A,tooling,330463.966,No Tier,None
+DappRadar,tooling,243488.112,No Tier,None
+DeForm,tooling,1670431.814,Tier 4,0
+DeStore,nft,124374650.292,Tier 2,2
+Dwellir,utility,612819.818,No Tier,None
+D’CENT Wallet,utility,2161238.289,Tier 4,0
+FiDi,utility,380174.789,No Tier,None
+GameDAO,unstoppable-grants,17133264.053,Tier 4,8
+Grabber,tooling,39105.798,No Tier,None
+HAHA Coin,others,5166941.773,Tier 4,2
+HEALTHREE,nft,156279254.148,Tier 2,3
+Heroic Animals,nft,40510.172,No Tier,None
+I am xAlice,nft,326293.954,No Tier,None
+InsureDAO,tooling,27293.807,No Tier,None
+JPYC,defi,8325864.575,Tier 4,3
+KEKKAI,tooling,1086197.461,No Tier,None
+KIRIFUDA,nft,71030.989,No Tier,None
+Kaiso Finance,others,115694.645,No Tier,None
+L2X.pro,defi,140899.424,No Tier,None
+Lotto,unstoppable-grants,257634.55,No Tier,None
+Lucky,others,11705312.47,Tier 4,5
+Metadomo,unstoppable-grants,1492104.272,No Tier,None
+Metasky,tooling,1258.215,No Tier,None
+MoonFit,nft,304184.732,No Tier,None
+NEET,others,60645.207,No Tier,None
+NFT Pocket | LOYLE,tooling,16141.349,No Tier,None
+NFTs2Me,nft,14914.591,No Tier,None
+Neemo Finance,defi,34005290.631,Tier 3,2
+Neurolanche X Labs,others,179983394.757,Tier 2,5
+Nova Wallet,others,6600690.064,Tier 4,2
+OnFinality,utility,3969000.999,Tier 4,1
+PINKY,nft,506415.566,No Tier,None
+Paras,nft,742074.802,No Tier,None
+Polkaholic.io,utility,443341.75,No Tier,None
+Polkasafe Multisig,utility,56566,No Tier,None
+Prometheus - AI Dex by Balance AI,defi,1028380.534,No Tier,None
+ProofX,nft,146740.242,No Tier,None
+Protofire,tooling,368107.559,No Tier,None
+QuickSwap,defi,19037805.891,Tier 3,0
+RAIR,nft,850500,No Tier,None
+Rarible,nft,59793.795,No Tier,None
+Sentio,utility,153743.109,No Tier,None
+SiO2 Finance,defi,1421302.431,No Tier,None
+Singular,nft,6264202.162,Tier 4,2
+SkyLab Corporation,unstoppable-grants,2022625.801,Tier 4,0
+Slash Vision Labs,defi,100761.14,No Tier,None
+Sonova,nft,18288431.124,Tier 4,9
+Starlay Finance,defi,993939.022,No Tier,None
+SushiTop,nft,94545.766,No Tier,None
+Talisman🪬,utility,24658362.016,Tier 3,1
+The Royal Raffle,nft,180414.202,No Tier,None
+VeryLongSwap (Staking airdrop),defi,62548630.06,Tier 3,8
+Web3alert,tooling,911534.997,No Tier,None
+XO - Web3 Social,others,190796.577,No Tier,None
+XY Finance,defi,51662.76,No Tier,None
+Zenlink,defi,3419245.974,Tier 4,1
+beyondClub,nft,130469.631,No Tier,None
+keyvault,unstoppable-grants,17100636.101,Tier 4,8
+mooon,nft,686984.218,No Tier,None
+tofuNFT,nft,3984269.618,Tier 4,1
