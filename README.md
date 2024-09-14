@@ -18,7 +18,7 @@ Displays a list of stakers for each dApp in dAppStaking.
 - By default, it is displayed in descending order of staking amount (switchable via the table header).
 - dApps with many stakers may take some time to display.
 - By selecting a dApp and pressing “Export CSV Data,” you can export a file that lists stakers and their stake amounts.
-- The list of dApps itself is based on the data from **June 22, 2024**.
+- The list of dApps itself is based on the data from **Sep. 6, 2024**.
 - Please be aware that there may be changes to specifications or delays in updating the list of dApps without prior notice.
 
 ![image](https://github.com/tksarah/bc/assets/11060137/2607cb82-f854-43f6-b56d-071a538abe54)
@@ -27,14 +27,14 @@ Displays a list of stakers for each dApp in dAppStaking.
 
 This board is updated irregularly.
 
-- Rank
+- No. (as this list)
 - Project Name
 - Category
 - Total Staking Amount during Build&Earn Subperiod
 - Tier Level
+- Tier Rank
 
-![image](https://github.com/tksarah/bc/assets/11060137/96a4deb7-da42-4e24-acd5-e54a7ea50656)
-
+![image](https://github.com/user-attachments/assets/88a2ea19-a920-4b6c-aa96-9b8fd502f972)
 
 ## dApp Ranking During Voting Subperiod
 
