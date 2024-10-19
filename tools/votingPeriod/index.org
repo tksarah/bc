@@ -63,8 +63,8 @@
 </head>
 <body>
 
-<h1 style="color: #FFFFFF;">Period 3</h1>
-<h2 style="color: #FFFFFF;">dApp Ranking During Voting Subperiod</h2>
+<h1 style="color: #FFFFFF;">dApp Ranking</h1>
+<h2 style="color: #FFFFFF;">Voting / Period 3</h2>
 <h2 style="color: #FFFFFF;">Update: DATEJST</h2>
 
 <!-- Display DonutChart -->
