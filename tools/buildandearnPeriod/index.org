@@ -68,7 +68,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
 </head>
 <body>
-    <h1 style="color: #FFFFFF;">dApp Ranking During Build&Earn Subperiod</h1>
+    <h1 style="color: #FFFFFF;">dApp Ranking</h1>
+    <h2 style="color: #FFFFFF;">Build&Earn / Period 3</h2>
     <h2 style="color: #FFFFFF;">Update: DATEJST</h2>
     <br>
     注意: データは取得時点でのものである、最新データとは異なる場合がある点に注意ください。<br>
