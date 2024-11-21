@@ -20,8 +20,13 @@ Displays a list of stakers for each dApp in dAppStaking.
 - By selecting a dApp and pressing “Export CSV Data,” you can export a file that lists stakers and their stake amounts.
 - The list of dApps itself is based on the data from **Sep. 6, 2024**.
 - Please be aware that there may be changes to specifications or delays in updating the list of dApps without prior notice.
+- EVM (e.g., Metamask) addresses are now displayed. The following information is available.
+  * You can see the addresses staked with EVM [ (Staker/EVM) ] column.
+  * You can see the native addresses of those staked with EVM [ (Staker/Native) ] column.
+  * For those staked natively, the [ (Staker/EVM) ] column shows "N/A".
 
-![image](https://github.com/tksarah/bc/assets/11060137/2607cb82-f854-43f6-b56d-071a538abe54)
+![image](https://github.com/user-attachments/assets/47f8b6ff-8b6c-4d53-b09c-f05c5e06104a)
+
 
 ## dApp Ranking During Build&Earn Subperiod
 
