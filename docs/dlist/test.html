@@ -108,7 +108,8 @@
         <table id="data-table">
             <tr>
                 <th>No.</th>
-                <th>ステーカー (Staker)</th>
+                <th>ステーカー (Staker/Native)</th>
+                <th>ステーカー (Staker/EVM)</th>
                 <th id="amount-header" style="cursor:pointer;">ステーキング量 (Amount)</th>
             </tr>
         </table>
@@ -135,6 +136,7 @@
                     let option = document.createElement('option');
                     option.value = parts[0];
                     option.textContent = parts[1];
+                    option.textContent = parts[2];
                     select.appendChild(option);
 		   }
                 });
