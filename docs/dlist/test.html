@@ -136,7 +136,6 @@
                     let option = document.createElement('option');
                     option.value = parts[0];
                     option.textContent = parts[1];
-                    option.textContent = parts[2];
                     select.appendChild(option);
 		   }
                 });
@@ -158,14 +157,14 @@
                         cell0.textContent = index + 1;
                         let cell1 = document.createElement('td');
                         cell1.textContent = item.stakerAddress.slice(0, 5) + ' ... ' + item.stakerAddress.slice(-5);
-                        let cell3 = document.createElement('td');
-                        cell3.textContent = item.stakerAddressEvm.slice(0, 5) + ' ... ' + item.stakerAddressEvm.slice(-5);
                         let cell2 = document.createElement('td');
-                        cell2.textContent = (item.amount / 1000000000000000000).toFixed(3);
+                        cell2.textContent = item.stakerAddressEvm ? item.stakerAddressEvm.slice(0, 5) + ' ... ' + item.stakerAddressEvm.slice(-5) : 'N/A';
+                        let cell3 = document.createElement('td');
+                        cell3.textContent = (item.amount / 1000000000000000000).toFixed(3);
                         row.appendChild(cell0);
                         row.appendChild(cell1);
-                        row.appendChild(cell3);
                         row.appendChild(cell2);
+                        row.appendChild(cell3);
                         table.appendChild(row);
                     });
 	            // 
