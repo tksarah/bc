@@ -1,35 +1,53 @@
 document.getElementById('search-form').addEventListener('submit', function(event) {
     event.preventDefault();
+
+    const fileInput = document.getElementById('csv-file');
+    const file = fileInput.files[0];
     
-    const pattern = document.getElementById('pattern').value;
-    const file = './id_data.txt';
+    if (!file) {
+        alert('CSVファイルを選択してください。');
+        return;
+    }
     
-    fetch(file)
-        .then(response => response.text())
-        .then(data => {
-            const lines = data.split('\n');
-            const results = [];
+    Papa.parse(file, {
+        header: true,
+        complete: function(results) {
+            const data = results.data;
+            const stakerAddresses = data.map(row => row.StakerAddress);
+            const amounts = data.map(row => row.Amount);
+            const rawData = './id_data.txt';
             
-            for (let i = 0; i < lines.length; i++) {
-                if (lines[i].includes(pattern)) {
-                    for (let j = i + 1; j <= i + 40 && j < lines.length; j++) {
-                        if (lines[j].includes('display:')) {
-                            for (let k = j; k <= i + 40 && k < lines.length; k++) {
-                                const match = lines[k].match(/Raw:\s*(.*)/);
-                                if (match) {
-                                    results.push({ pattern: pattern, rawValue: match[1] });
-                                    break;
+            fetch(rawData)
+                .then(response => response.text())
+                .then(rawText => {
+                    const rawLines = rawText.split('\n');
+                    const outputData = [];
+
+                    stakerAddresses.forEach((pattern, index) => {
+                        const amount = amounts[index];
+                        for (let i = 0; i < rawLines.length; i++) {
+                            if (rawLines[i].includes(pattern)) {
+                                for (let j = i + 1; j <= i + 40 && j < rawLines.length; j++) {
+                                    if (rawLines[j].includes('display:')) {
+                                        for (let k = j; k <= i + 40 && k < rawLines.length; k++) {
+                                            const match = rawLines[k].match(/Raw:\s*(.*)/);
+                                            if (match) {
+                                                outputData.push({ stakerAddress: pattern, rawValue: match[1], amount: amount });
+                                                break;
+                                            }
+                                        }
+                                        break;
+                                    }
                                 }
                             }
-                            break;
                         }
-                    }
-                }
-            }
-            
-            displayResults(results);
-        })
-        .catch(error => console.error('Error:', error));
+                    });
+
+                    displayResults(outputData);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    });
 });
 
 function displayResults(results) {
@@ -38,15 +56,19 @@ function displayResults(results) {
     
     results.forEach(result => {
         const row = document.createElement('tr');
-        
-        const patternCell = document.createElement('td');
-        patternCell.textContent = result.pattern;
-        row.appendChild(patternCell);
-        
+
+        const stakerAddressCell = document.createElement('td');
+        stakerAddressCell.textContent = result.stakerAddress;
+        row.appendChild(stakerAddressCell);
+
         const rawValueCell = document.createElement('td');
         rawValueCell.textContent = result.rawValue;
         row.appendChild(rawValueCell);
-        
+
+        const amountCell = document.createElement('td');
+        amountCell.textContent = result.amount;
+        row.appendChild(amountCell);
+
         tbody.appendChild(row);
     });
 }
