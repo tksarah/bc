@@ -22,7 +22,7 @@
             <thead>
                 <tr>
                     <th>StakerAddress</th>
-                    <th>Display Name</th>
+                    <th>Raw Value</th>
                     <th>Amount</th>
                 </tr>
             </thead>
