@@ -3,12 +3,12 @@ document.getElementById('search-form').addEventListener('submit', function(event
 
     const fileInput = document.getElementById('csv-file');
     const file = fileInput.files[0];
-    
+
     if (!file) {
         alert('CSVファイルを選択してください。');
         return;
     }
-    
+
     Papa.parse(file, {
         header: true,
         complete: function(results) {
@@ -16,7 +16,7 @@ document.getElementById('search-form').addEventListener('submit', function(event
             const stakerAddresses = data.map(row => row.StakerAddress);
             const amounts = data.map(row => row.Amount);
             const rawData = './id_data.txt';
-            
+
             fetch(rawData)
                 .then(response => response.text())
                 .then(rawText => {
@@ -51,25 +51,35 @@ document.getElementById('search-form').addEventListener('submit', function(event
 });
 
 function displayResults(results) {
-    const tbody = document.getElementById('results-table').getElementsByTagName('tbody')[0];
+    const noResultsMessage = document.getElementById('no-results-message');
+    const resultsTable = document.getElementById('results-table');
+    const tbody = resultsTable.getElementsByTagName('tbody')[0];
     tbody.innerHTML = ''; // Clear previous results
-    
-    results.forEach(result => {
-        const row = document.createElement('tr');
 
-        const stakerAddressCell = document.createElement('td');
-        stakerAddressCell.textContent = result.stakerAddress;
-        row.appendChild(stakerAddressCell);
+    if (results.length === 0) {
+        noResultsMessage.classList.remove('hidden');
+        resultsTable.classList.add('hidden');
+    } else {
+        noResultsMessage.classList.add('hidden');
+        resultsTable.classList.remove('hidden');
 
-        const rawValueCell = document.createElement('td');
-        rawValueCell.textContent = result.rawValue;
-        row.appendChild(rawValueCell);
+        results.forEach(result => {
+            const row = document.createElement('tr');
 
-        const amountCell = document.createElement('td');
-        amountCell.textContent = result.amount;
-        row.appendChild(amountCell);
+            const stakerAddressCell = document.createElement('td');
+            stakerAddressCell.textContent = result.stakerAddress;
+            row.appendChild(stakerAddressCell);
 
-        tbody.appendChild(row);
-    });
+            const rawValueCell = document.createElement('td');
+            rawValueCell.textContent = result.rawValue;
+            row.appendChild(rawValueCell);
+
+            const amountCell = document.createElement('td');
+            amountCell.textContent = result.amount;
+            row.appendChild(amountCell);
+
+            tbody.appendChild(row);
+        });
+    }
 }
 

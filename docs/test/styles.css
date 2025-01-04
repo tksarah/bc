@@ -50,6 +50,10 @@ button:hover {
     background-color: #0056b3;
 }
 
+.hidden {
+    display: none;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -73,5 +77,14 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
     background-color: #e9f5ff;
+}
+
+tbody tr td {
+    background-color: #fff;
+}
+
+#no-results-message {
+    text-align: center;
+    margin-top: 20px;
 }
 

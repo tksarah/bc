@@ -13,7 +13,10 @@
             <input type="file" id="csv-file" name="csv-file" accept=".csv" required>
             <button type="submit">検索</button>
         </form>
-        <table id="results-table">
+        <div id="no-results-message" class="hidden">
+            <p>マッチングするIDは見つかりませんでした。</p>
+        </div>
+        <table id="results-table" class="hidden">
             <thead>
                 <tr>
                     <th>StakerAddress</th>
