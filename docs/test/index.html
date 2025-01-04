@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>ID Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>ID Search</h1>
-    <form id="search-form">
-        <label for="csv-file">CSVファイルを選択:</label>
-        <input type="file" id="csv-file" name="csv-file" accept=".csv" required>
-        <button type="submit">検索</button>
-    </form>
-    <table id="results-table" border="1">
-        <thead>
-            <tr>
-                <th>StakerAddress</th>
-                <th>Raw Value</th>
-                <th>Amount</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div class="container">
+        <h1>ID Search</h1>
+        <form id="search-form">
+            <label for="csv-file">CSVファイルを選択:</label>
+            <input type="file" id="csv-file" name="csv-file" accept=".csv" required>
+            <button type="submit">検索</button>
+        </form>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>StakerAddress</th>
+                    <th>Raw Value</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
     <script src="script.js"></script>
 </body>
