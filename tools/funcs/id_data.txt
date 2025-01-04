@@ -1,0 +1,6748 @@
+[
+  [
+    [
+      YAggFT76QLaG5kskQZanfuUopFjR4Wy8DBHG9b45jkVqLP9
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ef_dot_wallet l9HH537dwl
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZyBKzQfSYUj2xJ8UugQUr88q4EhJ5ps5ukkbT6J3pzokAsi
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Controller Account
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      W5UDvLQnfDRCcNS9Aj8pa96c3chgsd83B3wPsmnGZXKeE2R
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: RADIUMBLOCK.COM
+          }
+          legal: None
+          web: {
+            Raw: https://radiumblock.com
+          }
+          riot: None
+          email: {
+            Raw: info@radiumblock.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @radiumblock
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XXGUQfkvGJvFAFYXzt2tj5bsJ1N7MkgquXTqJW41HW6UoBV
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Dot stake
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Wwfs24NNBLsdN9BHHj29spDsq5vkjk771dxPvMrXwraLywn
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Bware Labs
+          }
+          legal: {
+            Raw: Bware Labs Ltd
+          }
+          web: {
+            Raw: https://bwarelabs.com
+          }
+          riot: None
+          email: {
+            Raw: validators@bwarelabs.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @BwareLabs
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XkHGbvpRkXWpBbc8Rk5PULy6mez9WCPGEfxC2pQxJ3QHRY6
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Tomding945
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Ww95bxcKcTS6beeELERiWGXKZmXpxoQKqy6V3FH5KP7fggB
+    ]
+    [
+      {
+        judgements: []
+        deposit: 106,960,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Leo
+          }
+          legal: {
+            Raw: Enes Faruk Sahin
+          }
+          web: {
+            Raw: https://neurolanche.com/
+          }
+          riot: None
+          email: {
+            Raw: enesfaruksahin@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @neurolauncher
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZetEvKuJmb2ZL6ftwfj9UBW3LwfK566tBNSdUJAF7hjm14E
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ava Lock
+          }
+          legal: None
+          web: {
+            Raw: https://avalock.com
+          }
+          riot: None
+          email: {
+            Raw: avalock@avalock.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @avaunlocked
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Yd9hH5qgbMh9zmd9s9hY4zy9DyPWbPxhrNiYytiwXKFTGKx
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Jcmz polkadot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YCsxt1f3R6wvpQu2McvjoBhkuPnsgyX3J8zTm6vdXygMzJy
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: dagga.bnb
+              }
+            ]
+          ]
+          display: {
+            Raw: Dagga
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: astar@blockmania.network
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XDVAeA3ye6RF7ffyUZY6anT6jSi3xkb7e39tYR6PVWj3ARq
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ValidatorAlliance
+          }
+          legal: None
+          web: {
+            Raw: https://dotvalidators.org/
+          }
+          riot: None
+          email: {
+            Raw: dotalliance@protonmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @DOTValAlliance
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YUxmRMev3JUrXHjy5WXzohdTmgYtTEZq4aWqdYRCgBYLQjC
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,820,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Jay
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: jay.jang@startale.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WGhiD4RD2JrhLcXideM1qrQuPRtZGPxwMRJG5LvhSuKPZUD
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: STAKENODE|VALIDATORS ALLIANCE
+          }
+          legal: {
+            Raw: JimmyTudeski
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: jimmytudeski@stakenode.dev
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @stakenode_dev
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bWLJsvBj1jQdGC4kpWbMRoEfvJw1jqYCtk35rjkBmGfSkhh
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: wangwangday
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      W2t4ARpxBCaAzKJXLKTLLHXgcki9YVQMb3v2mQm6maFsyJk
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: AstarNetwork
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: claudiopinac@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @MrPinapple_
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Wma5KpbBszEHmTQpAt2HzhT5mPG4iUeZiuqPkmqZVhJz4a2
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: @VasaKing
+              }
+            ]
+          ]
+          display: {
+            Raw: VasaKing
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Vasa__King
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      akUeFMpiHtfsvCTrB9KuMk428bTnFuURoeUpo5qWJwu1xma
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Kristas
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aRYue24w9T2p7wfxTh7RLyB4qYhm8Pbu8AL1e3EbUDGW3r6
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ramiz
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aNiNcLRE1YYsc98UgUPJt1mjLFC8V7zeTL1ayPjd4ZnEWyy
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Celer Admin-1
+          }
+          legal: {
+            Raw: Celer Network
+          }
+          web: {
+            Raw: https://www.celer.network
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @CelerNetwork
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XQWo6so77HwCCLjomwh4ynG5B5JdRJ1RTwQDszGS3MYhWg9
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: PolkadotAll
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bZmLznjYyRNM4WrT4GybC3buWNJp3iNyUVDVfYcv7dNAJWw
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ilgizar
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YGFm4UZK2y9nyCYP5FTjcnEFAKrkMG2VwbTPvqyGySTKHAp
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: FERONIDAS
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bH1nt19dYdvU66DgjTE1jC3KQvkVoYWpJrycAkPRK4LRnbz
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: HOTTA
+          }
+          legal: {
+            Raw: YOSHINORI HOTTA
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: kinsan1020@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      X7akruMgRDexYc4oCrfky25ksVyEArKDRa9jFDiaaJt5dWh
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: akru
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Zv4m7jJA6WXZycka46vgmWqiQrz3nRA9muEWzrSkVRA8GWf
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: AstarisFuture
+          }
+          legal: {
+            Raw: ASTARIUS
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bTTgTADDcb4MKP84uTyAm5J4DWUB1cFt2pFwqaAmorm1wDi
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Main Wallet
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aNkS9tz2ni8NsTjFPeAMPiRke4TMTvXXTr7SHcWF945tWC5
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 10,025,000,000,000,000,000
+        info: {
+          additional: [
+            [
+              None
+              None
+            ]
+          ]
+          display: {
+            Raw: Dwellir
+          }
+          legal: {
+            Raw: Dwellir AB
+          }
+          web: {
+            Raw: dwellir.com
+          }
+          riot: None
+          email: {
+            Raw: info@dwellir.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: DwellirOfficial
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WgLVEZn55rwTTemy2XNckQp6uKpV3C2w8nmNw2bFSVCsAJ7
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Cactus jack
+          }
+          legal: {
+            Raw: Rami Tivorossi
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bUVz6zZ5gaLoyE5gELt27xyZyUYURfcGjt5Z4jnWfdMSeYu
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Principal
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZySLTYY6uCbKWYUsag5V5yh2if8VgqegP2gxSvmdRtsaRpS
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 105,720,000,000,000,000
+        info: {
+          additional: [
+            [
+              None
+              None
+            ]
+          ]
+          display: {
+            Raw: Giraffe
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @1xGiraffe
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WmZGLTdBevkUecmjmFB6hoN47imhrLERXhxsHxxjYGTJuTZ
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Sequaja
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aEjXCuuJXJmj7BJGWyekb1Q5dXNBs9fABUqF9X5fxPUmb3g
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Dmitrius
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZPHxLDEhcqs9Ub2n6gRHiTJ1HSxeSZQJZ7HHhr57GFr2QeW
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: privateFrank
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      X3REWwC3wi7wzoaQwZpqSgSAfe8aA4176pfGW3wXHKdhexQ
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,140,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Dino | Startale
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: dino.pacandi@startale.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Wj14Wp8CD8D8K58hpxbuFSTmXyFeBvjfAoJqbHjrHRsm1pN
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: STAKECRAFT
+          }
+          legal: {
+            Raw: STAKECRAFT
+          }
+          web: {
+            Raw: https://stakecraft.com
+          }
+          riot: {
+            Raw: @n1trog3n:matrix.org
+          }
+          email: {
+            Raw: support@stakecraft.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @stakecraft
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      VwNLuRkRzHA4iu26F88vYremJG2WEUgTQiehXuxwTYw7WqY
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: DPD tora0515
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZHs7wBH6TVwTPXYtkTntiXupH9zCoXvLh31w1Zdg5CFafuT
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: FelixMobile
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: w808909@yahoo.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZFsTYn5uqtVrFgkBepKkNGsnsUeycDZYJN8TbccMtQEYiFp
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: fred
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aWNhvpK1zx7tmzWZbpf8rMx44mj79AtmYUqvNhFSpSBJC1v
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Mercury
+          }
+          legal: {
+            Raw: Discord mercury#1501
+          }
+          web: {
+            Raw: https://mercury-nodes.net
+          }
+          riot: {
+            Raw: @mercury.planetes:matrix.org
+          }
+          email: {
+            Raw: MercuryPlanetes@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @MercuryPlanetes
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YYP8obq1ea46a38J9NifKsZtJqsfWPdJH6wEkRWew8PevU9
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ZGM
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aZkj2EgiZkUbnKk6XMp9pf9f9SALXSAaTgz17ZEYUaq2UZy
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: tksarah
+              }
+            ]
+          ]
+          display: {
+            Raw: tksarah
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: cctksarah@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @tsarah0822
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bKxa9fKgvXdxsHrb6qDvYUKPMLw9yzFVU8V73pNhPVkALfM
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,580,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ivan (Astar Foundation)
+          }
+          legal: {
+            Raw: Ivan Andrisek
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: ivan.andrisek@startale.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XSikFavQVVMY4AEXbpFPCd4cnv7XfMmcLvmPHZqmzHfpcEj
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Sik | crifferent.de
+          }
+          legal: {
+            Raw: Simon Kraus
+          }
+          web: {
+            Raw: https://crifferent.de
+          }
+          riot: {
+            Raw: @dev0_sik:matrix.org
+          }
+          email: {
+            Raw: simon.kraus@crifferent.de
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @dev0_sik
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aqSchWm26ycwLUVGjXgm3sKrNy2pFYKYLbQoMfiVciDakr6
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: safe1
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YUtjbKccuJeTqijBGDdC6ToJ6xfoAjCG3fGCYPoDjCRgKjE
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0x706c61736de69c89706c6de79a84
+          }
+          legal: {
+            Raw: 0xSaber3
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZwEBK72g6j6JVsvLGXjyGFKnCe9wdcHbSbXbbU9aQm9rKVp
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xe5a4a9e8a197e5b08fe99ba8
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZhN4psXR2kqdYfqZqt55W4F84SGocSXNqGPm29Uqe4xJ3hF
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: sarahro_nodes
+              }
+            ]
+          ]
+          display: {
+            Raw: SarahRo | Node
+          }
+          legal: {
+            Raw: SarahRo
+          }
+          web: {
+            Raw: https://sarahro.io
+          }
+          riot: None
+          email: {
+            Raw: node@sarahro.io
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @SarahRO_Nodes
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YFJqekDWrxukqXZ634pLU41pq6WnTqsjyqf6r5jGgeq1qdB
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,320,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Openbitlab
+          }
+          legal: None
+          web: {
+            Raw: https://openbitlab.com/
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Openbitlab_node
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZqZz1ZK6EAYWopkQPRLjUrvtRi4Hq6LfTP6Q4PPG1BfSCna
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Wallet de Polkadot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      avft6CL4ACQVZsuq6LjAQGtzn3u3zwqLY7g34g6K2Xi5DUK
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Fernando
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bQffCZx4jNkUwxWq8DUEeP5yTeHABgiBiccd4hZ1mVtrQ8Q
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Miyu Tanaka
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WfNqvwHZ4mFvUz5X9mVcq5xs8o8PbBpZp51kzUz29LHxX2B
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 107,020,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar Foundation
+          }
+          legal: {
+            Raw: Astar Foundation
+          }
+          web: {
+            Raw: https://astar.network
+          }
+          riot: None
+          email: {
+            Raw: info@astar.network
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @AstarNetwork
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bCA3uBEyboFaKgzV5KZDZD9vn1DMkanaSbrAxRTtK2nRHbi
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ramznarsln
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XrcvHtmAR35ScNWuAoBwD33ERcV9zQbeafEhM3EsQALWcaP
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: findeth
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YkNc9aQ26xuADQGm3iYdN9o8GGwkmdSsPSNu8xE9QfxBSvj
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Txomin365
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aWHH6yB5Q4XunUkaTHJqcuMuCdKNgcRmJyjJoLryR5sPCuP
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: dot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZyMJx8Gey9tPoGVuumE3Nbx17oUw2eRurPqmsNoF4yKFAz3
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: lei
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Y1yFVYYaTW1zsuYwDQtRoMyN8KyQhJpF7xYntQMwWWLAqat
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Maarten | Astar <> xcBAI
+          }
+          legal: {
+            Raw: MultiSig
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: maarten@astar.network
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bZ6Fy7ARL6gDoVtcXJ2sMSivok1SQsKinfT6tdTGyJad89C
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ta-chi7707
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WhtnSjNmH1dWXCiJ1Vwa3h3aJftF8jtjVwTRKdi1v1nEL8P
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: TAKAFUMI S
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Yqawb18vVdF8Nruea9jzUn1myT3Us6eLhU1JjvwvZGz25xG
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Age Of Chronos Staking Rewards
+          }
+          legal: None
+          web: {
+            Raw: https://ageofchronos.com/
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @SFY_Labs
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZfEuzYHyfo5TZfAx9fsntdkx2W4gDFLPwUNeqSrJTpQJXDc
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            KnownGood
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Community rewards
+          }
+          legal: None
+          web: {
+            Raw: https://astar.network
+          }
+          riot: None
+          email: {
+            Raw: maarten@astar.network
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @AstarNetwork
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YdBDWpZ6zPDKxx3wkSL6nnuAPbRFBuoek12E74daUB39Tx9
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: carbonzero3.io
+          }
+          legal: {
+            Raw: carbonzero3
+          }
+          web: {
+            Raw: https://carbonzero3.io
+          }
+          riot: None
+          email: {
+            Raw: hello@carbonzero3.io
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WwyTUN3ZT6hgKHobaUEm9ovx5KYbizsJ5feJpznJRsY7aCh
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: fucker
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZwAWQmoo61zK9gRh8N9JA18cAji7NFHHPLh9fL6nECrtPui
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Tsuji74
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aqZEtceKwEU9bmrvkfgPivVgdKaKvVvU8AfU1q5WxethvTu
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: RuboPolkaDOT
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XkhVPXz33x4vmwaMCDugxBqeGm1Whrb1EtH8Mm13wDYtirv
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: dingpamao
+          }
+          legal: {
+            Raw: dingpamao
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      apdFKn2QWF5oCQ3mmRhjQCBavuDgLr82XK95r8pSQmySSKK
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: SkyDot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZSCGJbSRRnHDksKM2XxNNCQT5L3LriqhRrYkmFQwhmqBDzj
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: POLKADAN
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aCMzcvPoq54PR3VPndvv4143moRmYfiALp3EFf8bvphZi36
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: alexpromoteam
+              }
+            ]
+          ]
+          display: {
+            Raw: AlexPromoTeam
+          }
+          legal: None
+          web: None
+          riot: {
+            Raw: @alex-m:matrix.org
+          }
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Alex_PromoTeam
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WV4XWPuaqyajNL8PfnrCiqZ4L1yijcbvbiDkxoHR2fAFaBy
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Guardians
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      avW1zAw1KyCq2PxDPmxSNSWBNu3Sbw8t716qTmEqCzY85q2
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: _disruptor
+              }
+            ]
+          ]
+          display: {
+            Raw: DIsruptor
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @matosfranze
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XSh7tyzeufgjdKUvhUKpgehK7a5RDg6dgTwekq67g5JUmaw
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: TOKKY
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZCjtg7EVXpz2S4V6oCSpDEhnhHNCiQAURPCfmHtdGgHxDQX
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: polkadot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YysSHqNpLAMGRi3EjhHdfpnpC8J5aLzuFTBL5qafG9vYPvi
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xe59490e7baa2e99c9e
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      a6yB8qB8Vf2M1mH5p8y7Tadv6PxoVu4R99FJLiMgqSvGpUU
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: yazini
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Wdmk9hqLyYZ7euV46dAdK6GLYTkrxePYWuTY7qnPhPR25J6
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ivan R Math #ASTAR
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @math_ivan
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Y4rPEERX1ucGe2nWpEqR8ACboThwtgGZDWZNZvzYeoGRTJC
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            KnownGood
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Peers Program | Proposal #4250
+          }
+          legal: None
+          web: {
+            Raw: https://forum.astar.network
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZhkmeCKdDt9Ys8YyVHpZW3nqVu9LYW1FNuC4iQp35B1JF8H
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xe8b0ade5b2b1e998b3
+          }
+          legal: {
+            Raw: 0xe78e8be58b87
+          }
+          web: {
+            Raw: https://www.alchemytech.io/
+          }
+          riot: None
+          email: {
+            Raw: 2158764824@qq.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @AlchemyPay
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YB5BBK9ubcQrzrHyma3sP3j4E6qvrbnL4cXV43AvACnydko
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,740,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Gaius_sama - Council
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bNhXQfUcRuv5h2cU1bvaNPVT9LWbQ9beXQ1b9ktSUcVzije
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: LuckyFriday.io
+          }
+          legal: None
+          web: {
+            Raw: https://luckyfriday.io
+          }
+          riot: {
+            Raw: @luckyfriday:matrix.org
+          }
+          email: {
+            Raw: info@luckyfriday.io
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @LuckyFridayLabs
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      b6gMb42BaSpYPy11MdnpQ2NXhcKNwNEgdVfhuBhFbGQnjJ5
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: PLASM2021
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZaoZJFKZ3GE6Vjy74fBwTRqndq8ro43qyu3Yw7DYvzdJSq9
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: PromoTeam Validator
+          }
+          legal: None
+          web: None
+          riot: {
+            Raw: @alex-m:matrix.org
+          }
+          email: {
+            Raw: polkadotpromoteam@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @PromoTeamPD
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aCjn9DDdCqGredzxPjpRxabveyPUBJgP5cB3GLC3WBxg3rf
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Wetez03
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Zo8JoY7WEmJB9go6PQVscr2GMzFWE5rmWMn4bYLjQgtK6Re
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: swasilenko
+          }
+          legal: {
+            Raw: Sveta Vasilenko
+          }
+          web: None
+          riot: {
+            Raw: @maydrain:matrix.org
+          }
+          email: {
+            Raw: followtodream2@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @twbyvasilenko
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bbEphXcDmNXEcFJSDeNK8PvRwbH8mjERhdZTo7SPBhKfrT9
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            KnownGood
+          ]
+        ]
+        deposit: 106,960,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Maarten (Astar Foundation)
+          }
+          legal: {
+            Raw: Maarten Henskens
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: maarten.henskens@startale.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @henskensm
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZZhS59mA198aCb3XWFJzRXikf5DEHdsMBhxCQKVpLDPraH9
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Wetez
+          }
+          legal: None
+          web: {
+            Raw: https://www.wetez.io
+          }
+          riot: None
+          email: {
+            Raw: contact@wetez.io
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Wetez_stake
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      anJPQgvp3YmYj53KTKkKquLvSoCqf2QwFQZsynD8kxn1Dh5
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: cqwrn
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      X2UXqkaAALSJFUowkCPKfuquGoRpy5LFAmKybr7mrX5wSK7
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: atomdealNode
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bZ6rYAA6sFDaw5mMU4ZkexmxYFm2ije8XRm6jhWVGg7ZRk3
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 202202010142
+          }
+          legal: {
+            Raw: hidetoshi tsurumi
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: hide7159@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZmatH6vHG3q883KmXhv7EWet6PpzZ3FMrrJxRqscxLhvLxi
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Mile
+          }
+          legal: None
+          web: None
+          riot: {
+            Raw: @matherceg:matrix.org
+          }
+          email: {
+            Raw: mherceg@protonmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @mato_vilac
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YA43xn6ksBdwyavY4oukxsRggUe2hjQzarBV7ZvFKVVMMVG
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: WETEZ04
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      W3ZiGfQrxgyLZmXKHVsp7nyWSYJKwHQMQ5jLCTtdvenQ5MR
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,648,000,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: olezb#4858
+              }
+            ]
+          ]
+          display: {
+            Raw: olezba
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @olezba
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XrHfQcBB5cv4H9cRupXHJppcJ1J4ArM3tcD2LnC1W78qKoQ
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,620,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ramz - Council
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Yei2xtHFEai5FnyuGPNAqZhkt5tAQ9ZaXRc4BMvwkTsU5S3
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 50ritaia
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WXUrLdYDLnvMaM2QQx8VqWGDXnouxkSiqYXFPECLaJUB37t
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: yushil
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bbRNtU6k2skvgvMNohCzvLRJBF9vpf69JVU25Sy6rb2kM6B
+    ]
+    [
+      {
+        judgements: []
+        deposit: 106,860,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: https://discord.gg/P6Vczcbtur
+              }
+            ]
+          ]
+          display: {
+            Raw: AstarDegenDAO
+          }
+          legal: {
+            Raw: AstarDegenDAO
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @AstarDegens
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YvWEPYi6BRqpLeKQRQP1XZoWc6JM3LoZDCXgMNgtswXULvb
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: MAARTEN
+          }
+          legal: {
+            Raw: Maarten | Astar
+          }
+          web: None
+          riot: {
+            Raw: @fiexer:matrix.org
+          }
+          email: {
+            Raw: maarten@astar.network
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @henskensm
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZhyNE28MG6DSa8xGHioSqHStNdB13nTwrNVp925YZPXvEwt
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: defiguy
+              }
+            ]
+          ]
+          display: {
+            Raw: defiguy
+          }
+          legal: None
+          web: {
+            Raw: https://gustavohenrique.xyz
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @defiguy22
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZZzALabuXq9yJtLTBYmfSq4vpHfwetB9KV1cah8KUHYsQbX
+    ]
+    [
+      {
+        judgements: []
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: 2075
+              }
+            ]
+          ]
+          display: {
+            Raw: 2075
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XJnfRha6TJDy3kDmqu2gHt7daYTxji6wHHgRwHxhdZEuzbr
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: WETEZ05
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YgtesGAKrjgyXNiPMGUrztfDsJgYzknyhogjfoRQdqkgrPK
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: wy83111
+          }
+          legal: {
+            Raw: 338811
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      af3FERHDB2hdGx1GUs8BjhfS3tmUXFSwfeT7KugBJWR1z6Z
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: polkadotTral
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YnxBHkFP86DgXE8uLFgUZo4qn19dQsjfi4SUSuXXWSCd4tZ
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ASTAR@BML
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: wangr0729@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YteuSeNbFb7y9RFGeQb11N2jBwYmctbPfpNycFJCoHEpcyw
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 10,025,000,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: FOTON
+              }
+            ]
+          ]
+          display: {
+            Raw: maxfoton
+          }
+          legal: None
+          web: {
+            Raw: https://maxfoton.tech
+          }
+          riot: None
+          email: {
+            Raw: djmaxfoton@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @MaxFoton
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZF1qRq5zxGTJPAdMf4qdnAGvWZkLbrdiWD6TKFF5rJQr8rE
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: takashi57
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XB7zoJQqpV9VmP74BS3qdQ8ohUi5WDntp1NUmgXh3Lp6oHq
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: u910162005
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZUJewBJpQMCS8MeNbKoQk8ddTC5SyEzJN312XVx4zujjjHj
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: pathrocknetwork
+          }
+          legal: {
+            Raw: Patrick Hofmeister
+          }
+          web: {
+            Raw: https://pathrocknetwork.org/
+          }
+          riot: {
+            Raw: @pathrock:matrix.org
+          }
+          email: {
+            Raw: pathrocknetwork@protonmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @pathrock2
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZCb9h3Nu4pzaP9f8C211mu4LN8L8aS33bkCzivd3pfLgpuL
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Styx
+          }
+          legal: {
+            Raw: Styx
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      axW6q39DNe9V1u8oF1MXXGU3BnDNVTkAWz3dN8aYgjoUaJW
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: PinkRobot-Shared
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @PinkRobotNFT
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Yr7ZxQJX6Ho4qBFywoA5hvFSxpBtLQv5T4LnLpzy3MffKJa
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xf09fa78a2049636562657267204e6f64657320f09fa78a
+          }
+          legal: None
+          web: None
+          riot: {
+            Raw: @icebergnodes:matrix.org
+          }
+          email: {
+            Raw: info@icebergnodes.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @IcebergNodes
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bVx9wo5XVSaQnm5E5wpD56R4Dxt9dBJvJn3xBpWcYD5PmF8
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: andresfx
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WAf5Z3Si1A7GQD4ZVWWuJBCoVMTNrdtbNsPzWTBnjdoqrgF
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xd090d0bbd0b5d0bad181d0b0d0bdd0b4d180d09ad180d0b8d0bfd182d0be
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      b1gtBwnLUzcxMfXBPAd8j5m9Xxj9W77cBUcnHcijw1CqiUM
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,940,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: pithecus.astr
+              }
+            ]
+          ]
+          display: {
+            Raw: pithecus
+          }
+          legal: None
+          web: {
+            Raw: https://tinyurl.com/pithecus
+          }
+          riot: None
+          email: {
+            Raw: cp0x@duck.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @spmlaihm
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZUug9AtzRXCVhikp4X9n5ARmq3PcbcebHts8WHB1fdKJbV5
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,500,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: Mouthmouth68
+              }
+            ]
+          ]
+          display: {
+            Raw: Mouthmouth68
+          }
+          legal: {
+            Raw: Mouthmouth68
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @mouthmouth68
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Zy5e2MM4JBHd8FzRsZPwNMQ95SNNn24Cf1KXaynK1oWoeAH
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: bitcoin
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      X2mhhtngdrRtXyyJy89KGfQojc24Jhy8wKzi2h2HVXiNKhk
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: assyd974
+              }
+            ]
+          ]
+          display: {
+            Raw: VxMain
+          }
+          legal: {
+            Raw: svax974
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: svax974@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @svax974
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Z7MSqvaaFhRmVe1tk2t5SgVXfmUUS11sdyEHgvuRm1XxjJV
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: bas dot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZtPzFVEmtecnYZg98M7s6uLTdomjrWSrqxUThsS2sxQZz2k
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,440,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: astar
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZLuQAH9JmXsafg8QrUhqRCQX6tzBKD1W13M5UYGAybBw533
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: WETEZ06
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XQAM3HUyPvvHdpfTBzy9tbYPAWwLwMxXwGVgCe7pUZvswD5
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: syphilis6688
+              }
+            ]
+          ]
+          display: {
+            Raw: BreizhNode
+          }
+          legal: None
+          web: {
+            Raw: https://medium.com/@breizh-node
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @syphilisnode
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XyPUZ81HrxAMZh641xGQfQjYieNmzjFynp1T5vgAMqZ2soQ
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,640,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ShunP - Council
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      af4shqzyZ7FjbESzfZWncFfRcTbLS1da6X2Lbt6fpguiHzc
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 1
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      af3pojTazD27qkNvkGV5E22bJbu1qU78tFuS88bv1nv2BYs
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Eason
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZcCrrxh8kvj1px6cwKYtKXsLgyyerUnuj2A8fynJRvuaUd1
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 106,440,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: AstarHood
+          }
+          legal: {
+            Raw: Mythical Outlaw
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: astarhood@proton.me
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @0xAstarHood
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZHtL9qaaVVMPNmpgM1sJMKDzvFUjxybrW3Ky7AW8FP1wUHd
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: szx310105
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YMFxavc4wzMncNBKr6NkuPwNkp2C78hYhX6kkF7BD4jrhp2
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: mattweb5go
+              }
+            ]
+          ]
+          display: {
+            Raw: Matt
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: matt@astriddao.xyz
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Matt_Web3_
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bHxG1LELcf71cBgq96fj3HEdGUB9UpYJZ4o91auJB7jLRxc
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Aadarsh
+          }
+          legal: {
+            Raw: Aadarsh Shaw
+          }
+          web: {
+            Raw: fadsfd
+          }
+          riot: {
+            Raw: @adhsgff
+          }
+          email: {
+            Raw: fadsf
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: fadsf
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bHSX3HaHZxsTNk6JcEzhdN89Vb1Tye7vWG3CqskQMtreDpL
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: wowso
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Zo7PMNN8k78GN2RSC9cWhXVrsaJED3HY9TwUq95zCAUQF7R
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,920,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: BrhnKcby61
+          }
+          legal: {
+            Raw: BrhnKcby
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @BrhnKcby61
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZV1xJKuS2KuxUdi7vHCqYZN4FTxTXY8z2STzvgbykmTZCG8
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: MC
+          }
+          legal: {
+            Raw: Mark Crince
+          }
+          web: {
+            Raw: https://mcservice.io
+          }
+          riot: {
+            Raw: @mc_:matrix.org
+          }
+          email: {
+            Raw: markcrince@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      atB3Hqx6qT2CB8BhM5JFnMgk7LtbRXqLgEnPXhVsKj47m4Y
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: dot 1
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZkXuTVXB4s6sPgf42gviV2GcTHkvXks72sbVB7rqevzr2xu
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: mr.karahanli_emre_
+              }
+            ]
+          ]
+          display: {
+            Raw: Emre-Mr.Karahanli-
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: emretanis4@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @mr_karahanl
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XfoF6wwFvJSQaHU5cybnuoccU7nbNJpahVgCUYZCuEi83aN
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: polkawallet
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WBcqJe1YnndzHjCBCU9NaZwPmUjVzueoGpt8JwHKMU12yGG
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Cyganzcapi
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZL8yC4CbKCbzGtJ4vzhXUTD6UfE1eQo8GcA1TYwHWNBCdeb
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Plasm Lockdrop
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      b9AFkn64XxFbbaZbfi37thh6Ep6Xfg3EXyuotAfj8wFnHmP
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: calcodot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      W6Ko66wxnZpqhWX5GqNm7LukMdq4f27rXtM1cHsLc3PABC9
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Shiba
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aQbDMMNeziZ8ds1dFuTqfiAb2ZD1nW8CDETNjRE4GEpkWdQ
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xf09f8c8c204e4f564153414d4120f09f8c8c
+          }
+          legal: {
+            Raw: Novasama Technologies
+          }
+          web: {
+            Raw: https://novasama.io/
+          }
+          riot: {
+            Raw: @day7:matrix.org
+          }
+          email: {
+            Raw: anton@novawallet.io
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bTYiAHDfB8jsWxaiFwqWMCvq5oaCQpaWHDuku4Ty943ubWM
+    ]
+    [
+      {
+        judgements: []
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: swordboard.eth
+              }
+            ]
+          ]
+          display: {
+            Raw: swordboard
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: swordboard.net@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @swordboard1
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZwKrZUYrTWUbr68X89RL6dGphaPXrMURfyKgjKwcdddwpNr
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: micks polkawallet
+          }
+          legal: {
+            Raw: michael minto
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: michaelminto66@yahoo.com.au
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Wh2nf6F5ZNJguoQu22Z361xo6VFqX1Y2BuQMcJBSJxERh5E
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            KnownGood
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Hoon
+          }
+          legal: {
+            Raw: Hoon Kim
+          }
+          web: {
+            Raw: https://github.com/hoonsubin
+          }
+          riot: None
+          email: {
+            Raw: mail@hoonkim.me
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @hoonsubin
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WwsZurg9RUXSuv7N5b2cexdP7UirtuP7vQmdxpes3RmSwmV
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar crowdloan
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZVxgm34p4BNEBUMSsLSqFbBdtYtsCPz2MwFBFUjZtziqt8x
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: POL(S)KADOT TREASURY
+          }
+          legal: {
+            Raw: POL(S)KADOT
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: kontakt@polskadot.org
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @polkadot_poland
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WDa5ssmfcAESr6SjesRbEwya3wgdfzgn5XVuxyUXM9gVEgx
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Leemo
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @LeemoXD
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      X8EcFSxxSJ4Am9uyXN4ugeATP72iKax8kMDkYtbskTQYQDu
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0x4dc4b054c4b020504f4c4b41
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Z5VAv3wwBuH15d1gAgjztz8CQPG6rwekFYxavgjhggJicsk
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,648,000,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: gaius_sama
+              }
+            ]
+          ]
+          display: {
+            Raw: GAIUS_SAMA
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: g.unit2481@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @gunit3124
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WxBFjSwm9YgUA1UofXZoB8MA5RsQmcDV5T1AhDHCzrByQzu
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: FZ DOT Wallet
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZHbdKnhjuLYQpqmXJYYxQdW7FrVB7gcpeYH5whZqYar6B16
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Plasm100
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZUTPH9eHyN5G9uxDXRoQm5NL5qZnvKm9KxunSnG6jyiLoUR
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: tora0515
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      b7P34JHoKSQYRZMPqyg2ppMR35fHbcGcny7qPMF8k92ErBa
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: POLKA
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WcsJk4yV8Ez36ap9ofbYvQLUTg66UWjWru2hZh4LZaj7x3E
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: OnFinality
+          }
+          legal: {
+            Raw: OnFinality Limited
+          }
+          web: {
+            Raw: https://www.onfinality.io
+          }
+          riot: {
+            Raw: @samzou:matrix.org
+          }
+          email: {
+            Raw: support@onfinality.io
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @onfinality
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZZysykgBxwAgjknNF3Z22G57D9Us2f612Uxn7i1oy9LLoba
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: fernandoreis
+              }
+            ]
+          ]
+          display: {
+            Raw: Polkadot - Standard
+          }
+          legal: {
+            Raw: Fernando
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aZLe15oCxNxPsAWgWEa5msmRg61WUZCEi5aknhEpTrgwY3L
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: emre
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XBFtFg95J9W1uu5zKUBfDPxetkS1vfpxt3nsz6G7wzAjiLz
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xf09f909f426c61636b46696e2054756e61f09f909f
+          }
+          legal: {
+            Raw: tunkas#7609
+          }
+          web: None
+          riot: {
+            Raw: @bluefin_tuna:matrix.org
+          }
+          email: {
+            Raw: antun@tutanota.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @tun_antun
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Wi7GoJYZ46Hb1b7bconFPJg4VfoQEkbig99ZLDRszvHDdb5
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Stake Works
+          }
+          legal: {
+            Raw: Stake Works
+          }
+          web: {
+            Raw: https://stake.works
+          }
+          riot: {
+            Raw: @webdev99:matrix.org
+          }
+          email: {
+            Raw: info@stake.works
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @StakeWorks
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WDjPqC5tG9xatbKab1XzuJXw2HZk4gMNEsFgNAMzgQPipux
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 105,460,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: WakeUp
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XSoAFYUApBxr6fHSgYUyV44Cg6VnFvCfVhYZcQLH15hPzsv
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: GuiGou
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZxzQRvZP1CXTUg6aTbf3TCHWJMMQmL2hZRcZAue8faJ6FjR
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Polca
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bNEFUCsW6kV4KsHB6Y9TL2mH1GJenBVhBbByQCzSUXbED5U
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: eraki9292
+              }
+            ]
+          ]
+          display: {
+            Raw: eraki
+          }
+          legal: {
+            Raw: Ray Kinko
+          }
+          web: {
+            Raw: https://eraki.xyz
+          }
+          riot: None
+          email: {
+            Raw: eraki@eraki.xyz
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @0xeraki
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bhLkxrRDRQnjNCVz5RNFfJpGAroyPw33it28MenNQMbMcJn
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xf09faa9043616c6c6973746ff09faa90
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XAL7gbTCFBNCmYBwdQzcFvkSSbfMTSXEMqigEpkzyNLyYrw
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ParaNodes.io
+          }
+          legal: None
+          web: {
+            Raw: https://paranodes.io
+          }
+          riot: {
+            Raw: @paradoxxx:matrix.org
+          }
+          email: {
+            Raw: support@paranodes.io
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @ParaNodes
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XrQKeqCP3ibARdTJxZEGoFN8C3HPSuADKLRk1UrtfDsxbZ5
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,540,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: taka_cross
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WYGFx1JPUWPnJiUapAWitHnoTEAxY7gUsMNg5ZgcnXPHQV7
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Main Wallet
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bTmWytzRvrgjm4fJV79ZDvhESk2xhK2CGNx3xKvGo9VVqGN
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: GiorgeAbdala
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: giorgeabdala@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZtGv8PgCFW35AATvuAnW2vybTdx6PMddwro3HpH6QALrdCk
+    ]
+    [
+      {
+        judgements: []
+        deposit: 107,840,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: astar polkadot wallet
+          }
+          legal: {
+            Raw: 0x416c666f6e736f2053616e64726f2047c3b36d657a2047c3b36d657a
+          }
+          web: {
+            Raw: https://treebtc.w3spaces.com
+          }
+          riot: {
+            Raw: @treebtc:matrix.org
+          }
+          email: {
+            Raw: treebtc@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @tomerqueves
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WJUevho3n9RuQtdEwVPgThoRPvDttPKh2wqoecNCeT2U4Jb
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: inchainworks
+          }
+          legal: {
+            Raw: inchainworks
+          }
+          web: {
+            Raw: https://inchain.works/
+          }
+          riot: {
+            Raw: @dafricash:matrix.org
+          }
+          email: {
+            Raw: contact@inchain.works
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WDa63eyRCLi9TPe4ePtuJUqg32S2aqfaw7NnbLD33WnRJMu
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar Foundation Collator 2
+          }
+          legal: {
+            Raw: Astar Foundation Collator 2
+          }
+          web: {
+            Raw: https://astar.network
+          }
+          riot: None
+          email: {
+            Raw: info@astar.network
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @AstarNetwork
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YjuqPYaRnBop94qv925q4H5gCD2rWvb6VJiHYmHQnN8Y1xP
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: you425
+              }
+            ]
+          ]
+          display: {
+            Raw: you425
+          }
+          legal: {
+            Raw: you425
+          }
+          web: {
+            Raw: https://note.com/you425
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @you425you
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WE8MswntHTpVCQtfbYQ2E6Y6bPrSbRtL7Fk3Uv2dD8N1qfN
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,516,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar Foundation Collator 1
+          }
+          legal: {
+            Raw: Astar Foundation Collator 1
+          }
+          web: {
+            Raw: https://astar.network
+          }
+          riot: None
+          email: {
+            Raw: info@astar.network
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @AstarNetwork
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YLW2QLCmzRdfUo9wuRq5H8SAEncz7fDimmfdRWWTa521osD
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xe3819fe3818be381aee3828a
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bgha1b2RnXYoqqmf75GZpAUDwSuDeU4PetmMQhLYL7jHqR2
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: AMOAMO
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZfEcSDbNTZHi3XmUNYDxS489ZNsWLoXgrpPX29AB6PwpHc7
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Tadeco
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ajucydEKEVo4YgseCWreq3sXQxohSwSgGNow1VDrpajpjdk
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: TMA New
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZfamRojWDwMWp8mC8CS1GopciphXYB8fCK7qZrUhEuEN7mA
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ernst Kints
+          }
+          legal: {
+            Raw: Ernst Kints
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: plasmajack@me.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      beregwh2YyqJfFg4iSz7mSK8nfc4eREGEJMPuLTUQhYAkxo
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar1
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XoSzdQpoLiT33cVmVGWZCA3NXAKqNZHYYUQXB6rPAe539MP
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Polkadot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      a7KB4mzGSmuCrEwKNELQjiTxBtfxjS5heREPmZjTwrT7yg9
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: shutanaka
+          }
+          legal: {
+            Raw: Shuhei Tanaka
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @shutanaka_jp
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      X85VX338i2zATazfkYE1geEYBi5KorAuazuuLQdd1nvtPcj
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Shinlabs
+          }
+          legal: {
+            Raw: Shinlabs
+          }
+          web: {
+            Raw: https://shinlabs.xyz
+          }
+          riot: None
+          email: {
+            Raw: node@shinlabs.xyz
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @AlexShin
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bTQ9suXXefXMDVWTJuq8Bn7SC468A91EGE6Wv3bu9didXcb
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              None
+              None
+            ]
+          ]
+          display: {
+            Raw: Scytale Digital
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ac2v7depJQ8wWu8TNfYbknVWQCMKHcLgWhhCEW1ZcNgNMJ3
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Acheekybum
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WXX4zsN3LPwUbVAouQUE9EqUSVycUTaoW65FyM5UeS5xeWZ
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 106,120,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: Simon_Brt
+              }
+            ]
+          ]
+          display: {
+            Raw: SimonB
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @simonebortolan
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZZrGKpDXg6p6J6kkReu8V9hKbzy8UMsFJbteGJ3jNGmzats
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0xe4b8bde5a790
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      anonfKRySqTSYpxYSnt7DqDFPjVBdcAXuMyKjCK9GN29uvL
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 105,640,000,000,000,000
+        info: {
+          additional: [
+            [
+              None
+              None
+            ]
+          ]
+          display: {
+            Raw: Shaun | Astar
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Ww3XXBSjgNY8EANYCDiNWkmmsBbmjRZsSC71inDkRdmNu5b
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+        ]
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0x5375627374616b65e29ca8
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bLd7595inXyXLsnCB75Er2Z2y6aqAfBqi8datgqthSGAF9X
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            KnownGood
+          ]
+        ]
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: bLd
+          }
+          legal: None
+          web: {
+            Raw: https://bldnodes.org
+          }
+          riot: {
+            Raw: @bld759:matrix.org
+          }
+          email: {
+            Raw: gm@bldnodes.org
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @bLdNodes
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XSH7DGt4KPLiy9bh5iqeNd6BSkmWw3LjsrUQqdE6M98qX13
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: DOT Concha Piquer
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bEDgvNBaR1ZxeR4HSTtaGnnTBksDuBYfzuRvnAqiLnHLCrk
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Xyh5rhLjEbXxVbVAattgQC9qTTEAg3kZeGXY2THwbsWuQPQ
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Kensdot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      a7gTjVR4kyNAHDp4B8PiLLPQYRhpbicaCr1CQ6eMLuMBT7W
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Plasm Gaby Lock
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZJKp9fuuQihYopwLEmxZ55zU5WMpeXi95HAPRPUiGcZgZQz
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: Juminstock
+              }
+            ]
+          ]
+          display: {
+            Raw: Juminstock Astar
+          }
+          legal: {
+            Raw: 0x4361726c6f7320526f6472c3ad6775657a
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: juminstock@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Juminstock
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Y5iCr5tyia5UwQnjVjSE9nDWJoFtowywG3BSfmsqLzNgy6W
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: cmalize
+              }
+            ]
+          ]
+          display: {
+            Raw: CMALIZE
+          }
+          legal: None
+          web: None
+          riot: None
+          email: {
+            Raw: malizechris@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @chrismalize3
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ae4jogSftsjxjLr3RCzifMSmU9wcAuUaXw4PYrqrRVXtiQM
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: pitcoin.spacelabs.astr
+              }
+            ]
+          ]
+          display: {
+            Raw: Pitcoin
+          }
+          legal: {
+            Raw: Marco Da Rocha
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: mguimaraes.darocha@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @pitcoin_
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YqMw1pu9Htiean1uoKZUQDEYgVMdSAMTY8yENqCBWXGxDiz
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar-Network
+          }
+          legal: {
+            Raw: Don
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ahJj2FY4jDHmDnpKtCW56puzuwPp8bqFwyrPZHG7DKVqyS7
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Treasury Distribution
+          }
+          legal: {
+            Raw: Astar Network
+          }
+          web: {
+            Raw: https://twitter.com/AstarNetwork
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZQ24NzyzdAD8XQVGZmshpzia2VEvAkbnkY4XBRaZhA6YFhz
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: peach_dudu
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZxB77ZVCXH7HUVQr5Fa3zZgCZSpMw3xkU6sqrRjmxPoBWyS
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: 0x706c61736d613333e99481e4bb93
+          }
+          legal: {
+            Raw: chowsangsang
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: wjx18923713624@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aCVweEHsJYeE7gbd88zvccqBX53PEttrdwJYLRydFrXiRCA
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: GameDAO
+          }
+          legal: None
+          web: {
+            Raw: https://gamedao.co
+          }
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @gamedaoco
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XUComoBMgocUUBnzEcc6pEZZxezVMvEdo38yJLDJy59Q965
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Astar-ico
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WiJkJBgws5kda2w1snF3ggFi2SAvGNV7HLC5BgWYEWYdCgj
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: shaw02_dapp
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XoPmK9TagQEAFusNy1DYAEgLuft4Ly5wGwM66bvAYLhC3km
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Polkadotters
+          }
+          legal: None
+          web: None
+          riot: {
+            Raw: @pmensik:matrix.org
+          }
+          email: {
+            Raw: polkadotters@protonmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Polkadotters1
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      aP2SsUxuuF19f3DkU2U7BjuPe5nFFQ2YW5ALtnvq35Vhhog
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            KnownGood
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: SW Collator
+          }
+          legal: {
+            Raw: Shunsuke
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: shunsukesan.tech@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      a4XX676FBaTAekrZD4RkRfqnsPGZpnFAxgbawdbawYWTEhc
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: Guitarman7202
+              }
+            ]
+          ]
+          display: {
+            Raw: Guitarman
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @Guitarman7202
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Wg5rKAbt2utYhy1XciYdy1XSUCURa1vWGgowjvjdppc91wp
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: jobjun
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      WmkVgpMF2pHtVCd8Yp7WpnbzzUCTJF9Vh9Te8tRLMfdt5mC
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: AstarisFuture
+          }
+          legal: {
+            Raw: ASTARIUS
+          }
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      atN2okyrBn8EKmzRNg8UjZqUKuj5LGHBMJbMFUx2yx4kgNL
+    ]
+    [
+      {
+        judgements: [
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: 3s8841
+              }
+            ]
+          ]
+          display: {
+            Raw: Tsigalko
+          }
+          legal: {
+            Raw: 0x736164c4b16b20736174c4b163c4b1
+          }
+          web: None
+          riot: None
+          email: {
+            Raw: sadiksatici@outlook.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @porgence
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XUz4QCwDTXruSduAnKoJEMpatZ32bvxDzKAfpbFfisjQdQB
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Polkadot
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      beeZfXVZppLCGtZuE4jRZLD9RperjqbfCYrC148Np1uv4pE
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            {
+              FeePaid: 0
+            }
+          ]
+          [
+            1
+            Reasonable
+          ]
+        ]
+        deposit: 106,480,000,000,000,000
+        info: {
+          additional: [
+            [
+              {
+                Raw: Discord
+              }
+              {
+                Raw: bao1993
+              }
+            ]
+          ]
+          display: {
+            Raw: bao
+          }
+          legal: None
+          web: {
+            Raw: https://linktr.ee/bao1993
+          }
+          riot: None
+          email: {
+            Raw: bao.crypto.5515@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: {
+            Raw: @bao1993jp
+          }
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      XD1LmQoBAtEirn3LRkjFNgfevqCYboXfXA1kck24TdWfmkg
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Finalyxre
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      Z2dLdodVKKTAmSthvVhmEPjoXtQJrFz4KSNEAgCtbZhaBhk
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Polkadot/Kusama Wallet
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      bHV7Rd9htiUbxG2jH9skezP5ncQK4wn3QxmKMbCfd5zcrh9
+    ]
+    [
+      {
+        judgements: [
+          [
+            0
+            Reasonable
+          ]
+        ]
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: ASTAR_NODE_EK1
+          }
+          legal: None
+          web: None
+          riot: {
+            Raw: @ek_2785:matrix.org
+          }
+          email: {
+            Raw: vertusprem@gmail.com
+          }
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ar9yi2NvibVwuv56nLdagTrgXXNb2xsjP3z3gGKtmUS5dAs
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Aadarsh-Astar
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZtNddaSXofVbF4UXNFNb99y1M1JM3MTPqXKJwn7kBPDB68k
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: yoshimomo
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      YHwL9eZBfugf4vDDqihWA7rQweLwP2p9io6BhpmCFfx9Bns
+    ]
+    [
+      {
+        judgements: []
+        deposit: 105,160,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Controller 9
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+  [
+    [
+      ZvWgyBa6G1KW1UYCrTvKDF4WCpu19dfiMR7R2rZ52FTZjUm
+    ]
+    [
+      {
+        judgements: []
+        deposit: 10,000,000,000,000,000,000
+        info: {
+          additional: []
+          display: {
+            Raw: Ganymede
+          }
+          legal: None
+          web: None
+          riot: None
+          email: None
+          pgpFingerprint: null
+          image: None
+          twitter: None
+        }
+      }
+      null
+    ]
+  ]
+]
