@@ -25,6 +25,7 @@
         }
         th {
             background-color: #4CAF50;
+            text-align: center;
             color: white;
             cursor: pointer;
         }
@@ -85,6 +86,10 @@
                 <th>Name</th>
                 <th>Category</th>
                 <th>TotalStaked</th>
+                <th>Stakers</th>
+                <th>MEAN</th>
+                <th>MEDIAN</th>
+                <th>STDDEV</th>
                 <th>Tier</th>
                 <th>Rank</th>
             </tr>
@@ -103,7 +108,20 @@
                     data.forEach((row, index) => {
                         if (row.Name) {
                             var tierClass = 'tier' + row.Tier.charAt(5);
-                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td class="${tierClass}">${row.Tier}</td><td style="text-align: center;">${row.Rank}</td></tr>`);
+                            $('#myTable tbody').append(
+				`<tr>
+				  <td>${index + 1}</td>
+				  <td>${row.Name}</td>
+				  <td>${row.Category}</td>
+				  <td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.Stakers).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.Mean).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.Median).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.STDDEV).toLocaleString()}</td>
+				  <td class="${tierClass}">${row.Tier}</td>
+				  <td style="text-align: center;">${row.Rank}</td>
+				</tr>`
+			      );
                         }
                     });
                     $("#myTable").tablesorter();

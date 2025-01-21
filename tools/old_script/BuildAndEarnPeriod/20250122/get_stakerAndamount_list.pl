@@ -5,8 +5,6 @@ use JSON;
 use LWP::Simple;
 use Text::CSV;
 use POSIX 'strftime';
-use List::Util qw(sum); 
-use Statistics::Basic qw(:all);
 
 # Set Tier value
 my ($tier1, $tier2, $tier3, $tier4) = get_threshold('tier.json');
@@ -31,16 +29,10 @@ my $timestamp = strftime "%Y-%m-%d-%H", localtime;
 $total_amount = $timestamp . "_" . $total_amount;
 # Open TotalAmount
 open my $output_fh2, ">>:encoding(utf8)", $total_amount or die "$total_amount: $!";
-print $output_fh2 "Name,Category,TotalStaked,Stakers,Mean,Median,STDDEV,Tier,Rank\n";
+print $output_fh2 "Name,Category,TotalStaked,Tier,Rank\n";
 
 while (my $row = $csv->getline($fh)) {
-    my $num_staker=0;
-    my $mean=0;
-    my $median=0;
-    my $stddev=0;
     my ($address, $name, $mainCategory) = @$row;
-
-    my @stake_amount_a;
 
     # 保存するファイル名を生成する-1
     my $filename = $timestamp . "_" . $name . ".csv";
@@ -75,9 +67,6 @@ while (my $row = $csv->getline($fh)) {
         print $output_fh "$item->{stakerAddress}, $formatted_value\n";
 
 	$sum += $formatted_value;
-	$num_staker++;
-
-	push(@stake_amount_a, $formatted_value);
     }
     close $output_fh;
 
@@ -86,18 +75,8 @@ while (my $row = $csv->getline($fh)) {
     # Get Tier and Rank
     my ($tier,$rank) = get_tier($tier1,$tier2,$tier3,$tier4,$sum);
 
-    # Per staker amount
-    if ($num_staker != 0){
-	#$per_staker_amount = int($sum/$num_staker);
-    	$mean = $sum/$num_staker;
-    }
-
-    # Get Median & STDDEV
-    $median = median_func(@stake_amount_a);
-    $stddev = stddev_func(@stake_amount_a);
-
     # For total amount
-    print $output_fh2 "$name,$mainCategory,$sum,$num_staker,$mean,$median,$stddev$tier,$rank\n";
+    print $output_fh2 "$name,$mainCategory,$sum,$tier,$rank\n";
 
 }
 close $fh;
@@ -202,32 +181,6 @@ sub get_tier{
 
 }
 
-# Out Median
-sub median_func {
-    my @sorted = sort { $a <=> $b } @_;
-    my $count = scalar @sorted;
-
-    # 配列が空の場合は0を返す
-    return 0 if $count == 0;
-
-    if ($count % 2) {
-        return $sorted[int($count / 2)];
-    } else {
-        return ($sorted[$count / 2 - 1] + $sorted[$count / 2]) / 2;
-    }
-}
-
-# Out STDDEV
-sub stddev_func {
-    my @data = @_;
-
-    # 配列が空の場合、またはすべての要素が0の場合は0を返す 
-    return 0 if @data == 0 || sum(@data) == 0;
-
-    my $mean = sum(@data) / @data;
-    my $sq_sum = sum(map { ($_ - $mean) ** 2 } @data);
-    return sqrt($sq_sum / @data);
-}
 
 1;
 
