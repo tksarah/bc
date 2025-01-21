@@ -29,7 +29,7 @@ my $timestamp = strftime "%Y-%m-%d-%H", localtime;
 $total_amount = $timestamp . "_" . $total_amount;
 # Open TotalAmount
 open my $output_fh2, ">>:encoding(utf8)", $total_amount or die "$total_amount: $!";
-print $output_fh2 "Name,Category,TotalStaked,Tier,Rank,Sakers,Amount/Staker\n";
+print $output_fh2 "Name,Category,TotalStaked,Stakers,AmountPerStaker,Tier,Rank\n";
 
 while (my $row = $csv->getline($fh)) {
     my $num_staker=0;
@@ -80,11 +80,12 @@ while (my $row = $csv->getline($fh)) {
 
     # Per staker amount
     if ($num_staker != 0){
+	#$per_staker_amount = int($sum/$num_staker);
     	$per_staker_amount = $sum/$num_staker;
     }
 
     # For total amount
-    print $output_fh2 "$name,$mainCategory,$sum,$tier,$rank,$num_staker,$per_staker_amount\n";
+    print $output_fh2 "$name,$mainCategory,$sum,$num_staker,$per_staker_amount,$tier,$rank\n";
 
 }
 close $fh;
