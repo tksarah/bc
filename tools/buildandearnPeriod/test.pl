@@ -97,7 +97,7 @@ while (my $row = $csv->getline($fh)) {
     $stddev = stddev_func(@stake_amount_a);
 
     # For total amount
-    print $output_fh2 "$name,$mainCategory,$sum,$num_staker,$mean,$median,$stddev$tier,$rank\n";
+    print $output_fh2 "$name,$mainCategory,$sum,$num_staker,$mean,$median,$stddev,$tier,$rank\n";
 
 }
 close $fh;
