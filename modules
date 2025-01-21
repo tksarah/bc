@@ -2,3 +2,5 @@ apt-get:
  libjson-perl
  libtext-csv-perl 
  libwww-perl
+ liblist-moreutils-perl
+ libstatistics-basic-perl
