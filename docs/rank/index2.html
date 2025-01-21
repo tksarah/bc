@@ -105,7 +105,7 @@
                     data.forEach((row, index) => {
                         if (row.Name) {
                             var tierClass = 'tier' + row.Tier.charAt(5);
-                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td class="${tierClass}">${row.Tier}</td><td style="text-align: center;">${row.Rank}</td><td style="text-align: right;">${parseInt(row.Stakers).toLocaleString()}</td><td style="text-align: right;">${parseInt(row.Amount/Staker).toLocaleString()}</td></tr>`);
+                            $('#myTable tbody').append(`<tr><td>${index + 1}</td><td>${row.Name}</td><td>${row.Category}</td><td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td><td class="${tierClass}">${row.Tier}</td><td style="text-align: center;">${row.Rank}</td><td style="text-align: right;">${parseInt(row.Stakers).toLocaleString()}</td><td style="text-align: right;">${parseInt(row.AmountPerStaker).toLocaleString()}</td></tr>`);
                         }
                     });
                     $("#myTable").tablesorter();
