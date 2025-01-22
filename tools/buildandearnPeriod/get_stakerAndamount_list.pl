@@ -17,6 +17,15 @@ my $rank = 0;
 # Output TotalAmount
 my $total_amount = "TotalAmount.csv";
 
+# Reward hash
+our $tier_n;
+our $rank_n;
+our %tier_reward;
+our %rank_reward;
+$rank_reward{'1'} = 0;
+get_reward_func('reward.json');
+my $total_reward = 0;
+
 # 新しいCSVモジュールを使用するための準備
 my $csv = Text::CSV->new({ binary => 1, auto_diag => 1 });
 
@@ -31,7 +40,7 @@ my $timestamp = strftime "%Y-%m-%d-%H", localtime;
 $total_amount = $timestamp . "_" . $total_amount;
 # Open TotalAmount
 open my $output_fh2, ">>:encoding(utf8)", $total_amount or die "$total_amount: $!";
-print $output_fh2 "Name,Category,TotalStaked,Stakers,Mean,Median,STDDEV,Tier,Rank\n";
+print $output_fh2 "Name,Category,TotalStaked,Stakers,Mean,Median,STDDEV,Tier,Rank,Reward\n";
 
 while (my $row = $csv->getline($fh)) {
     my $num_staker=0;
@@ -85,6 +94,9 @@ while (my $row = $csv->getline($fh)) {
     
     # Get Tier and Rank
     my ($tier,$rank) = get_tier($tier1,$tier2,$tier3,$tier4,$sum);
+    # for reward
+    if ($tier =~ /(\d)/) { $tier_n = $1; }
+    if ($rank =~ /(\d)/) { $rank_n = $1; }
 
     # Per staker amount
     if ($num_staker != 0){
@@ -96,8 +108,15 @@ while (my $row = $csv->getline($fh)) {
     $median = median_func(@stake_amount_a);
     $stddev = stddev_func(@stake_amount_a);
 
-    # For total amount
-    print $output_fh2 "$name,$mainCategory,$sum,$num_staker,$mean,$median,$stddev,$tier,$rank\n";
+    # For total reward
+    if($tier ne "No Tier"){
+	    $total_reward = $tier_reward{$tier_n} + $rank_n*$rank_reward{$tier_n};
+    }else{
+	    $total_reward = 0;
+    }
+
+    ### Out
+    print $output_fh2 "$name,$mainCategory,$sum,$num_staker,$mean,$median,$stddev,$tier,$rank,$total_reward\n";
 
 }
 close $fh;
@@ -227,6 +246,77 @@ sub stddev_func {
     my $mean = sum(@data) / @data;
     my $sq_sum = sum(map { ($_ - $mean) ** 2 } @data);
     return sqrt($sq_sum / @data);
+}
+
+# Get Tier Reward
+sub get_reward_func {
+
+    my ($file) = @_;
+    my $x = 0;
+    open my $refh, '<', $file or die "Could not open file: $!";
+
+    while (my $row = <$refh>) {
+      chomp $row;
+
+      # Tier Base
+      if ($row =~ /\srewards:\s\[$/) {
+        $row = <$refh>;  # Teir1 Base Reward
+        chomp $row;
+        ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+        $x =~ s/,//g;
+        $x = $x/1000000000000000000;
+        $tier_reward{'1'} = sprintf("%d", $x);
+
+        $row = <$refh>;  # Teir2 Base Reward
+        chomp $row;
+        ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+        $x =~ s/,//g;
+        $x = $x/1000000000000000000;
+        $tier_reward{'2'} = sprintf("%d", $x);
+
+        $row = <$refh>;  # Teir3 Base Reward
+        chomp $row;
+        ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+        $x =~ s/,//g;
+        $x = $x/1000000000000000000;
+        $tier_reward{'3'} = sprintf("%d", $x);
+
+        $row = <$refh>;  # Teir4 Base Reward
+        chomp $row;
+        ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+        $x =~ s/,//g;
+        $x = $x/1000000000000000000;
+        $tier_reward{'4'} = sprintf("%d", $x);
+  	}
+
+      # Rank
+      if ($row =~ /\srankRewards:\s\[$/) {
+         <$refh>;
+        $row = <$refh>;  # Tier2 Rank Reward
+        chomp $row;
+        ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+        $x =~ s/,//g;
+        $x = $x/1000000000000000000;
+        $rank_reward{'2'} = sprintf("%d", $x);
+
+        $row = <$refh>;  # Teir3 Rank Reward
+        chomp $row;
+        ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+        $x =~ s/,//g;
+        $x = $x/1000000000000000000;
+        $rank_reward{'3'} = sprintf("%d", $x);
+
+        $row = <$refh>;  # Tier4 Rank Reward
+        chomp $row;
+        ($x) = $row =~ /\s*(\d{0,3}(,\d{3})*)/;
+        $x =~ s/,//g;
+        $x = $x/1000000000000000000;
+        $rank_reward{'4'} = sprintf("%d", $x);
+   	}
+    }
+
+    close $refh;
+
 }
 
 1;
