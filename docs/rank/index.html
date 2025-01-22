@@ -71,7 +71,7 @@
 <body>
     <h1 style="color: #FFFFFF;">dApp Ranking</h1>
     <h2 style="color: #FFFFFF;">Build&Earn / Period 3</h2>
-    <h2 style="color: #FFFFFF;">Update: 2025-01-22 07:21:38</h2>
+    <h2 style="color: #FFFFFF;">Update: 2025-01-23 01:17:43</h2>
     <br>
     注意: データは取得時点でのものである、最新データとは異なる場合がある点に注意ください。<br>
     また、まれに<b>”Delisted”</b>となっているプロジェクトがありますが、このプロジェクトはランキングされていたとしても、実際はdApp Stakingからは上場廃止されています。
@@ -92,6 +92,7 @@
                 <th>STDDEV</th>
                 <th>Tier</th>
                 <th>Rank</th>
+                <th>Reward</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -120,6 +121,7 @@
 				  <td style="text-align: right;">${parseInt(row.STDDEV).toLocaleString()}</td>
 				  <td class="${tierClass}">${row.Tier}</td>
 				  <td style="text-align: center;">${row.Rank}</td>
+				  <td style="text-align: right;">${parseInt(row.Reward).toLocaleString()}</td>
 				</tr>`
 			      );
                         }

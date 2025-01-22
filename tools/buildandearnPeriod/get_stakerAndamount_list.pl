@@ -17,7 +17,7 @@ my $rank = 0;
 # Output TotalAmount
 my $total_amount = "TotalAmount.csv";
 
-# Reward hash
+# Reward parm
 our $tier_n;
 our $rank_n;
 our %tier_reward;

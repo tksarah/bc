@@ -92,6 +92,7 @@
                 <th>STDDEV</th>
                 <th>Tier</th>
                 <th>Rank</th>
+                <th>Reward</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -120,6 +121,7 @@
 				  <td style="text-align: right;">${parseInt(row.STDDEV).toLocaleString()}</td>
 				  <td class="${tierClass}">${row.Tier}</td>
 				  <td style="text-align: center;">${row.Rank}</td>
+				  <td style="text-align: right;">${parseInt(row.Reward).toLocaleString()}</td>
 				</tr>`
 			      );
                         }
