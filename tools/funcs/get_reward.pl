@@ -53,7 +53,7 @@ while (my $row = <$refh>) {
     print "Tier 1 Reward, $tier_reward{'1'}\n";
     print "Tier 2 Reward, $tier_reward{'2'}\n";
     print "Tier 3 Reward, $tier_reward{'3'}\n";
-    print "Tier 4 Reward, $tier_reward{'4'}\n";
+    print "Tier 4 Reward, $tier_reward{'4'}\n\n";
   }
 
   # Rank
@@ -65,7 +65,6 @@ while (my $row = <$refh>) {
     $x =~ s/,//g;
     $x = $x/1000000000000000000;
     $rank_reward{'2'} = sprintf("%d", $x);
-    #print "Tier 2 Rank Reward,$formatted_x\n";
 
     $row = <$refh>;  # Teir3 Rank Reward
     chomp $row;
@@ -73,7 +72,6 @@ while (my $row = <$refh>) {
     $x =~ s/,//g;
     $x = $x/1000000000000000000;
     $rank_reward{'3'} = sprintf("%d", $x);
-    #print "Tier 3 Rank Reward,$formatted_x\n";
 
     $row = <$refh>;  # Tier4 Rank Reward
     chomp $row;
@@ -85,14 +83,12 @@ while (my $row = <$refh>) {
     print "Tier 1 Rank Reward, $rank_reward{'1'}\n";
     print "Tier 2 Rank Reward, $rank_reward{'2'}\n";
     print "Tier 3 Rank Reward, $rank_reward{'3'}\n";
-    print "Tier 4 Rank Reward, $rank_reward{'4'}\n";
+    print "Tier 4 Rank Reward, $rank_reward{'4'}\n\n";
    } 
 }
 
 close $refh;
 
-
-print "\n";
 print "Tier: $tier\n";
 print "Rank: $rank\n";
 
