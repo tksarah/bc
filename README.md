@@ -32,7 +32,7 @@ Displays a list of stakers for each dApp in dAppStaking.
 
 This board is updated irregularly.
 
-- No. (as this list)
+- No. ( Ranking number by Total Staked Amount )
 - Name ( Project Name )
 - Category
 - TotalStaked ( Total Staking Amount during Build&Earn Subperiod )
