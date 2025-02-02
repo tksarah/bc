@@ -7,7 +7,7 @@ dApp Staking Data
 
 https://agent.sun-t-sarah.work/
 
-![image](https://github.com/tksarah/bc/assets/11060137/d2789ec1-3580-451b-8c43-e50e7907a213)
+![image](https://github.com/user-attachments/assets/032f077c-0b2f-4313-9522-442c175b27f6)
 
 ## Staking Amount by dApp Staker
 
@@ -18,7 +18,7 @@ Displays a list of stakers for each dApp in dAppStaking.
 - By default, it is displayed in descending order of staking amount (switchable via the table header).
 - dApps with many stakers may take some time to display.
 - By selecting a dApp and pressing “Export CSV Data,” you can export a file that lists stakers and their stake amounts.
-- The list of dApps itself is based on the data from **Sep. 6, 2024**.
+- The list of dApps itself is based on the data from **Jan. 28, 2025**.
 - Please be aware that there may be changes to specifications or delays in updating the list of dApps without prior notice.
 - EVM (e.g., Metamask) addresses are now displayed. The following information is available.
   * You can see the addresses staked with EVM [ (Staker/EVM) ] column.
@@ -53,6 +53,12 @@ Currently, it is manually operated to update once or twice a day during the "Vot
 - VotingStaked
 
 ![image](https://github.com/tksarah/bc/assets/11060137/f4533b9c-9a63-4b3b-a06a-c21108cb5dd4)
+
+## ID Search
+
+On this page, you can input the CSV obtained from 'Staking Amount by dApp Staker' and display the ones from the staker list that have their on-chain IDs.
+
+![image](https://github.com/user-attachments/assets/e09038ab-6bc3-40f5-8253-cc8958624ac7)
 
 
 
