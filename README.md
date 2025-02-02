@@ -33,15 +33,15 @@ Displays a list of stakers for each dApp in dAppStaking.
 This board is updated irregularly.
 
 - No. (as this list)
-- Project Name
+- Name ( Project Name )
 - Category
-- Total Staking Amount during Build&Earn Subperiod
+- TotalStaked ( Total Staking Amount during Build&Earn Subperiod )
 - Stakers
 - MEAN ( Average per Staker )
 - MEDIAN ( Median of Staking Amount )
 - STDDEV ( Standard Deviation of Staking Amount )
-- Tier Level
-- Tier Rank
+- Tier ( Tier Level )
+- Rank ( Rank in Tier )
 - Reward ( Rewards per ERA calculated by Tier and Rank )
 
 ![image](https://github.com/user-attachments/assets/7496444f-5c3b-4cbb-a7fa-99d0802115cd)
