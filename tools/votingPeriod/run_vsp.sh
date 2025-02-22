@@ -2,7 +2,7 @@
 
 # Current period number
 # Edit required before running
-period=3
+period=4
 
 # Data from https://polkadot.js.org/apps/#/chainstate
 file="data"
