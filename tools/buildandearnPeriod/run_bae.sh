@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR="../../docs/rank"
-SDIR="../../store/Period3_data"
+SDIR="../../store/Period4_data"
 
 echo "Run get_stakerAndamount_list.pl -> "
 perl ./get_stakerAndamount_list.pl

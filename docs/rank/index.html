@@ -71,8 +71,68 @@
 <body>
     <h1 style="color: #FFFFFF;">dApp Ranking</h1>
     <h2 style="color: #FFFFFF;">Build&Earn / Period 3</h2>
-    <h2 style="color: #FFFFFF;">Update: 2025-02-21 08:00:06</h2>
-    調整中。
+    <h2 style="color: #FFFFFF;">Update: 2025-03-05 23:38:46</h2>
+    <br>
+    注意: データは取得時点でのものである、最新データとは異なる場合がある点に注意ください。<br>
+    また、まれに<b>”Delisted”</b>となっているプロジェクトがありますが、このプロジェクトはランキングされていたとしても、実際はdApp Stakingからは上場廃止されています。
+    </p>
+    Note: Please note that the data for TotalStaked, Tier and Rank is from this snapshot and may differ from the latest data.<br>
+    Occasionally, there are projects marked as “Delisted.” Even if these projects appear in the rankings, they have actually been delisted from dApp Staking.
+    </p>
+    <table id="myTable" class="table table-striped">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>TotalStaked</th>
+                <th>Stakers</th>
+                <th>MEAN</th>
+                <th>MEDIAN</th>
+                <th>STDDEV</th>
+                <th>Tier</th>
+                <th>Rank</th>
+                <th>Reward</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            Papa.parse('TotalAmount.csv', {
+                download: true,
+                header: true,
+                complete: function(results) {
+                    var data = results.data;
+                    data.sort((a, b) => b.TotalStaked - a.TotalStaked);
+                    data.forEach((row, index) => {
+                        if (row.Name) {
+                            var tierClass = 'tier' + row.Tier.charAt(5);
+                            $('#myTable tbody').append(
+				`<tr>
+				  <td>${index + 1}</td>
+				  <td>${row.Name}</td>
+				  <td>${row.Category}</td>
+				  <td style="text-align: right;">${parseInt(row.TotalStaked).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.Stakers).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.Mean).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.Median).toLocaleString()}</td>
+				  <td style="text-align: right;">${parseInt(row.STDDEV).toLocaleString()}</td>
+				  <td class="${tierClass}">${row.Tier}</td>
+				  <td style="text-align: center;">${row.Rank}</td>
+				  <td style="text-align: right;">${parseInt(row.Reward).toLocaleString()}</td>
+				</tr>`
+			      );
+                        }
+                    });
+                    $("#myTable").tablesorter();
+                }
+            });
+        });
+    </script>
+    </br>
+    </br>
     <p>
 </body>
 </html>
