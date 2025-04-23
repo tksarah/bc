@@ -79,7 +79,7 @@ google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
 async function getData() {
-    const response = await fetch('vsp_data.csv');
+    const response = await fetch('test.csv');
     const data = await response.text();
     const rows = data.split('\n').slice(1).filter(row => row.trim().length > 0);
     let html = `<tr><th onclick="sortTable(0, false)">Rank</th><th onclick="sortTable(1, true)">Name</th><th onclick="sortTable(2, true)">Category</th><th onclick="sortTable(3, false)">Stakers</th><th
