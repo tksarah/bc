@@ -65,7 +65,7 @@
 
 <h1 style="color: #FFFFFF;">dApp Ranking</h1>
 <h2 style="color: #FFFFFF;">Voting / Period 4</h2>
-<h2 style="color: #FFFFFF;">Update: 2025-03-04 10:47:52</h2>
+<h2 style="color: #FFFFFF;">Update: DATEJST</h2>
 
 <!-- Display DonutChart -->
 <div id="donutChart" style="width: 900px; height: 500px;"></div>
