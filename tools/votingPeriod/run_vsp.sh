@@ -46,11 +46,12 @@ sed -i 's/"ApeXChimpz \(.*\)",\(.*\),\([0-9]*\),\([0-9]*\.[0-9]*\)/"ApeXChimpz",
 
 # Copy
 echo -n "Run copy to DOCS -> "
-cp -p $sfile index.html $DIR/
+#cp -p $sfile index.html $DIR/
 echo "Done"
 
 ### Cleanup
 echo -n "Run cleanup -> "
-rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv vsp_data.csv index.html data
+#rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv vsp_data.csv index.html data
+rm chaindapps.csv chaindapps.json dappssimple.csv dappssimple.json api_data.csv voting_period.csv index.html data
 touch data
 echo "Done"
