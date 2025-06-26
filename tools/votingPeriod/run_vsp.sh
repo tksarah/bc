@@ -5,6 +5,7 @@
 period=5
 
 # Data from https://polkadot.js.org/apps/#/chainstate
+# dappStaking.contractStake: PalletDappStakingContractStakeAmount
 file="data"
 
 # Save file name
