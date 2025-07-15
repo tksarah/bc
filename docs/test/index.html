@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ロゴスライダー</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      font-family: sans-serif;
+    }
+
+    .logo-slider {
+      overflow: hidden;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px 0;
+    }
+
+    .logo-track {
+      display: flex;
+      animation: scroll 20s linear infinite;
+    }
+
+    .logo-track img {
+      height: 60px;
+      margin: 0 30px;
+      object-fit: contain;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo-slider">
+    <div class="logo-track">
+      <img src="./btc.svg" alt="BTC Logo">
+      <img src="./eth.png" alt="ETH Logo">
+      <img src="./polka.png" alt="Polkadot Logo">
+      <!-- 2セット目でループ感を演出 -->
+      <img src="./btc.svg" alt="BTC Logo">
+      <img src="./eth.png" alt="ETH Logo">
+      <img src="./polka.png" alt="Polkadot Logo">
+    </div>
+  </div>
+
+</body>
+</html>
+
