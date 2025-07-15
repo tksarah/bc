@@ -2,34 +2,52 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ロゴスライダー</title>
+  <title>ロゴ横スクロール＆ループ サンプル</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      font-family: sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e8ecf1); /* ✅ モダンな背景 */
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
       display: flex;
-      justify-content: center; /* ページ中央に配置 */
+      flex-direction: column;
+      align-items: center;
     }
 
+    h1 {
+      font-size: 28px;
+      margin: 40px 0 20px;
+      color: #333;
+      letter-spacing: 1px;
+      text-align: center;
+      border-bottom: 2px solid #ccc; /* ✅ タイトルにアクセント */
+      padding-bottom: 10px;
+      width: 800px;
+    }
 
     .logo-slider {
       overflow: hidden;
-      width: 800px; /* 編集：中央幅800pxに設定 */
+      width: 800px;
       background-color: #fff;
       padding: 20px 0;
+      border-radius: 12px; /* ✅ 角丸で柔らかい印象 */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ✅ モダンな影効果 */
     }
 
     .logo-track {
       display: flex;
-      animation: scroll 15s linear infinite;
+      animation: scroll 25s linear infinite; /* ✅ スピード調整可能 */
     }
 
     .logo-track img {
       height: 60px;
       margin: 0 30px;
       object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .logo-track img:hover {
+      transform: scale(1.1); /* ✅ ホバーで拡大 */
     }
 
     @keyframes scroll {
@@ -44,6 +62,8 @@
 </head>
 <body>
 
+  <h1>ロゴ横スクロール＆ループ サンプル</h1> <!-- ✅ ページ上部のタイトル -->
+
   <div class="logo-slider">
     <div class="logo-track">
       <img src="./btc.png" alt="BTC Logo">
@@ -51,7 +71,7 @@
       <img src="./polka.png" alt="Polkadot Logo">
       <img src="./shiba.png" alt="Shibainu Logo">
       <img src="./sol.png" alt="Solana Logo">
-      <!-- 2セット目でループ感を演出 -->
+      <!-- ✅ 2セット目でループ感を演出 -->
       <img src="./btc.png" alt="BTC Logo">
       <img src="./eth.png" alt="Ethereum Logo">
       <img src="./polka.png" alt="Polkadot Logo">
